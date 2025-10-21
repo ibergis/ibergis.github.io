@@ -1,0 +1,32 @@
+{% extends "sphinx_rtd_theme/layout.html" %} {%- block extrahead %}
+<meta
+	name="description"
+	content="IberGIS {{ version }} documentation: {{ title|striptags|e }}"
+/>
+{%- if outdated %}
+<meta name="robots" content="noindex" />
+{%- endif %} {%- endblock -%} {%block extrabody %}
+
+<nav class="release_status_topbar">
+	{%- if isTesting %}
+	<div class="row isTesting">
+		{{ _('This documentation is a work in progress. For the Long Term Release
+		and translations, please visit the ') }}<a
+			href="https://ibergis.github.io/latest/{{ language }}/{{ pagename }}.html"
+			>{{ _('latest version') }}</a
+		>.
+	</div>
+	{%- endif %} {%- if outdated %}
+	<div class="row outdated">
+		{{ _('This documentation is for a QGIS version which has reached end of
+		life. Instead visit the ') }}<a
+			href="https://ibergis.github.io/latest/{{ language }}/{{ pagename }}.html"
+			>{{ _('latest version') }}</a
+		>.
+	</div>
+	{%- endif %}
+</nav>
+
+{{ super() }} {% endblock extrabody %} {% block sidebartitle %} {{ super() }}
+<a href="{{pathto('genindex.html', 1)}}">{{ _('Index') }}</a>
+{% endblock sidebartitle %}
