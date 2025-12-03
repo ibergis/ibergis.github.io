@@ -33,7 +33,7 @@ Tab SWMM OPTIONS
 
 The following options are available:
 
-- Skip steady state: it allows to omit the steady phase at the beginning of the hydraulic simulation. The default is NO.
+- Skip steady state: allows to omit the steady phase at the beginning of the hydraulic simulation. The default is NO.
 - Allow ponding: determines whether excess water is allowed to collect atop nodes and be re-introduced into the system as conditions permit.
   The default is YES. In order form ponding to actually occur at a particular node, **a non-zero value for its ponded area attribute must be used** (field *apond* on Junction layer).
 - Min slope: minimum value allowed for a conduit's slope (%). If zero (the default) then no minimum is imposed (although SWMM uses a lower limit on elevation drop of 0.00035 m when computing a conduit slope).
@@ -226,10 +226,12 @@ Tab RASTER OPTIONS
 
     Raster options.
 
-Set the maximum and minimum values for raster results, sets the symbology color, and allows you to exclude values for the parameters:
+Set the maximum and minimum values for raster results, sets the symbology color ramp, and allows you to exclude values for the parameters:
 depth, velocity, water elevation, hazard ACA, severe hazard RD9-2008, local time step, specific discharge X, specific discharge Y, energy,
 Froude, infiltration rate, rain depth, velocity X, velocity Y, water performance, max depth, max velocity, max water elevation, max hazard ACA,
 max severe hazard RD9-2008, max local time step and max specific discharge.
 
+.. important:: The maximum and minimum configuration will only work with the custom symbology mode.
 
+.. note:: The execution can output more rasters than the available to configure on this dialog. They will get imported too, but with default configuration.
 

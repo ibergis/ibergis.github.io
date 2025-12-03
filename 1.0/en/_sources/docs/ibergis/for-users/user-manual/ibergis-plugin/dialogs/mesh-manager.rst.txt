@@ -33,6 +33,6 @@ The following buttons are available:
     This name will later help you identify the mesh you want to work with when assigning the boundary conditions scenario.
   
 - View: allows, by selecting a mesh, see it in the ToC.
-- Import: allows import a mesh from computer files.
-- Export: allows export a mesh.
+- Import: allows to import a mesh from computer files.
+- Export: allows to export a mesh.
 - Delete: allows, by selecting a mesh, delete it.

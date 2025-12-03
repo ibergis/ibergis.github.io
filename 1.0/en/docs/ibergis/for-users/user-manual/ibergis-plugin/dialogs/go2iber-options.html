@@ -165,7 +165,7 @@
 </figure>
 <p>The following options are available:</p>
 <ul class="simple">
-<li><p>Skip steady state: it allows to omit the steady phase at the beginning of the hydraulic simulation. The default is NO.</p></li>
+<li><p>Skip steady state: allows to omit the steady phase at the beginning of the hydraulic simulation. The default is NO.</p></li>
 <li><p>Allow ponding: determines whether excess water is allowed to collect atop nodes and be re-introduced into the system as conditions permit.
 The default is YES. In order form ponding to actually occur at a particular node, <strong>a non-zero value for its ponded area attribute must be used</strong> (field <em>apond</em> on Junction layer).</p></li>
 <li><p>Min slope: minimum value allowed for a conduit’s slope (%). If zero (the default) then no minimum is imposed (although SWMM uses a lower limit on elevation drop of 0.00035 m when computing a conduit slope).</p></li>
@@ -375,10 +375,18 @@ manning, cellsize, sfactor, slope, street_vol, orifice_cd, roughness, mfactor, u
 <p><span class="caption-text">Raster options.</span><a class="headerlink" href="#id9" title="Link to this image"></a></p>
 </figcaption>
 </figure>
-<p>Set the maximum and minimum values for raster results, sets the symbology color, and allows you to exclude values for the parameters:
+<p>Set the maximum and minimum values for raster results, sets the symbology color ramp, and allows you to exclude values for the parameters:
 depth, velocity, water elevation, hazard ACA, severe hazard RD9-2008, local time step, specific discharge X, specific discharge Y, energy,
 Froude, infiltration rate, rain depth, velocity X, velocity Y, water performance, max depth, max velocity, max water elevation, max hazard ACA,
 max severe hazard RD9-2008, max local time step and max specific discharge.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>The maximum and minimum configuration will only work with the custom symbology mode.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The execution can output more rasters than the available to configure on this dialog. They will get imported too, but with default configuration.</p>
+</div>
 </section>
 </section>
 </section>
@@ -392,7 +400,7 @@ max severe hazard RD9-2008, max local time step and max specific discharge.</p>
 
   <div role="contentinfo">
     <p>&#169; Copyright 2025, IberGIS.
-      <span class="lastupdated">Last updated on 2025 Oct 21, 11:53 +0200.
+      <span class="lastupdated">Last updated on 2025 Dec 03, 14:18 +0100.
       </span></p>
   </div>
 
@@ -428,10 +436,6 @@ max severe hazard RD9-2008, max local time step and max specific discharge.</p>
 
 		<dl>
 			<dt>Versions</dt>
-			
-			<dd>
-				<a href="https://ibergis.github.io/testing/en/docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.html">testing</a>
-			</dd>
 			
 			<dd>
 				<a href="https://ibergis.github.io/1.0/en/docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.html">1.0</a>

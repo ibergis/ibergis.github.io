@@ -30,6 +30,6 @@ Then, a form will appear where we must to specify:
  
 - Time Series: this option allows us to specify an inlet hydrograph. **It is only available when we select 2D inlet option**.
 
-.. important:: The boundary conditions are directly applied to a specific existing scenario, the one active while adding them or *current scenario*. If you want to specify the boundary conditions to a certain scenario make sure that it is the one active at the moment. 
+.. important:: The boundary conditions are directly applied to the current scenario. The current scenario can be set on :ref:`boundary-cond-manager`. 
 
 Once boundary conditions exist, they can be edited directly by enabling editing through the *Toggle Editing* button, either from the map or the attribute table.
