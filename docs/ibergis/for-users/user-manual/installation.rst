@@ -24,7 +24,7 @@ To download it we will go to the `download center of the QGIS web site <https://
 
       Close donation window to QGIS project.
 
-QGIS is available for Windows, macOS, Linux, Android and iOS so we will have to select one or the other depending on our operating system.
+QGIS is available for many different operating systems, but IberGIS will only work fully on Windows and Linux so we will have to select one or the other depending on our operating system.
 Once located, we can download it.
 
 .. figure:: img/installation/download_qgis_2.png
@@ -33,7 +33,7 @@ Once located, we can download it.
 
 Once QGIS has been downloaded, run the downloaded file and follow the instructions to install it.
 
-.. important:: To work with IberGIS **must** download the LTR version of QGIS.
+.. important:: IberGIS **requires** the latest available LTR version of QGIS.
 
 IberGIS installation
 ====================
@@ -59,7 +59,7 @@ Iber installation (optional)
 
 Iber is a two-dimensional hydraulic model for the simulation of free surface flow distributed for free in English and Spanish.
 
-To download it we must to be registered in the `official website <https://www.iberaula.es/54/iber-model/downloads>`_.
+To download it we must be registered in the `official website <https://www.iberaula.es/54/iber-model/downloads>`_.
 
 .. figure:: img/installation/download_iber.png
 

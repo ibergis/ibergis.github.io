@@ -18,9 +18,9 @@ Tool to manage the non visual objects of the project.
 We can manage curves, patterns, timeseries, controls and rasters.
 In all cases, the following buttons are available:
 
-- Duplicate: it allows to duplicate a selected object.
-- Create: it allows to create a new object.
-- Delete: it allows to delete a selected.
+- Duplicate: allows to duplicate a selected object.
+- Create: allows to create a new object.
+- Delete: allows to delete a selected object.
 
 This window is used to create and configure non-visual objects.
 These elements are stored in the model and can be selectively activated depending on the requirements of each simulation.
@@ -82,6 +82,8 @@ They integrate spatial data to represent variability of parameters such as preci
 
 These rasters may represent either rainfall volume (mm) or rainfall intensity (mm/h).
 The user must specify the type of data contained in the rasters, as well as the corresponding timestamp for each file to ensure correct temporal assignment during the simulation.
+
+.. note:: Rasters can be imported with the import button on the manager.
 
 .. figure:: img/non-visual-obj-rasters.png
 
