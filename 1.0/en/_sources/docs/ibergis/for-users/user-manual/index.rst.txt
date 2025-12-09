@@ -11,6 +11,7 @@ IberGIS User Manual
    installation
    empty-schema
    sample-schema
+   update-gpkg
    toc
    ibergis-plugin/ibergis-plugin
    ibergis-toolbox

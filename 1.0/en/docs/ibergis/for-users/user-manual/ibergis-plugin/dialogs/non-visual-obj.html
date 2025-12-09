@@ -4,9 +4,9 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>4. Dialog Non visual objects &mdash; IberGIS Documentation  documentation</title>
+  <title>8.1.4. Dialog Non visual objects &mdash; IberGIS Documentation  documentation</title>
       <link rel="stylesheet" type="text/css" href="../../../../../../_static/pygments.css?v=b86133f3" />
-      <link rel="stylesheet" type="text/css" href="../../../../../../_static/css/ibergis_docs.css?v=05a3ee12" />
+      <link rel="stylesheet" type="text/css" href="../../../../../../_static/css/ibergis_docs.css?v=3f46d377" />
       <link rel="stylesheet" type="text/css" href="../../../../../../_static/togglebutton.css?v=13237357" />
       <link rel="stylesheet" type="text/css" href="../../../../../../_static/copybutton.css?v=76b2166b" />
 
@@ -33,9 +33,11 @@
     <script src="../../../../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../../../search.html" />
+    <link rel="next" title="8.1.5. Dialog Bridge Actions" href="bridge-actions.html" />
+    <link rel="prev" title="8.1.3. Dialog Create boundary conditions" href="create-boundary-cond.html" />
 <meta
 	name="description"
-	content="IberGIS 1.0 documentation: 4. Dialog Non visual objects"
+	content="IberGIS 1.0 documentation: 8.1.4. Dialog Non visual objects"
 />
 </head>
 
@@ -70,12 +72,34 @@
 
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">FOR USERS</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../index.html">IberGIS User Manual</a></li>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">IberGIS User Manual</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../introduction.html">1. Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../what-is-ibergis.html">2. What is IberGIS?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../installation.html">3. Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../empty-schema.html">4. Create an empty IberGIS schema</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../sample-schema.html">5. Create a sample IberGIS schema</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../update-gpkg.html">6. Update a IberGIS GeoPackage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../toc.html">7. Table of Contents (ToC)</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../ibergis-plugin.html">8. IberGIS Plugin</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="../ibergis-plugin.html#toolbar-main">8.1. Toolbar <em>Main</em></a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="import-inp.html">8.1.1. Dialog Import INP</a></li>
+<li class="toctree-l4"><a class="reference internal" href="boundary-cond-manager.html">8.1.2. Dialog Boundary conditions manager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="create-boundary-cond.html">8.1.3. Dialog Create boundary conditions</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">8.1.4. Dialog Non visual objects</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bridge-actions.html">8.1.5. Dialog Bridge Actions</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../ibergis-plugin.html#toolbar-utilities">8.2. Toolbar <em>Utilities</em></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../ibergis-toolbox.html">9. IberGIS toolbox</a></li>
+</ul>
+</li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">FOR DEVELOPERS</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../../for-developers/index.html">Developer Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../for-developers/developer-manual/index.html">IberGIS Developer Manual</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">FOR ADMINISTRATORS</span></p>
 <ul>
@@ -96,77 +120,94 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active"><span class="section-number">4. </span>Dialog Non visual objects</li>
+          <li class="breadcrumb-item"><a href="../../index.html">IberGIS User Manual</a></li>
+          <li class="breadcrumb-item"><a href="../ibergis-plugin.html"><span class="section-number">8. </span>IberGIS Plugin</a></li>
+      <li class="breadcrumb-item active"><span class="section-number">8.1.4. </span>Dialog Non visual objects</li>
       <li class="wy-breadcrumbs-aside">
               <a href="https://github.com/IberGIS/IberGIS-Documentation/blob/master/docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/non-visual-obj.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
-  </ul>
+  </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="Sequential page navigation">
+        <a href="create-boundary-cond.html" class="btn btn-neutral float-left" title="8.1.3. Dialog Create boundary conditions" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="bridge-actions.html" class="btn btn-neutral float-right" title="8.1.5. Dialog Bridge Actions" accesskey="n">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+  </div>
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
   <section id="dialog-non-visual-objects">
-<span id="dialog-non-visual-obj"></span><h1><span class="section-number">4. </span>Dialog Non visual objects<a class="headerlink" href="#dialog-non-visual-objects" title="Link to this heading"></a></h1>
+<span id="dialog-non-visual-obj"></span><h1><span class="section-number">8.1.4. </span>Dialog Non visual objects<a class="headerlink" href="#dialog-non-visual-objects" title="Link to this heading"></a></h1>
 <nav class="contents local" id="contents">
 <ul class="simple">
-<li><p><a class="reference internal" href="#curves" id="id4">Curves</a></p></li>
-<li><p><a class="reference internal" href="#patterns" id="id5">Patterns</a></p></li>
-<li><p><a class="reference internal" href="#timeseries" id="id6">Timeseries</a></p></li>
-<li><p><a class="reference internal" href="#controls" id="id7">Controls</a></p></li>
-<li><p><a class="reference internal" href="#rasters" id="id8">Rasters</a></p></li>
+<li><p><a class="reference internal" href="#curves" id="id9">Curves</a></p></li>
+<li><p><a class="reference internal" href="#patterns" id="id10">Patterns</a></p></li>
+<li><p><a class="reference internal" href="#timeseries" id="id11">Timeseries</a></p></li>
+<li><p><a class="reference internal" href="#controls" id="id12">Controls</a></p></li>
+<li><p><a class="reference internal" href="#rasters" id="id13">Rasters</a></p></li>
 </ul>
 </nav>
 <p>Tool to manage the non visual objects of the project.</p>
 <figure class="align-default" id="id1">
-<img alt="../../../../../../_images/non-visual-obj-curves.png" src="../../../../../../_images/non-visual-obj-curves.png" />
+<img alt="../../../../../../_images/non-visual-obj-curve-manager.png" src="../../../../../../_images/non-visual-obj-curve-manager.png" />
 <figcaption>
-<p><span class="caption-text">Window to manage the non visual objects.</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+<p><span class="caption-number">Fig. 8.5 </span><span class="caption-text">Window to manage the non visual objects.</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <p>We can manage curves, patterns, timeseries, controls and rasters.
 In all cases, the following buttons are available:</p>
 <ul class="simple">
-<li><p>Duplicate: allows to duplicate a selected object.</p></li>
-<li><p>Create: allows to create a new object.</p></li>
-<li><p>Delete: allows to delete a selected object.</p></li>
+<li><p><strong>Duplicate:</strong> allows to duplicate a selected object.</p></li>
+<li><p><strong>Create:</strong> allows to create a new object.</p></li>
+<li><p><strong>Delete:</strong> allows to delete a selected object.</p></li>
 </ul>
 <p>This window is used to create and configure non-visual objects.
 These elements are stored in the model and can be selectively activated depending on the requirements of each simulation.</p>
 <section id="curves">
-<h2><a class="toc-backref" href="#id4" role="doc-backlink"><span class="section-number">4.1. </span>Curves</a><a class="headerlink" href="#curves" title="Link to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id9" role="doc-backlink"><span class="section-number">8.1.4.1. </span>Curves</a><a class="headerlink" href="#curves" title="Link to this heading"></a></h2>
 <p>Allows to define curves of control, diversion, pump, rating, shape, storage or tidal type.</p>
+<figure class="align-default" id="id2">
+<img alt="../../../../../../_images/non-visual-obj-curve.png" src="../../../../../../_images/non-visual-obj-curve.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 8.6 </span><span class="caption-text">Window to create or edit a curve.</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 <p>To create a curve we will have to specify pairs of values until the curve is defined.
 Depending on the type of curve, several pairs of values may be necessary.</p>
 </section>
 <section id="patterns">
-<h2><a class="toc-backref" href="#id5" role="doc-backlink"><span class="section-number">4.2. </span>Patterns</a><a class="headerlink" href="#patterns" title="Link to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id10" role="doc-backlink"><span class="section-number">8.1.4.2. </span>Patterns</a><a class="headerlink" href="#patterns" title="Link to this heading"></a></h2>
 <p>Allows to define temporal patterns that we can assign to certain network objects.</p>
+<figure class="align-default" id="id3">
+<img alt="../../../../../../_images/non-visual-obj-patt.png" src="../../../../../../_images/non-visual-obj-patt.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 8.7 </span><span class="caption-text">Window to create or edit a pattern.</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 <p>We can create daily, hourly, monthly or weekend patterns.</p>
 </section>
 <section id="timeseries">
-<h2><a class="toc-backref" href="#id6" role="doc-backlink"><span class="section-number">4.3. </span>Timeseries</a><a class="headerlink" href="#timeseries" title="Link to this heading"></a></h2>
-<p>Allows to define time series of type boundary condition elevation, boundary condition flow, evaporation, inflow hydrograph,
-orifice, rainfall and temperature.</p>
-<blockquote>
-<div><ul>
-<li><p>BC elevation: boundary condition to set a specific water surface elevation.</p></li>
-<li><p>BC flow: boundary condition to set a specific flow.</p></li>
-<li><p>Evaporation: a time series of evaporation rates can be loaded to account for water loss due to this factor during long hydrological simulations.</p></li>
-<li><p>Inflow hydrograph: boundary condition used to define a specific inflow over time using a hydrograph (discharge vs time).
-This allows modeling variable flow entering the domain.</p></li>
-<li><p>Orifice:</p></li>
-<li><p>Rainfall: allows the user to define a hyetograph to be used in the model.
-Each hyetograpgh is associated with specific spatial coordinates and its location can be manually adjusted using the vertex editor,
-by toggling the editing mode in QGIS and dragging the point to the desired location.</p>
+<h2><a class="toc-backref" href="#id11" role="doc-backlink"><span class="section-number">8.1.4.3. </span>Timeseries</a><a class="headerlink" href="#timeseries" title="Link to this heading"></a></h2>
+<figure class="align-default" id="id4">
+<img alt="../../../../../../_images/non-visual-obj-time.png" src="../../../../../../_images/non-visual-obj-time.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 8.8 </span><span class="caption-text">Window to create or edit a time series.</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Allows to define different types of time series:</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>If only one hyetograph is provided, the entire domain will receive homogeneous rainfall based on that hyetograph.</p></li>
-<li><p>If multiple hyetographs are loaded, rainfall distribution across the domain will be interpolated using Thiessen polygons.</p></li>
-</ul>
-</div></blockquote>
-</li>
-<li><p>Temperature: a time series of temperatue can be loaded.</p></li>
+<li><p><strong>BC elevation:</strong> boundary condition to set a specific water surface elevation.</p></li>
+<li><p><strong>BC flow:</strong> boundary condition to set a specific flow.</p></li>
+<li><p><strong>Evaporation:</strong> a time series of evaporation rates can be loaded to account for water loss due to this factor during long hydrological simulations.</p></li>
+<li><p><strong>Inflow hydrograph:</strong> boundary condition used to define a specific inflow over time using a hydrograph (discharge vs time).
+This allows modeling variable flow entering the domain.</p></li>
+<li><p><strong>Orifice:</strong></p></li>
+<li><p><strong>Rainfall:</strong> allows the user to define a hyetograph to be used in the model.
+Each hyetograph is associated with specific spatial coordinates and its location can be manually adjusted using the vertex editor,
+by toggling the editing mode in QGIS and dragging the point to the desired location.
+- If only one hyetograph is provided, the entire domain will receive homogeneous rainfall based on that hyetograph.
+- If multiple hyetographs are loaded, rainfall distribution across the domain will be interpolated using Thiessen polygons.</p></li>
+<li><p><strong>Temperature:</strong> a time series of temperature can be loaded.</p></li>
 </ul>
 </div></blockquote>
 <p>Except for the <em>BC ELEVATION</em> option, in all other cases the data can be defined either manually (using relative or absolute times) or by importing it from an external file.</p>
@@ -174,19 +215,31 @@ by toggling the editing mode in QGIS and dragging the point to the desired locat
 This can be done through the attribute table by toggling the editing mode and selecting the relevant geometry.
 The attribute table displays one row for each geometry or location in the domain.
 To assign the appropriate time series to each location, activate the editing mode and use the drop-down menu in the “timeseries” column to choose from the predefined time series.</p>
-<figure class="align-default" id="id2">
+<figure class="align-default" id="id5">
 <img alt="../../../../../../_images/non-visual-obj-assign-hyetograph.png" src="../../../../../../_images/non-visual-obj-assign-hyetograph.png" />
 <figcaption>
-<p><span class="caption-text">Hyetograph attribute table.</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
+<p><span class="caption-number">Fig. 8.9 </span><span class="caption-text">Hyetograph attribute table.</span><a class="headerlink" href="#id5" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 </section>
 <section id="controls">
-<h2><a class="toc-backref" href="#id7" role="doc-backlink"><span class="section-number">4.4. </span>Controls</a><a class="headerlink" href="#controls" title="Link to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id12" role="doc-backlink"><span class="section-number">8.1.4.4. </span>Controls</a><a class="headerlink" href="#controls" title="Link to this heading"></a></h2>
 <p>Orders or instructions that determine how the network works over time.</p>
+<figure class="align-default" id="id6">
+<img alt="../../../../../../_images/non-visual-obj-cont.png" src="../../../../../../_images/non-visual-obj-cont.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 8.10 </span><span class="caption-text">Window to create or edit a control.</span><a class="headerlink" href="#id6" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 </section>
 <section id="rasters">
-<h2><a class="toc-backref" href="#id8" role="doc-backlink"><span class="section-number">4.5. </span>Rasters</a><a class="headerlink" href="#rasters" title="Link to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id13" role="doc-backlink"><span class="section-number">8.1.4.5. </span>Rasters</a><a class="headerlink" href="#rasters" title="Link to this heading"></a></h2>
+<figure class="align-default" id="id7">
+<img alt="../../../../../../_images/non-visual-obj-rast-manager.png" src="../../../../../../_images/non-visual-obj-rast-manager.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 8.11 </span><span class="caption-text">Window to manage the raster objects.</span><a class="headerlink" href="#id7" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 <p>They integrate spatial data to represent variability of parameters such as precipitation.</p>
 <p>These rasters may represent either rainfall volume (mm) or rainfall intensity (mm/h).
 The user must specify the type of data contained in the rasters, as well as the corresponding timestamp for each file to ensure correct temporal assignment during the simulation.</p>
@@ -194,10 +247,10 @@ The user must specify the type of data contained in the rasters, as well as the 
 <p class="admonition-title">Note</p>
 <p>Rasters can be imported with the import button on the manager.</p>
 </div>
-<figure class="align-default" id="id3">
-<img alt="../../../../../../_images/non-visual-obj-rasters.png" src="../../../../../../_images/non-visual-obj-rasters.png" />
+<figure class="align-default" id="id8">
+<img alt="../../../../../../_images/non-visual-obj-rast.png" src="../../../../../../_images/non-visual-obj-rast.png" />
 <figcaption>
-<p><span class="caption-text">Raster Editor.</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
+<p><span class="caption-number">Fig. 8.12 </span><span class="caption-text">Window to create or edit a raster.</span><a class="headerlink" href="#id8" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <div class="admonition important">
@@ -210,13 +263,16 @@ The user must specify the type of data contained in the rasters, as well as the 
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="create-boundary-cond.html" class="btn btn-neutral float-left" title="8.1.3. Dialog Create boundary conditions" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="bridge-actions.html" class="btn btn-neutral float-right" title="8.1.5. Dialog Bridge Actions" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 
   <div role="contentinfo">
     <p>&#169; Copyright 2025, IberGIS.
-      <span class="lastupdated">Last updated on 2025 Dec 03, 14:18 +0100.
+      <span class="lastupdated">Last updated on 2025 Dec 09, 15:44 +0100.
       </span></p>
   </div>
 

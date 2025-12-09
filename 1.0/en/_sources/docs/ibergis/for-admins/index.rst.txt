@@ -1,6 +1,6 @@
-===============
+===========================
 IberGIS Administrator Guide
-===============
+===========================
 
 Guide for IberGIS administrators.
 

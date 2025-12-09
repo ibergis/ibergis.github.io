@@ -1,0 +1,251 @@
+========
+Examples
+========
+
+.. only:: html
+
+   .. contents::
+      :local:
+
+This section provides practical, high‑level examples for developers working
+with the IberGIS plugin. The goal is to illustrate **typical workflows**,
+not to document every implementation detail.
+
+The examples below build on the concepts described in :doc:`python` and
+:doc:`dbmodel`.
+
+Typical development tasks
+=========================
+
+Common changes you will perform in IberGIS include:
+
+- Adding or modifying **QGIS Processing algorithms**.
+- Creating new **toolbars, buttons or dialogs**.
+- Reading and writing **configuration values** for new features.
+- Evolving the **database model** while keeping existing projects working.
+
+The following sections walk through representative examples of each area.
+
+Example 1 – Creating a new Processing algorithm
+===============================================
+
+This example describes the typical steps to add a new QGIS Processing
+algorithm to IberGIS.
+
+Locate the Processing package
+-----------------------------
+
+Processing algorithms are implemented under the plugin root in::
+
+   core/processing/
+
+Each ``*.py`` file usually exposes one or more algorithms that appear in the
+QGIS Processing Toolbox under the IberGIS groups.
+
+Create and register the algorithm
+---------------------------------
+
+1. Choose a clear, descriptive name for your algorithm file, for example::
+
+      core/processing/check_custom_rule.py
+
+2. Implement your algorithm class following the standard QGIS Processing API
+   (subclassing ``QgsProcessingAlgorithm``). Reuse utilities from
+   ``lib/tools_qgis.py`` and ``core/utils`` whenever possible for
+   logging, configuration and data access.
+
+3. Keep line length under 120 characters and follow the naming conventions
+   described in :doc:`python`.
+
+4. Register the algorithm in the appropriate provider file::
+
+      core/processing/drain_provider.py
+      core/processing/drain_mesh_provider.py
+
+   - Import your new algorithm class.
+   - Add an instance of it in the provider’s ``loadAlgorithms`` (or
+     equivalent) method.
+   - Use ``tools_qt.tr`` for user‑visible names and group labels.
+
+5. Reload the plugin in QGIS and verify that the algorithm appears in the
+   Processing Toolbox and behaves as expected.
+
+Example 2 – Adding a new toolbar button and dialog
+==================================================
+
+This example shows how to expose new functionality through the QGIS GUI.
+
+Decide where the feature belongs
+--------------------------------
+
+- **Core logic** for the feature should live in ``core`` or ``core/utils``.
+- **UI elements** (dialogs, dock widgets) should live under ``core/ui``.
+- **Toolbar/button wiring** usually lives under ``core/toolbars`` or is
+  triggered from ``main.py`` / ``core/load_project_menu.py``.
+
+Create the dialog
+-----------------
+
+1. Design a new form using Qt Designer and save it under::
+
+      core/ui/<area>/<dialog_name>.ui
+
+2. Use the existing ``ui_manager.py`` helpers to load the form or generate
+   a Python wrapper (for example, a ``DrDialog`` subclass) that encapsulates
+   the business logic.
+
+Wire the dialog to a toolbar button
+-----------------------------------
+
+1. Identify the toolbar class you want to extend under::
+
+      core/toolbars/
+
+2. Add a new ``QAction`` with an icon from ``icons/toolbars`` and connect
+   its ``triggered`` signal to a small function that opens your dialog.
+
+3. If the toolbar is created dynamically depending on the project type,
+   make sure your new button is added in the same code path (for example, in
+   the methods that run after a project is loaded from ``main.py``).
+
+4. Reload the plugin, open a project and confirm that the new button appears
+   and correctly opens the dialog.
+
+Example 3 – Using configuration and global state
+================================================
+
+Many IberGIS features are controlled by configuration files and global
+variables. This example shows how to add a new user‑configurable option.
+
+Define the configuration key
+----------------------------
+
+1. Decide whether the setting belongs to **user config** (per installation)
+   or **project config** (per project). See the explanations in
+   :doc:`python` and :doc:`dbmodel`.
+
+2. Add a new key in the appropriate section of the configuration file, for
+   example in ``config/drain.config`` or ``config/user_params.config``.
+
+Read and write the setting in code
+----------------------------------
+
+1. Use the helpers in ``core.utils.tools_dr`` to access configuration
+   values, for example ``get_config_parser()`` and ``set_config_parser()``.
+
+2. If the setting must be available globally during the session, store it in
+   an appropriate variable in ``global_vars`` (for example in
+   ``plugin_settings`` or inside ``session_vars``).
+
+3. Update any relevant dialogs so that users can change the setting from the
+   UI when necessary (usually via forms defined under ``core/ui``).
+
+4. Avoid creating new, unrelated globals; prefer extending the existing
+   structures in ``global_vars.py``.
+
+Example 4 – Modifying a database table
+======================================
+
+IberGIS stores its project data in GeoPackage files created from SQL scripts
+in the ``dbmodel/`` directory. When you change the schema you **must**
+carefully update both the base DDL/DML and the corresponding ``updates/``
+sub‑folder if this change is part of a new plugin version.
+
+Scenario
+--------
+
+Suppose you want to add a new column ``new_field`` to an existing table
+``v_edit_node``.
+
+1. **Update the base DDL** so that new projects include the field.
+2. **Update the base DML** if the new field needs default values.
+3. **Create an update script** under ``dbmodel/updates/`` so that existing
+   projects can be migrated to the new schema when the plugin is updated.
+
+Step 1 – Modify DDL for new projects
+------------------------------------
+
+The base table definitions are stored in::
+
+   dbmodel/ddl/ddl.sql
+
+Actions:
+
+- Locate the ``CREATE TABLE`` statement for ``v_edit_node``.
+- Add the new column definition (type, constraints, default value, etc.).
+- Respect the existing style: indentation, type checking using
+  ``CHECK (typeof(...))`` where applicable, and naming conventions.
+
+After this change, **newly created** project GeoPackages will contain the new
+column.
+
+Step 2 – Modify DML for default data
+------------------------------------
+
+Initial data population is defined in::
+
+   dbmodel/dml/dml.sql
+
+If your new column requires a specific default value or must be populated for
+system tables:
+
+- Extend the corresponding ``INSERT`` statements.
+- Or add explicit ``UPDATE`` statements that set appropriate default values
+  for the new column.
+
+Again, follow the existing style and structure of the file.
+
+Step 3 – Add an update script for existing projects
+---------------------------------------------------
+
+Existing projects will not see the new column unless you add an update
+script under::
+
+   dbmodel/updates/<major>/<minor>/<patch>/
+
+For example, if you are preparing version ``1.2.0``, you might have::
+
+   dbmodel/updates/1/2/0/ddl.sql
+   dbmodel/updates/1/2/0/dml.sql
+   dbmodel/updates/1/2/0/changelog.txt
+
+Typical actions in the update scripts:
+
+- In ``ddl.sql``:
+
+  - Use ``ALTER TABLE`` statements to add the new column to the existing
+    tables.
+  - Adjust indexes, triggers or views that depend on the modified table, if
+    needed.
+
+- In ``dml.sql``:
+
+  - Initialize the new column for existing records (for example with a
+    default value or a computed value based on existing fields).
+
+- In ``changelog.txt``:
+
+  - Document the change (what table/column was added or modified, and why).
+
+Remember that, as explained in :doc:`dbmodel`, **updates must also be
+reflected in the base files** (``dbmodel/ddl/ddl.sql`` and
+``dbmodel/dml/dml.sql``) so that new projects and upgraded projects share the
+same schema.
+
+Versioning and testing
+======================
+
+Whenever you introduce schema changes or new Processing algorithms or major
+UI features:
+
+1. Increment the version in the appropriate place (plugin metadata and
+   ``dbmodel/updates`` folder structure).
+2. Create a **new project** with the updated plugin to verify the base DDL
+   and DML.
+3. Open an **existing project** and run the update logic to ensure that the
+   ``updates/<major>/<minor>/<patch>`` scripts correctly migrate the
+   database.
+4. Run the automated tests shipped with the plugin if available, and add
+   new tests when appropriate.
+5. Document user‑visible changes in the changelog files and in the user
+   manual when relevant.

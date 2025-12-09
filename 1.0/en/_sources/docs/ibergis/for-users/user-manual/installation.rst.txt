@@ -43,7 +43,7 @@ To download it, go to...
 SWMM installation (optional)
 ============================
 
-SWMM is a program developed by eht Environmental Protection Agency (EPA) of the United States which allows to simulate the sewage and urban drainage networks in urban areas.
+SWMM is a program developed by the Environmental Protection Agency (EPA) of the United States which allows to simulate the sewage and urban drainage networks in urban areas.
 
 To download it we will go to the `official website <https://www.epa.gov/water-research/storm-water-management-model-swmm>`_ where we will
 scroll through the page until we locate the file that we have to download to be able to install it.

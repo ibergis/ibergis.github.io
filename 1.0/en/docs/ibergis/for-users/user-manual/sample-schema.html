@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>5. Create a sample IberGIS schema &mdash; IberGIS Documentation  documentation</title>
       <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=b86133f3" />
-      <link rel="stylesheet" type="text/css" href="../../../../_static/css/ibergis_docs.css?v=05a3ee12" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/css/ibergis_docs.css?v=3f46d377" />
       <link rel="stylesheet" type="text/css" href="../../../../_static/togglebutton.css?v=13237357" />
       <link rel="stylesheet" type="text/css" href="../../../../_static/copybutton.css?v=76b2166b" />
 
@@ -33,7 +33,7 @@
     <script src="../../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../search.html" />
-    <link rel="next" title="6. Table of Contents (ToC)" href="toc.html" />
+    <link rel="next" title="6. Update a IberGIS GeoPackage" href="update-gpkg.html" />
     <link rel="prev" title="4. Create an empty IberGIS schema" href="empty-schema.html" />
 <meta
 	name="description"
@@ -79,19 +79,20 @@
 <li class="toctree-l2"><a class="reference internal" href="installation.html">3. Installation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="empty-schema.html">4. Create an empty IberGIS schema</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">5. Create a sample IberGIS schema</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#create-a-sample-geopackage">5.1. Create a sample geopackage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#create-a-sample-geopackage">5.1. Create a sample GeoPackage</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#create-a-sample-qgis-project">5.2. Create a sample QGIS project</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="toc.html">6. Table of Contents (ToC)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ibergis-plugin/ibergis-plugin.html">7. IberGIS Plugin</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ibergis-toolbox.html">8. IberGIS toolbox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="update-gpkg.html">6. Update a IberGIS GeoPackage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="toc.html">7. Table of Contents (ToC)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ibergis-plugin/ibergis-plugin.html">8. IberGIS Plugin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ibergis-toolbox.html">9. IberGIS toolbox</a></li>
 </ul>
 </li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">FOR DEVELOPERS</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../for-developers/index.html">Developer Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../for-developers/developer-manual/index.html">IberGIS Developer Manual</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">FOR ADMINISTRATORS</span></p>
 <ul>
@@ -119,7 +120,7 @@
       </li>
   </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="Sequential page navigation">
         <a href="empty-schema.html" class="btn btn-neutral float-left" title="4. Create an empty IberGIS schema" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="toc.html" class="btn btn-neutral float-right" title="6. Table of Contents (ToC)" accesskey="n">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="update-gpkg.html" class="btn btn-neutral float-right" title="6. Update a IberGIS GeoPackage" accesskey="n">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
   </div>
   <hr/>
 </div>
@@ -130,13 +131,13 @@
 <h1><span class="section-number">5. </span>Create a sample IberGIS schema<a class="headerlink" href="#create-a-sample-ibergis-schema" title="Link to this heading"></a></h1>
 <nav class="contents local" id="contents">
 <ul class="simple">
-<li><p><a class="reference internal" href="#create-a-sample-geopackage" id="id3">Create a sample geopackage</a></p></li>
+<li><p><a class="reference internal" href="#create-a-sample-geopackage" id="id3">Create a sample GeoPackage</a></p></li>
 <li><p><a class="reference internal" href="#create-a-sample-qgis-project" id="id4">Create a sample QGIS project</a></p></li>
 </ul>
 </nav>
 <section id="create-a-sample-geopackage">
-<h2><a class="toc-backref" href="#id3" role="doc-backlink"><span class="section-number">5.1. </span>Create a sample geopackage</a><a class="headerlink" href="#create-a-sample-geopackage" title="Link to this heading"></a></h2>
-<p>To create a sample geopackage to start working, click on the IberGIS button and fill in the following fields:</p>
+<h2><a class="toc-backref" href="#id3" role="doc-backlink"><span class="section-number">5.1. </span>Create a sample GeoPackage</a><a class="headerlink" href="#create-a-sample-geopackage" title="Link to this heading"></a></h2>
+<p>To create a sample GeoPackage to start working, click on the IberGIS button and fill in the following fields:</p>
 <figure class="align-default" id="id1">
 <img alt="../../../../_images/sample_gpkg.png" src="../../../../_images/sample_gpkg.png" />
 <figcaption>
@@ -144,18 +145,18 @@
 </figcaption>
 </figure>
 <ul class="simple">
-<li><p>GPKG Name: name of the geopackage file.</p></li>
-<li><p>Description: a sort description of the project.</p></li>
-<li><p>Path: path where the geopackage will be stored.</p></li>
-<li><p>Locale: language of the geopackage. For the sample is mandatory English.</p></li>
-<li><p>Filter SRID: coordinate reference system of the geopackage. For the sample is mandatory 25831.</p></li>
-<li><p>Example data: option to create a template.</p></li>
+<li><p><strong>GPKG Name:</strong> name of the GeoPackage file.</p></li>
+<li><p><strong>Description:</strong> a short description of the project.</p></li>
+<li><p><strong>Path:</strong> path where the GeoPackage will be stored.</p></li>
+<li><p><strong>Locale:</strong> language of the GeoPackage. For the sample is mandatory English.</p></li>
+<li><p><strong>Filter SRID:</strong> coordinate reference system of the GeoPackage. For the sample is mandatory 25831.</p></li>
+<li><p><strong>Example data:</strong> option to create a template.</p></li>
 </ul>
-<p>After specifying the above, if we click on <em>Accept</em> button the sample geopackage will be created.</p>
+<p>After specifying the above, if we click on <em>Accept</em> button the sample GeoPackage will be created.</p>
 </section>
 <section id="create-a-sample-qgis-project">
 <h2><a class="toc-backref" href="#id4" role="doc-backlink"><span class="section-number">5.2. </span>Create a sample QGIS project</a><a class="headerlink" href="#create-a-sample-qgis-project" title="Link to this heading"></a></h2>
-<p>After the geopackage has been created we will see that we have available the tab <em>Create QGIS project</em> where we have to specify:</p>
+<p>After the GeoPackage has been created we will see that we have available the tab <em>Create QGIS project</em> where we have to specify:</p>
 <figure class="align-default" id="id2">
 <img alt="../../../../_images/sample_project.png" src="../../../../_images/sample_project.png" />
 <figcaption>
@@ -163,9 +164,9 @@
 </figcaption>
 </figure>
 <ul class="simple">
-<li><p>GPKG file: name and folder for the geopackage.</p></li>
-<li><p>GIS file name: name of the QGIS project.</p></li>
-<li><p>GIS folder: project folder.</p></li>
+<li><p><strong>GPKG file:</strong> name and folder for the GeoPackage.</p></li>
+<li><p><strong>GIS file name:</strong> name of the QGIS project.</p></li>
+<li><p><strong>GIS folder:</strong> project folder.</p></li>
 </ul>
 <p>By clicking on the <em>Accept</em> button, the sample project will be created.</p>
 <p>Now we are ready to start working with the sample.</p>
@@ -177,14 +178,14 @@
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="empty-schema.html" class="btn btn-neutral float-left" title="4. Create an empty IberGIS schema" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="toc.html" class="btn btn-neutral float-right" title="6. Table of Contents (ToC)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="update-gpkg.html" class="btn btn-neutral float-right" title="6. Update a IberGIS GeoPackage" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
     <p>&#169; Copyright 2025, IberGIS.
-      <span class="lastupdated">Last updated on 2025 Dec 03, 14:18 +0100.
+      <span class="lastupdated">Last updated on 2025 Dec 09, 15:44 +0100.
       </span></p>
   </div>
 

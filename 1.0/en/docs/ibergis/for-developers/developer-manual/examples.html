@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>4. Examples &mdash; IberGIS Documentation  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/css/ibergis_docs.css?v=3f46d377" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/togglebutton.css?v=13237357" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/copybutton.css?v=76b2166b" />
+
+  
+    <link rel="shortcut icon" href="../../../../_static/logo.png"/>
+    <link rel="canonical" href="https://ibergis.github.io/testing/en/docs/ibergis/for-developers/developer-manual/examples.html" />
+  <!--[if lt IE 9]>
+    <script src="../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../../../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../../../_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="../../../../_static/copybutton.js?v=f281be69"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../../../../_static/togglebutton.js?v=4a39c7ea"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+    <link rel="next" title="IberGIS Administrator Guide" href="../../for-admins/index.html" />
+    <link rel="prev" title="3. Python Code" href="python.html" />
+<meta
+	name="description"
+	content="IberGIS 1.0 documentation: 4. Examples"
+/>
+</head>
+
+<body class="wy-body-for-nav">
+
+<nav class="release_status_topbar">
+</nav>
+
+  
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" > 
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            IberGIS Documentation
+              <img src="../../../../_static/logo.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                1.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+<a href="../../../../genindex.html">Index</a>
+
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">FOR USERS</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../for-users/user-manual/index.html">IberGIS User Manual</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">FOR DEVELOPERS</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">IberGIS Developer Manual</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="introduction.html">1. Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dbmodel.html">2. DB Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="python.html">3. Python Code</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">4. Examples</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#typical-development-tasks">4.1. Typical Development Tasks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#example-1-creating-a-new-processing-algorithm">4.2. Example 1 - Creating a New Processing Algorithm</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#locate-the-processing-package">4.2.1. Locate the Processing Package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#create-and-register-the-algorithm">4.2.2. Create and Register the Algorithm</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#example-2-adding-a-new-toolbar-button-and-dialog">4.3. Example 2 - Adding a New Toolbar Button and Dialog</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#decide-where-the-feature-belongs">4.3.1. Decide Where the Feature Belongs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#create-the-dialog">4.3.2. Create the Dialog</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#wire-the-button-in-drain-config">4.3.3. Wire the Button in drain.config</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#example-3-using-configuration-and-global-state">4.4. Example 3 - Using Configuration and Global State</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#configuration-files-overview">4.4.1. Configuration Files Overview</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#define-the-configuration-key">4.4.2. Define the Configuration Key</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#example-4-modifying-a-database-table">4.5. Example 4 - Modifying a Database Table</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#scenario">4.5.1. Scenario</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#step-1-modify-ddl-for-new-projects">4.5.2. Step 1 - Modify DDL for New Projects</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#step-2-modify-dml-for-default-data">4.5.3. Step 2 - Modify DML for Default Data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#step-3-add-an-update-script-for-existing-projects">4.5.4. Step 3 - Add an Update Script for Existing Projects</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#versioning-and-testing">4.6. Versioning and Testing</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">FOR ADMINISTRATORS</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../for-admins/index.html">Administrator Documentation</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">IberGIS Documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">IberGIS Developer Manual</a></li>
+      <li class="breadcrumb-item active"><span class="section-number">4. </span>Examples</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/IberGIS/IberGIS-Documentation/blob/master/docs/ibergis/for-developers/developer-manual/examples.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="Sequential page navigation">
+        <a href="python.html" class="btn btn-neutral float-left" title="3. Python Code" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../../for-admins/index.html" class="btn btn-neutral float-right" title="IberGIS Administrator Guide" accesskey="n">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+  </div>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="examples">
+<h1><span class="section-number">4. </span>Examples<a class="headerlink" href="#examples" title="Link to this heading"></a></h1>
+<nav class="contents local" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#typical-development-tasks" id="id1">Typical Development Tasks</a></p></li>
+<li><p><a class="reference internal" href="#example-1-creating-a-new-processing-algorithm" id="id2">Example 1 - Creating a New Processing Algorithm</a></p>
+<ul>
+<li><p><a class="reference internal" href="#locate-the-processing-package" id="id3">Locate the Processing Package</a></p></li>
+<li><p><a class="reference internal" href="#create-and-register-the-algorithm" id="id4">Create and Register the Algorithm</a></p>
+<ul>
+<li><p><a class="reference internal" href="#code-example-minimal-processing-algorithm" id="id5">Code Example - Minimal Processing Algorithm</a></p></li>
+<li><p><a class="reference internal" href="#code-example-register-in-provider" id="id6">Code Example - Register in Provider</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#example-2-adding-a-new-toolbar-button-and-dialog" id="id7">Example 2 - Adding a New Toolbar Button and Dialog</a></p>
+<ul>
+<li><p><a class="reference internal" href="#decide-where-the-feature-belongs" id="id8">Decide Where the Feature Belongs</a></p></li>
+<li><p><a class="reference internal" href="#create-the-dialog" id="id9">Create the Dialog</a></p>
+<ul>
+<li><p><a class="reference internal" href="#code-example-register-dialog-in-ui-manager-py" id="id10">Code Example - Register Dialog in ui_manager.py</a></p></li>
+<li><p><a class="reference internal" href="#code-example-create-button-class" id="id11">Code Example - Create Button Class</a></p></li>
+<li><p><a class="reference internal" href="#code-example-export-button-in-buttons-py" id="id12">Code Example - Export Button in buttons.py</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#wire-the-button-in-drain-config" id="id13">Wire the Button in drain.config</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#example-3-using-configuration-and-global-state" id="id14">Example 3 - Using Configuration and Global State</a></p>
+<ul>
+<li><p><a class="reference internal" href="#configuration-files-overview" id="id15">Configuration Files Overview</a></p></li>
+<li><p><a class="reference internal" href="#define-the-configuration-key" id="id16">Define the Configuration Key</a></p>
+<ul>
+<li><p><a class="reference internal" href="#code-example-read-configuration" id="id17">Code Example - Read Configuration</a></p></li>
+<li><p><a class="reference internal" href="#code-example-write-configuration" id="id18">Code Example - Write Configuration</a></p></li>
+<li><p><a class="reference internal" href="#code-example-using-global-variables" id="id19">Code Example - Using Global Variables</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#example-4-modifying-a-database-table" id="id20">Example 4 - Modifying a Database Table</a></p>
+<ul>
+<li><p><a class="reference internal" href="#scenario" id="id21">Scenario</a></p></li>
+<li><p><a class="reference internal" href="#step-1-modify-ddl-for-new-projects" id="id22">Step 1 - Modify DDL for New Projects</a></p>
+<ul>
+<li><p><a class="reference internal" href="#code-example-ddl-modification" id="id23">Code Example - DDL Modification</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#step-2-modify-dml-for-default-data" id="id24">Step 2 - Modify DML for Default Data</a></p>
+<ul>
+<li><p><a class="reference internal" href="#code-example-dml-modification" id="id25">Code Example - DML Modification</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#step-3-add-an-update-script-for-existing-projects" id="id26">Step 3 - Add an Update Script for Existing Projects</a></p>
+<ul>
+<li><p><a class="reference internal" href="#code-example-update-ddl-script" id="id27">Code Example - Update DDL Script</a></p></li>
+<li><p><a class="reference internal" href="#code-example-update-dml-script" id="id28">Code Example - Update DML Script</a></p></li>
+<li><p><a class="reference internal" href="#code-example-changelog" id="id29">Code Example - Changelog</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#versioning-and-testing" id="id30">Versioning and Testing</a></p></li>
+</ul>
+</nav>
+<p>This section provides practical, high-level examples for developers working with the IberGIS plugin. The goal is to illustrate <strong>typical workflows</strong>, not to document every implementation detail.</p>
+<p>The examples below build on the concepts described in <a class="reference internal" href="python.html"><span class="doc">Python Code</span></a> and <a class="reference internal" href="dbmodel.html"><span class="doc">DB Model</span></a>.</p>
+<section id="typical-development-tasks">
+<h2><a class="toc-backref" href="#id1" role="doc-backlink"><span class="section-number">4.1. </span>Typical Development Tasks</a><a class="headerlink" href="#typical-development-tasks" title="Link to this heading"></a></h2>
+<p>Common changes you will perform in IberGIS include:</p>
+<ul class="simple">
+<li><p>Adding or modifying <strong>QGIS Processing algorithms</strong>.</p></li>
+<li><p>Creating new <strong>toolbars, buttons or dialogs</strong>.</p></li>
+<li><p>Reading and writing <strong>configuration values</strong> for new features.</p></li>
+<li><p>Evolving the <strong>database model</strong> while keeping existing projects working.</p></li>
+</ul>
+<p>The following sections walk through representative examples of each area.</p>
+</section>
+<section id="example-1-creating-a-new-processing-algorithm">
+<h2><a class="toc-backref" href="#id2" role="doc-backlink"><span class="section-number">4.2. </span>Example 1 - Creating a New Processing Algorithm</a><a class="headerlink" href="#example-1-creating-a-new-processing-algorithm" title="Link to this heading"></a></h2>
+<p>This example describes the typical steps to add a new QGIS Processing algorithm to IberGIS.</p>
+<section id="locate-the-processing-package">
+<h3><a class="toc-backref" href="#id3" role="doc-backlink"><span class="section-number">4.2.1. </span>Locate the Processing Package</a><a class="headerlink" href="#locate-the-processing-package" title="Link to this heading"></a></h3>
+<p>Processing algorithms are implemented under the plugin root in:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">core</span><span class="o">/</span><span class="n">processing</span><span class="o">/</span>
+</pre></div>
+</div>
+<p>Each <code class="docutils literal notranslate"><span class="pre">*.py</span></code> file usually exposes one or more algorithms that appear in the QGIS Processing Toolbox under the IberGIS groups.</p>
+</section>
+<section id="create-and-register-the-algorithm">
+<h3><a class="toc-backref" href="#id4" role="doc-backlink"><span class="section-number">4.2.2. </span>Create and Register the Algorithm</a><a class="headerlink" href="#create-and-register-the-algorithm" title="Link to this heading"></a></h3>
+<p>There is a QGIS Official Guide for Processing Algorithms that can be found at <a class="reference external" href="https://docs.qgis.org/3.40/en/docs/pyqgis_developer_cookbook/processing.html">https://docs.qgis.org/3.40/en/docs/pyqgis_developer_cookbook/processing.html</a>.</p>
+<ol class="arabic">
+<li><p>Choose a clear, descriptive name for your algorithm file, for example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">core</span><span class="o">/</span><span class="n">processing</span><span class="o">/</span><span class="n">check_custom_rule</span><span class="o">.</span><span class="n">py</span>
+</pre></div>
+</div>
+</li>
+<li><p>Implement your algorithm class following the standard QGIS Processing API (subclassing <code class="docutils literal notranslate"><span class="pre">QgsProcessingAlgorithm</span></code>). Reuse utilities from <code class="docutils literal notranslate"><span class="pre">lib/tools_qgis.py</span></code> and <code class="docutils literal notranslate"><span class="pre">core/utils</span></code> whenever possible for logging, configuration and data access.</p></li>
+<li><p>Keep line length under 120 characters and follow the naming conventions described in <a class="reference internal" href="python.html"><span class="doc">Python Code</span></a>.</p></li>
+<li><p>Register the algorithm in the appropriate provider file:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">core</span><span class="o">/</span><span class="n">processing</span><span class="o">/</span><span class="n">drain_provider</span><span class="o">.</span><span class="n">py</span>
+<span class="n">core</span><span class="o">/</span><span class="n">processing</span><span class="o">/</span><span class="n">drain_mesh_provider</span><span class="o">.</span><span class="n">py</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Import your new algorithm class.</p></li>
+<li><p>Add an instance of it in the provider’s <code class="docutils literal notranslate"><span class="pre">loadAlgorithms</span></code> method.</p></li>
+</ul>
+</li>
+<li><p>Reload the plugin in QGIS and verify that the algorithm appears in the Processing Toolbox and behaves as expected.</p></li>
+</ol>
+<section id="code-example-minimal-processing-algorithm">
+<h4><a class="toc-backref" href="#id5" role="doc-backlink"><span class="section-number">4.2.2.1. </span>Code Example - Minimal Processing Algorithm</a><a class="headerlink" href="#code-example-minimal-processing-algorithm" title="Link to this heading"></a></h4>
+<p>Below is a minimal implementation of a Processing algorithm following the IberGIS patterns. Create this file as <code class="docutils literal notranslate"><span class="pre">core/processing/check_custom_rule.py</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">This file is part of IberGIS</span>
+<span class="sd">The program is free software: you can redistribute it and/or modify it under the terms of the GNU</span>
+<span class="sd">General Public License as published by the Free Software Foundation, either version 3 of the License,</span>
+<span class="sd">or (at your option) any later version.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="c1"># -*- coding: utf-8 -*-</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">qgis.core</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
+    <span class="n">QgsProcessingAlgorithm</span><span class="p">,</span>
+    <span class="n">QgsProcessingParameterVectorLayer</span><span class="p">,</span>
+    <span class="n">QgsProcessingParameterBoolean</span><span class="p">,</span>
+    <span class="n">QgsProcessing</span><span class="p">,</span>
+    <span class="n">QgsVectorLayer</span>
+<span class="p">)</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">qgis.PyQt.QtCore</span><span class="w"> </span><span class="kn">import</span> <span class="n">QCoreApplication</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">...lib</span><span class="w"> </span><span class="kn">import</span> <span class="n">tools_qgis</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">...</span><span class="w"> </span><span class="kn">import</span> <span class="n">global_vars</span>
+
+
+<span class="k">class</span><span class="w"> </span><span class="nc">CheckCustomRule</span><span class="p">(</span><span class="n">QgsProcessingAlgorithm</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Algorithm to validate features against a custom rule.&quot;&quot;&quot;</span>
+
+    <span class="c1"># Parameter identifiers</span>
+    <span class="n">INPUT_LAYER</span> <span class="o">=</span> <span class="s1">&#39;INPUT_LAYER&#39;</span>
+    <span class="n">BOOL_SHOW_ONLY_ERRORS</span> <span class="o">=</span> <span class="s1">&#39;BOOL_SHOW_ONLY_ERRORS&#39;</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">name</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Unique algorithm identifier (lowercase, no spaces).&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="s1">&#39;check_custom_rule&#39;</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">displayName</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Human-readable name shown in the Processing Toolbox.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">tr</span><span class="p">(</span><span class="s1">&#39;Check Custom Rule&#39;</span><span class="p">)</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">createInstance</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Return a new instance of the algorithm.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">CheckCustomRule</span><span class="p">()</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">initAlgorithm</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">config</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Define the algorithm inputs and outputs.&quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">addParameter</span><span class="p">(</span>
+            <span class="n">QgsProcessingParameterVectorLayer</span><span class="p">(</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">INPUT_LAYER</span><span class="p">,</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">tr</span><span class="p">(</span><span class="s1">&#39;Input layer&#39;</span><span class="p">),</span>
+                <span class="n">types</span><span class="o">=</span><span class="p">[</span><span class="n">QgsProcessing</span><span class="o">.</span><span class="n">SourceType</span><span class="o">.</span><span class="n">VectorPolygon</span><span class="p">]</span>
+            <span class="p">)</span>
+        <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">addParameter</span><span class="p">(</span>
+            <span class="n">QgsProcessingParameterBoolean</span><span class="p">(</span>
+                <span class="n">name</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">BOOL_SHOW_ONLY_ERRORS</span><span class="p">,</span>
+                <span class="n">description</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">tr</span><span class="p">(</span><span class="s1">&#39;Show only errors&#39;</span><span class="p">),</span>
+                <span class="n">defaultValue</span><span class="o">=</span><span class="kc">False</span>
+            <span class="p">)</span>
+        <span class="p">)</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">processAlgorithm</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">parameters</span><span class="p">,</span> <span class="n">context</span><span class="p">,</span> <span class="n">feedback</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Execute the algorithm logic.&quot;&quot;&quot;</span>
+        <span class="c1"># Get parameters</span>
+        <span class="n">layer</span><span class="p">:</span> <span class="n">QgsVectorLayer</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">parameterAsVectorLayer</span><span class="p">(</span>
+            <span class="n">parameters</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">INPUT_LAYER</span><span class="p">,</span> <span class="n">context</span>
+        <span class="p">)</span>
+        <span class="n">show_only_errors</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">parameterAsBool</span><span class="p">(</span>
+            <span class="n">parameters</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">BOOL_SHOW_ONLY_ERRORS</span><span class="p">,</span> <span class="n">context</span>
+        <span class="p">)</span>
+
+        <span class="c1"># Get database connection from global_vars</span>
+        <span class="n">dao</span> <span class="o">=</span> <span class="n">global_vars</span><span class="o">.</span><span class="n">gpkg_dao_data</span><span class="o">.</span><span class="n">clone</span><span class="p">()</span>
+        <span class="k">if</span> <span class="n">dao</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">feedback</span><span class="o">.</span><span class="n">pushWarning</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">tr</span><span class="p">(</span><span class="s1">&#39;ERROR: No database connection found&#39;</span><span class="p">))</span>
+            <span class="k">return</span> <span class="p">{}</span>
+
+        <span class="n">feedback</span><span class="o">.</span><span class="n">setProgressText</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">tr</span><span class="p">(</span><span class="s1">&#39;Validating layer...&#39;</span><span class="p">))</span>
+
+        <span class="c1"># Your validation logic here</span>
+        <span class="n">feature_count</span> <span class="o">=</span> <span class="n">layer</span><span class="o">.</span><span class="n">featureCount</span><span class="p">()</span>
+        <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">feature</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">layer</span><span class="o">.</span><span class="n">getFeatures</span><span class="p">()):</span>
+            <span class="k">if</span> <span class="n">feedback</span><span class="o">.</span><span class="n">isCanceled</span><span class="p">():</span>
+                <span class="k">break</span>
+            <span class="c1"># Perform validation on each feature</span>
+            <span class="n">feedback</span><span class="o">.</span><span class="n">setProgress</span><span class="p">(</span><span class="nb">int</span><span class="p">((</span><span class="n">i</span> <span class="o">/</span> <span class="n">feature_count</span><span class="p">)</span> <span class="o">*</span> <span class="mi">100</span><span class="p">))</span>
+
+        <span class="n">dao</span><span class="o">.</span><span class="n">close_db</span><span class="p">()</span>
+        <span class="k">return</span> <span class="p">{}</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">postProcessAlgorithm</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">context</span><span class="p">,</span> <span class="n">feedback</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Called after processAlgorithm, runs on main thread.&quot;&quot;&quot;</span>
+        <span class="n">feedback</span><span class="o">.</span><span class="n">setProgressText</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">tr</span><span class="p">(</span><span class="s1">&#39;Validation complete.&#39;</span><span class="p">))</span>
+        <span class="k">return</span> <span class="p">{}</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">shortHelpString</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Help text shown in the algorithm dialog.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">tr</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;This algorithm validates features against a custom rule.</span>
+
+<span class="s2">                        Results are reported as errors and warnings in the log.&quot;&quot;&quot;</span><span class="p">)</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">helpUrl</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s2">&quot;https://github.com/drain-iber&quot;</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">tr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">string</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Translate string using QCoreApplication.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">QCoreApplication</span><span class="o">.</span><span class="n">translate</span><span class="p">(</span><span class="s1">&#39;Processing&#39;</span><span class="p">,</span> <span class="n">string</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="code-example-register-in-provider">
+<h4><a class="toc-backref" href="#id6" role="doc-backlink"><span class="section-number">4.2.2.2. </span>Code Example - Register in Provider</a><a class="headerlink" href="#code-example-register-in-provider" title="Link to this heading"></a></h4>
+<p>Add the algorithm to the provider in <code class="docutils literal notranslate"><span class="pre">core/processing/drain_provider.py</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># At the top of drain_provider.py, add the import:</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">.check_custom_rule</span><span class="w"> </span><span class="kn">import</span> <span class="n">CheckCustomRule</span>
+
+
+<span class="k">class</span><span class="w"> </span><span class="nc">DrainProvider</span><span class="p">(</span><span class="n">QgsProcessingProvider</span><span class="p">):</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">plugin_dir</span><span class="p">):</span>
+        <span class="n">QgsProcessingProvider</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">plugin_dir</span> <span class="o">=</span> <span class="n">plugin_dir</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">loadAlgorithms</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Loads all algorithms belonging to this provider.&quot;&quot;&quot;</span>
+        <span class="c1"># ... existing algorithms ...</span>
+
+        <span class="c1"># Add your new algorithm</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">addAlgorithm</span><span class="p">(</span><span class="n">CheckCustomRule</span><span class="p">())</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">id</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s1">&#39;IberGISProvider&#39;</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">name</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">tr</span><span class="p">(</span><span class="s1">&#39;IberGIS&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+<section id="example-2-adding-a-new-toolbar-button-and-dialog">
+<h2><a class="toc-backref" href="#id7" role="doc-backlink"><span class="section-number">4.3. </span>Example 2 - Adding a New Toolbar Button and Dialog</a><a class="headerlink" href="#example-2-adding-a-new-toolbar-button-and-dialog" title="Link to this heading"></a></h2>
+<p>This example shows how to expose new functionality through the QGIS GUI.</p>
+<section id="decide-where-the-feature-belongs">
+<h3><a class="toc-backref" href="#id8" role="doc-backlink"><span class="section-number">4.3.1. </span>Decide Where the Feature Belongs</a><a class="headerlink" href="#decide-where-the-feature-belongs" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p><strong>Core logic</strong> for the feature should live in <code class="docutils literal notranslate"><span class="pre">core</span></code> or <code class="docutils literal notranslate"><span class="pre">core/utils</span></code>.</p></li>
+<li><p><strong>UI elements</strong> (dialogs, dock widgets) should live under <code class="docutils literal notranslate"><span class="pre">core/ui</span></code>.</p></li>
+<li><p><strong>Toolbar/button wiring</strong> usually lives under <code class="docutils literal notranslate"><span class="pre">core/toolbars</span></code> or is triggered from <code class="docutils literal notranslate"><span class="pre">main.py</span></code> / <code class="docutils literal notranslate"><span class="pre">core/load_project_menu.py</span></code>.</p></li>
+</ul>
+</section>
+<section id="create-the-dialog">
+<h3><a class="toc-backref" href="#id9" role="doc-backlink"><span class="section-number">4.3.2. </span>Create the Dialog</a><a class="headerlink" href="#create-the-dialog" title="Link to this heading"></a></h3>
+<ol class="arabic">
+<li><p>Design a new form using Qt Designer and save it under:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">core</span><span class="o">/</span><span class="n">ui</span><span class="o">/</span><span class="n">toolbars</span><span class="o">/&lt;</span><span class="n">toolbar_name</span><span class="o">&gt;/&lt;</span><span class="n">dialog_name</span><span class="o">&gt;.</span><span class="n">ui</span>
+</pre></div>
+</div>
+</li>
+<li><p>Register the UI class in <code class="docutils literal notranslate"><span class="pre">core/ui/ui_manager.py</span></code>.</p></li>
+<li><p>Create a button class that inherits from <code class="docutils literal notranslate"><span class="pre">DrAction</span></code> and opens your dialog.</p></li>
+</ol>
+<section id="code-example-register-dialog-in-ui-manager-py">
+<h4><a class="toc-backref" href="#id10" role="doc-backlink"><span class="section-number">4.3.2.1. </span>Code Example - Register Dialog in ui_manager.py</a><a class="headerlink" href="#code-example-register-dialog-in-ui-manager-py" title="Link to this heading"></a></h4>
+<p>Add your dialog class to <code class="docutils literal notranslate"><span class="pre">core/ui/ui_manager.py</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># In core/ui/ui_manager.py</span>
+
+<span class="c1"># Add the UI loader for your new dialog</span>
+<span class="n">FORM_CLASS</span> <span class="o">=</span> <span class="n">_get_ui_class</span><span class="p">(</span><span class="s1">&#39;custom_feature.ui&#39;</span><span class="p">,</span> <span class="s1">&#39;utilities&#39;</span><span class="p">)</span>
+
+
+<span class="k">class</span><span class="w"> </span><span class="nc">DrCustomFeatureUi</span><span class="p">(</span><span class="n">DrDialog</span><span class="p">,</span> <span class="n">FORM_CLASS</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Dialog for the custom feature.&quot;&quot;&quot;</span>
+    <span class="k">pass</span>
+</pre></div>
+</div>
+</section>
+<section id="code-example-create-button-class">
+<h4><a class="toc-backref" href="#id11" role="doc-backlink"><span class="section-number">4.3.2.2. </span>Code Example - Create Button Class</a><a class="headerlink" href="#code-example-create-button-class" title="Link to this heading"></a></h4>
+<p>Create the button class in <code class="docutils literal notranslate"><span class="pre">core/toolbars/utilities/custom_feature_btn.py</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">This file is part of IberGIS</span>
+<span class="sd">The program is free software: you can redistribute it and/or modify it under the terms of the GNU</span>
+<span class="sd">General Public License as published by the Free Software Foundation, either version 3 of the License,</span>
+<span class="sd">or (at your option) any later version.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="c1"># -*- coding: utf-8 -*-</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">functools</span><span class="w"> </span><span class="kn">import</span> <span class="n">partial</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">..dialog</span><span class="w"> </span><span class="kn">import</span> <span class="n">DrAction</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">...ui.ui_manager</span><span class="w"> </span><span class="kn">import</span> <span class="n">DrCustomFeatureUi</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">...utils</span><span class="w"> </span><span class="kn">import</span> <span class="n">tools_dr</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">....lib</span><span class="w"> </span><span class="kn">import</span> <span class="n">tools_qt</span><span class="p">,</span> <span class="n">tools_qgis</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">....</span><span class="w"> </span><span class="kn">import</span> <span class="n">global_vars</span>
+
+
+<span class="k">class</span><span class="w"> </span><span class="nc">DrCustomFeatureButton</span><span class="p">(</span><span class="n">DrAction</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Button for custom feature functionality.&quot;&quot;&quot;</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">icon_path</span><span class="p">,</span> <span class="n">action_name</span><span class="p">,</span> <span class="n">text</span><span class="p">,</span> <span class="n">toolbar</span><span class="p">,</span> <span class="n">action_group</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">icon_path</span><span class="p">,</span> <span class="n">action_name</span><span class="p">,</span> <span class="n">text</span><span class="p">,</span> <span class="n">toolbar</span><span class="p">,</span> <span class="n">action_group</span><span class="p">)</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">clicked_event</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Handle button click - open the dialog.&quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_open_dialog</span><span class="p">()</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">_open_dialog</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Open the custom feature dialog.&quot;&quot;&quot;</span>
+        <span class="c1"># Create dialog instance</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">dlg</span> <span class="o">=</span> <span class="n">DrCustomFeatureUi</span><span class="p">()</span>
+
+        <span class="c1"># Load saved position and size</span>
+        <span class="n">tools_dr</span><span class="o">.</span><span class="n">load_settings</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">dlg</span><span class="p">)</span>
+
+        <span class="c1"># Connect signals</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">dlg</span><span class="o">.</span><span class="n">btn_run</span><span class="o">.</span><span class="n">clicked</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_execute_feature</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">dlg</span><span class="o">.</span><span class="n">btn_close</span><span class="o">.</span><span class="n">clicked</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">partial</span><span class="p">(</span><span class="n">tools_dr</span><span class="o">.</span><span class="n">close_dialog</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">dlg</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">dlg</span><span class="o">.</span><span class="n">rejected</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">partial</span><span class="p">(</span><span class="n">tools_dr</span><span class="o">.</span><span class="n">close_dialog</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">dlg</span><span class="p">))</span>
+
+        <span class="c1"># Open dialog with translation support</span>
+        <span class="n">tools_dr</span><span class="o">.</span><span class="n">open_dialog</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">dlg</span><span class="p">,</span> <span class="n">dlg_name</span><span class="o">=</span><span class="s1">&#39;custom_feature&#39;</span><span class="p">)</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">_execute_feature</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Execute the custom feature logic.&quot;&quot;&quot;</span>
+        <span class="c1"># Get values from dialog widgets</span>
+        <span class="n">input_value</span> <span class="o">=</span> <span class="n">tools_qt</span><span class="o">.</span><span class="n">get_text</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">dlg</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">dlg</span><span class="o">.</span><span class="n">txt_input</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">input_value</span><span class="p">:</span>
+            <span class="n">tools_qgis</span><span class="o">.</span><span class="n">show_warning</span><span class="p">(</span><span class="s1">&#39;Please enter a value&#39;</span><span class="p">)</span>
+            <span class="k">return</span>
+
+        <span class="c1"># Your feature logic here</span>
+        <span class="n">tools_qgis</span><span class="o">.</span><span class="n">show_info</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Feature executed with value: </span><span class="si">{</span><span class="n">input_value</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+
+        <span class="c1"># Close dialog after execution</span>
+        <span class="n">tools_dr</span><span class="o">.</span><span class="n">close_dialog</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">dlg</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="code-example-export-button-in-buttons-py">
+<h4><a class="toc-backref" href="#id12" role="doc-backlink"><span class="section-number">4.3.2.3. </span>Code Example - Export Button in buttons.py</a><a class="headerlink" href="#code-example-export-button-in-buttons-py" title="Link to this heading"></a></h4>
+<p>Export the button class in <code class="docutils literal notranslate"><span class="pre">core/toolbars/buttons.py</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># In core/toolbars/buttons.py, add the import:</span>
+
+<span class="c1"># Utilities</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">.utilities.custom_feature_btn</span><span class="w"> </span><span class="kn">import</span> <span class="n">DrCustomFeatureButton</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="wire-the-button-in-drain-config">
+<h3><a class="toc-backref" href="#id13" role="doc-backlink"><span class="section-number">4.3.3. </span>Wire the Button in drain.config</a><a class="headerlink" href="#wire-the-button-in-drain-config" title="Link to this heading"></a></h3>
+<p>Register the button in <code class="docutils literal notranslate"><span class="pre">config/drain.config</span></code>:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[toolbars]</span>
+<span class="na">list_toolbars</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">main, utilities</span>
+<span class="na">main</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">01, 02, 03, 04, 05</span>
+<span class="na">utilities</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">21, 22, 23, 24, 25, 32, 33</span><span class="w">  </span><span class="c1">; Added 33 for new button</span>
+
+<span class="k">[buttons_def]</span>
+<span class="c1">; ... existing buttons ...</span>
+<span class="na">33</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">DrCustomFeatureButton</span>
+
+<span class="k">[buttons_tooltip]</span>
+<span class="c1">; ... existing tooltips ...</span>
+<span class="na">33</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">Custom Feature</span>
+</pre></div>
+</div>
+<p>After these changes, reload the plugin and the new button will appear in the utilities toolbar.</p>
+</section>
+</section>
+<section id="example-3-using-configuration-and-global-state">
+<h2><a class="toc-backref" href="#id14" role="doc-backlink"><span class="section-number">4.4. </span>Example 3 - Using Configuration and Global State</a><a class="headerlink" href="#example-3-using-configuration-and-global-state" title="Link to this heading"></a></h2>
+<p>Many IberGIS features are controlled by configuration files and global variables. This example shows how to add a new user-configurable option.</p>
+<section id="configuration-files-overview">
+<h3><a class="toc-backref" href="#id15" role="doc-backlink"><span class="section-number">4.4.1. </span>Configuration Files Overview</a><a class="headerlink" href="#configuration-files-overview" title="Link to this heading"></a></h3>
+<p>IberGIS uses several configuration files managed through <code class="docutils literal notranslate"><span class="pre">global_vars.configs</span></code>:</p>
+<ul class="simple">
+<li><p><strong>init.config</strong>: User configuration stored in the user folder (persistent across sessions)</p></li>
+<li><p><strong>session.config</strong>: Session-specific settings (dialog positions, temporary values)</p></li>
+<li><p><strong>drain.config</strong>: Plugin configuration (toolbars, buttons, system settings)</p></li>
+<li><p><strong>user_params.config</strong>: Default values for user parameters</p></li>
+</ul>
+</section>
+<section id="define-the-configuration-key">
+<h3><a class="toc-backref" href="#id16" role="doc-backlink"><span class="section-number">4.4.2. </span>Define the Configuration Key</a><a class="headerlink" href="#define-the-configuration-key" title="Link to this heading"></a></h3>
+<ol class="arabic simple">
+<li><p>Decide whether the setting belongs to <strong>user config</strong> (per installation) or <strong>project config</strong> (per project). See the explanations in <a class="reference internal" href="python.html"><span class="doc">Python Code</span></a> and <a class="reference internal" href="dbmodel.html"><span class="doc">DB Model</span></a>.</p></li>
+<li><p>Add default values in <code class="docutils literal notranslate"><span class="pre">config/user_params.config</span></code> if needed:</p></li>
+</ol>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[custom_feature]</span>
+<span class="na">enabled</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">True</span>
+<span class="na">threshold</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">0.5</span>
+<span class="na">max_iterations</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">100</span>
+</pre></div>
+</div>
+<section id="code-example-read-configuration">
+<h4><a class="toc-backref" href="#id17" role="doc-backlink"><span class="section-number">4.4.2.1. </span>Code Example - Read Configuration</a><a class="headerlink" href="#code-example-read-configuration" title="Link to this heading"></a></h4>
+<p>Use <code class="docutils literal notranslate"><span class="pre">tools_dr.get_config_parser()</span></code> to read configuration values:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">core.utils</span><span class="w"> </span><span class="kn">import</span> <span class="n">tools_dr</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">get_custom_feature_settings</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Read custom feature settings from configuration file.&quot;&quot;&quot;</span>
+
+    <span class="c1"># Read from user config file &#39;init.config&#39;</span>
+    <span class="n">enabled</span> <span class="o">=</span> <span class="n">tools_dr</span><span class="o">.</span><span class="n">get_config_parser</span><span class="p">(</span>
+        <span class="n">section</span><span class="o">=</span><span class="s1">&#39;custom_feature&#39;</span><span class="p">,</span>
+        <span class="n">parameter</span><span class="o">=</span><span class="s1">&#39;enabled&#39;</span><span class="p">,</span>
+        <span class="n">config_type</span><span class="o">=</span><span class="s1">&#39;user&#39;</span><span class="p">,</span>
+        <span class="n">file_name</span><span class="o">=</span><span class="s1">&#39;init&#39;</span>
+    <span class="p">)</span>
+
+    <span class="c1"># Read from session config (temporary values)</span>
+    <span class="n">last_value</span> <span class="o">=</span> <span class="n">tools_dr</span><span class="o">.</span><span class="n">get_config_parser</span><span class="p">(</span>
+        <span class="n">section</span><span class="o">=</span><span class="s1">&#39;custom_feature&#39;</span><span class="p">,</span>
+        <span class="n">parameter</span><span class="o">=</span><span class="s1">&#39;last_value&#39;</span><span class="p">,</span>
+        <span class="n">config_type</span><span class="o">=</span><span class="s1">&#39;user&#39;</span><span class="p">,</span>
+        <span class="n">file_name</span><span class="o">=</span><span class="s1">&#39;session&#39;</span>
+    <span class="p">)</span>
+
+    <span class="c1"># Read from project config &#39;drain.config&#39;</span>
+    <span class="n">default_threshold</span> <span class="o">=</span> <span class="n">tools_dr</span><span class="o">.</span><span class="n">get_config_parser</span><span class="p">(</span>
+        <span class="n">section</span><span class="o">=</span><span class="s1">&#39;custom_feature&#39;</span><span class="p">,</span>
+        <span class="n">parameter</span><span class="o">=</span><span class="s1">&#39;threshold&#39;</span><span class="p">,</span>
+        <span class="n">config_type</span><span class="o">=</span><span class="s1">&#39;project&#39;</span><span class="p">,</span>
+        <span class="n">file_name</span><span class="o">=</span><span class="s1">&#39;drain&#39;</span>
+    <span class="p">)</span>
+
+    <span class="k">return</span> <span class="p">{</span>
+        <span class="s1">&#39;enabled&#39;</span><span class="p">:</span> <span class="n">enabled</span> <span class="o">==</span> <span class="s1">&#39;True&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;last_value&#39;</span><span class="p">:</span> <span class="n">last_value</span><span class="p">,</span>
+        <span class="s1">&#39;threshold&#39;</span><span class="p">:</span> <span class="nb">float</span><span class="p">(</span><span class="n">default_threshold</span><span class="p">)</span> <span class="k">if</span> <span class="n">default_threshold</span> <span class="k">else</span> <span class="mf">0.5</span>
+    <span class="p">}</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">is_custom_feature_enabled</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Check if custom feature is enabled.&quot;&quot;&quot;</span>
+    <span class="n">value</span> <span class="o">=</span> <span class="n">tools_dr</span><span class="o">.</span><span class="n">get_config_parser</span><span class="p">(</span>
+        <span class="s1">&#39;custom_feature&#39;</span><span class="p">,</span> <span class="s1">&#39;enabled&#39;</span><span class="p">,</span> <span class="s1">&#39;user&#39;</span><span class="p">,</span> <span class="s1">&#39;init&#39;</span>
+    <span class="p">)</span>
+    <span class="k">return</span> <span class="n">value</span> <span class="o">==</span> <span class="s1">&#39;True&#39;</span>
+</pre></div>
+</div>
+</section>
+<section id="code-example-write-configuration">
+<h4><a class="toc-backref" href="#id18" role="doc-backlink"><span class="section-number">4.4.2.2. </span>Code Example - Write Configuration</a><a class="headerlink" href="#code-example-write-configuration" title="Link to this heading"></a></h4>
+<p>Use <code class="docutils literal notranslate"><span class="pre">tools_dr.set_config_parser()</span></code> to write configuration values:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">core.utils</span><span class="w"> </span><span class="kn">import</span> <span class="n">tools_dr</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">save_custom_feature_settings</span><span class="p">(</span><span class="n">enabled</span><span class="p">,</span> <span class="n">threshold</span><span class="p">,</span> <span class="n">last_value</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Save custom feature settings to configuration files.&quot;&quot;&quot;</span>
+
+    <span class="c1"># Save to user config (persistent)</span>
+    <span class="n">tools_dr</span><span class="o">.</span><span class="n">set_config_parser</span><span class="p">(</span>
+        <span class="n">section</span><span class="o">=</span><span class="s1">&#39;custom_feature&#39;</span><span class="p">,</span>
+        <span class="n">parameter</span><span class="o">=</span><span class="s1">&#39;enabled&#39;</span><span class="p">,</span>
+        <span class="n">value</span><span class="o">=</span><span class="nb">str</span><span class="p">(</span><span class="n">enabled</span><span class="p">),</span>
+        <span class="n">config_type</span><span class="o">=</span><span class="s1">&#39;user&#39;</span><span class="p">,</span>
+        <span class="n">file_name</span><span class="o">=</span><span class="s1">&#39;init&#39;</span>
+    <span class="p">)</span>
+
+    <span class="n">tools_dr</span><span class="o">.</span><span class="n">set_config_parser</span><span class="p">(</span>
+        <span class="n">section</span><span class="o">=</span><span class="s1">&#39;custom_feature&#39;</span><span class="p">,</span>
+        <span class="n">parameter</span><span class="o">=</span><span class="s1">&#39;threshold&#39;</span><span class="p">,</span>
+        <span class="n">value</span><span class="o">=</span><span class="nb">str</span><span class="p">(</span><span class="n">threshold</span><span class="p">),</span>
+        <span class="n">config_type</span><span class="o">=</span><span class="s1">&#39;user&#39;</span><span class="p">,</span>
+        <span class="n">file_name</span><span class="o">=</span><span class="s1">&#39;init&#39;</span>
+    <span class="p">)</span>
+
+    <span class="c1"># Save to session config (temporary, cleared on restart)</span>
+    <span class="n">tools_dr</span><span class="o">.</span><span class="n">set_config_parser</span><span class="p">(</span>
+        <span class="n">section</span><span class="o">=</span><span class="s1">&#39;custom_feature&#39;</span><span class="p">,</span>
+        <span class="n">parameter</span><span class="o">=</span><span class="s1">&#39;last_value&#39;</span><span class="p">,</span>
+        <span class="n">value</span><span class="o">=</span><span class="nb">str</span><span class="p">(</span><span class="n">last_value</span><span class="p">),</span>
+        <span class="n">config_type</span><span class="o">=</span><span class="s1">&#39;user&#39;</span><span class="p">,</span>
+        <span class="n">file_name</span><span class="o">=</span><span class="s1">&#39;session&#39;</span>
+    <span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="code-example-using-global-variables">
+<h4><a class="toc-backref" href="#id19" role="doc-backlink"><span class="section-number">4.4.2.3. </span>Code Example - Using Global Variables</a><a class="headerlink" href="#code-example-using-global-variables" title="Link to this heading"></a></h4>
+<p>Access shared state through <code class="docutils literal notranslate"><span class="pre">global_vars</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">...</span><span class="w"> </span><span class="kn">import</span> <span class="n">global_vars</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">get_database_connection</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Get the project database connection.&quot;&quot;&quot;</span>
+    <span class="c1"># Get GeoPackage data access object</span>
+    <span class="n">dao</span> <span class="o">=</span> <span class="n">global_vars</span><span class="o">.</span><span class="n">gpkg_dao_data</span>
+    <span class="k">if</span> <span class="n">dao</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">return</span> <span class="kc">None</span>
+
+    <span class="c1"># Clone for thread safety in processing algorithms</span>
+    <span class="k">return</span> <span class="n">dao</span><span class="o">.</span><span class="n">clone</span><span class="p">()</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">get_project_info</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Get current project information.&quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="p">{</span>
+        <span class="s1">&#39;project_type&#39;</span><span class="p">:</span> <span class="n">global_vars</span><span class="o">.</span><span class="n">project_type</span><span class="p">,</span>
+        <span class="s1">&#39;project_epsg&#39;</span><span class="p">:</span> <span class="n">global_vars</span><span class="o">.</span><span class="n">project_epsg</span><span class="p">,</span>
+        <span class="s1">&#39;data_epsg&#39;</span><span class="p">:</span> <span class="n">global_vars</span><span class="o">.</span><span class="n">data_epsg</span><span class="p">,</span>
+        <span class="s1">&#39;gpkg_path&#39;</span><span class="p">:</span> <span class="n">global_vars</span><span class="o">.</span><span class="n">project_vars</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;project_gpkg_path&#39;</span><span class="p">),</span>
+        <span class="s1">&#39;plugin_dir&#39;</span><span class="p">:</span> <span class="n">global_vars</span><span class="o">.</span><span class="n">plugin_dir</span>
+    <span class="p">}</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">run_feature_with_layer</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Example using global iface to get active layer.&quot;&quot;&quot;</span>
+    <span class="c1"># Get active layer from QGIS interface</span>
+    <span class="n">layer</span> <span class="o">=</span> <span class="n">global_vars</span><span class="o">.</span><span class="n">iface</span><span class="o">.</span><span class="n">activeLayer</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">layer</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">return</span>
+
+    <span class="c1"># Get map canvas</span>
+    <span class="n">canvas</span> <span class="o">=</span> <span class="n">global_vars</span><span class="o">.</span><span class="n">canvas</span>
+
+    <span class="c1"># Access session variables</span>
+    <span class="n">threads</span> <span class="o">=</span> <span class="n">global_vars</span><span class="o">.</span><span class="n">session_vars</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;threads&#39;</span><span class="p">,</span> <span class="p">[])</span>
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+<section id="example-4-modifying-a-database-table">
+<h2><a class="toc-backref" href="#id20" role="doc-backlink"><span class="section-number">4.5. </span>Example 4 - Modifying a Database Table</a><a class="headerlink" href="#example-4-modifying-a-database-table" title="Link to this heading"></a></h2>
+<p>IberGIS stores its project data in GeoPackage files created from SQL scripts in the <code class="docutils literal notranslate"><span class="pre">dbmodel/</span></code> directory. When you change the schema you <strong>must</strong> carefully update both the base DDL/DML and the corresponding <code class="docutils literal notranslate"><span class="pre">updates/</span></code> sub-folder if this change is part of a new plugin version.</p>
+<section id="scenario">
+<h3><a class="toc-backref" href="#id21" role="doc-backlink"><span class="section-number">4.5.1. </span>Scenario</a><a class="headerlink" href="#scenario" title="Link to this heading"></a></h3>
+<p>Suppose you want to add a new column <code class="docutils literal notranslate"><span class="pre">new_field</span></code> to an existing table <code class="docutils literal notranslate"><span class="pre">v_edit_node</span></code>.</p>
+<ol class="arabic simple">
+<li><p><strong>Update the base DDL</strong> so that new projects include the field.</p></li>
+<li><p><strong>Update the base DML</strong> if the new field needs default values.</p></li>
+<li><p><strong>Create an update script</strong> under <code class="docutils literal notranslate"><span class="pre">dbmodel/updates/</span></code> so that existing projects can be migrated to the new schema when the plugin is updated.</p></li>
+</ol>
+</section>
+<section id="step-1-modify-ddl-for-new-projects">
+<h3><a class="toc-backref" href="#id22" role="doc-backlink"><span class="section-number">4.5.2. </span>Step 1 - Modify DDL for New Projects</a><a class="headerlink" href="#step-1-modify-ddl-for-new-projects" title="Link to this heading"></a></h3>
+<p>The base table definitions are stored in:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">dbmodel</span><span class="o">/</span><span class="n">ddl</span><span class="o">/</span><span class="n">ddl</span><span class="o">.</span><span class="n">sql</span>
+</pre></div>
+</div>
+<p>Actions:</p>
+<ul class="simple">
+<li><p>Locate the <code class="docutils literal notranslate"><span class="pre">CREATE</span> <span class="pre">TABLE</span></code> statement for <code class="docutils literal notranslate"><span class="pre">v_edit_node</span></code>.</p></li>
+<li><p>Add the new column definition (type, constraints, default value, etc.).</p></li>
+<li><p>Respect the existing style: indentation, type checking using <code class="docutils literal notranslate"><span class="pre">CHECK</span> <span class="pre">(typeof(...))</span></code> where applicable, and naming conventions.</p></li>
+</ul>
+<p>After this change, <strong>newly created</strong> project GeoPackages will contain the new column.</p>
+<section id="code-example-ddl-modification">
+<h4><a class="toc-backref" href="#id23" role="doc-backlink"><span class="section-number">4.5.2.1. </span>Code Example - DDL Modification</a><a class="headerlink" href="#code-example-ddl-modification" title="Link to this heading"></a></h4>
+<p>In <code class="docutils literal notranslate"><span class="pre">dbmodel/ddl/ddl.sql</span></code>, locate and modify the table definition:</p>
+<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="c1">-- Before: existing table definition</span>
+<span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">v_edit_node</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="n">node_id</span><span class="w"> </span><span class="nb">TEXT</span><span class="w"> </span><span class="k">PRIMARY</span><span class="w"> </span><span class="k">KEY</span><span class="p">,</span>
+<span class="w">    </span><span class="n">node_type</span><span class="w"> </span><span class="nb">TEXT</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="p">,</span>
+<span class="w">    </span><span class="n">elevation</span><span class="w"> </span><span class="nb">REAL</span><span class="p">,</span>
+<span class="w">    </span><span class="n">geom</span><span class="w"> </span><span class="n">GEOMETRY</span><span class="p">,</span>
+<span class="w">    </span><span class="k">CHECK</span><span class="w"> </span><span class="p">(</span><span class="n">typeof</span><span class="p">(</span><span class="n">node_id</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;text&#39;</span><span class="p">),</span>
+<span class="w">    </span><span class="k">CHECK</span><span class="w"> </span><span class="p">(</span><span class="n">typeof</span><span class="p">(</span><span class="n">elevation</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;real&#39;</span><span class="w"> </span><span class="k">OR</span><span class="w"> </span><span class="n">elevation</span><span class="w"> </span><span class="k">IS</span><span class="w"> </span><span class="k">NULL</span><span class="p">)</span>
+<span class="p">);</span>
+
+<span class="c1">-- After: with new column added</span>
+<span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">v_edit_node</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="n">node_id</span><span class="w"> </span><span class="nb">TEXT</span><span class="w"> </span><span class="k">PRIMARY</span><span class="w"> </span><span class="k">KEY</span><span class="p">,</span>
+<span class="w">    </span><span class="n">node_type</span><span class="w"> </span><span class="nb">TEXT</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="p">,</span>
+<span class="w">    </span><span class="n">elevation</span><span class="w"> </span><span class="nb">REAL</span><span class="p">,</span>
+<span class="w">    </span><span class="n">new_field</span><span class="w"> </span><span class="nb">TEXT</span><span class="w"> </span><span class="k">DEFAULT</span><span class="w"> </span><span class="s1">&#39;default_value&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="n">geom</span><span class="w"> </span><span class="n">GEOMETRY</span><span class="p">,</span>
+<span class="w">    </span><span class="k">CHECK</span><span class="w"> </span><span class="p">(</span><span class="n">typeof</span><span class="p">(</span><span class="n">node_id</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;text&#39;</span><span class="p">),</span>
+<span class="w">    </span><span class="k">CHECK</span><span class="w"> </span><span class="p">(</span><span class="n">typeof</span><span class="p">(</span><span class="n">elevation</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;real&#39;</span><span class="w"> </span><span class="k">OR</span><span class="w"> </span><span class="n">elevation</span><span class="w"> </span><span class="k">IS</span><span class="w"> </span><span class="k">NULL</span><span class="p">),</span>
+<span class="w">    </span><span class="k">CHECK</span><span class="w"> </span><span class="p">(</span><span class="n">typeof</span><span class="p">(</span><span class="n">new_field</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;text&#39;</span><span class="w"> </span><span class="k">OR</span><span class="w"> </span><span class="n">new_field</span><span class="w"> </span><span class="k">IS</span><span class="w"> </span><span class="k">NULL</span><span class="p">)</span>
+<span class="p">);</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="step-2-modify-dml-for-default-data">
+<h3><a class="toc-backref" href="#id24" role="doc-backlink"><span class="section-number">4.5.3. </span>Step 2 - Modify DML for Default Data</a><a class="headerlink" href="#step-2-modify-dml-for-default-data" title="Link to this heading"></a></h3>
+<p>Initial data population is defined in:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">dbmodel</span><span class="o">/</span><span class="n">dml</span><span class="o">/</span><span class="n">dml</span><span class="o">.</span><span class="n">sql</span>
+</pre></div>
+</div>
+<p>If your new column requires a specific default value or must be populated for system tables:</p>
+<ul class="simple">
+<li><p>Extend the corresponding <code class="docutils literal notranslate"><span class="pre">INSERT</span></code> statements.</p></li>
+<li><p>Or add explicit <code class="docutils literal notranslate"><span class="pre">UPDATE</span></code> statements that set appropriate default values for the new column.</p></li>
+</ul>
+<p>Again, follow the existing style and structure of the file.</p>
+<section id="code-example-dml-modification">
+<h4><a class="toc-backref" href="#id25" role="doc-backlink"><span class="section-number">4.5.3.1. </span>Code Example - DML Modification</a><a class="headerlink" href="#code-example-dml-modification" title="Link to this heading"></a></h4>
+<p>In <code class="docutils literal notranslate"><span class="pre">dbmodel/dml/dml.sql</span></code>:</p>
+<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="c1">-- Option 1: Extend existing INSERT statements</span>
+<span class="c1">-- Before:</span>
+<span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">v_edit_node</span><span class="w"> </span><span class="p">(</span><span class="n">node_id</span><span class="p">,</span><span class="w"> </span><span class="n">node_type</span><span class="p">,</span><span class="w"> </span><span class="n">elevation</span><span class="p">,</span><span class="w"> </span><span class="n">geom</span><span class="p">)</span>
+<span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="s1">&#39;N001&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;junction&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">100</span><span class="p">.</span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="n">GeomFromText</span><span class="p">(</span><span class="s1">&#39;POINT(0 0)&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">25831</span><span class="p">));</span>
+
+<span class="c1">-- After: include the new column</span>
+<span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">v_edit_node</span><span class="w"> </span><span class="p">(</span><span class="n">node_id</span><span class="p">,</span><span class="w"> </span><span class="n">node_type</span><span class="p">,</span><span class="w"> </span><span class="n">elevation</span><span class="p">,</span><span class="w"> </span><span class="n">new_field</span><span class="p">,</span><span class="w"> </span><span class="n">geom</span><span class="p">)</span>
+<span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="s1">&#39;N001&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;junction&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">100</span><span class="p">.</span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;initial_value&#39;</span><span class="p">,</span><span class="w"> </span><span class="n">GeomFromText</span><span class="p">(</span><span class="s1">&#39;POINT(0 0)&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">25831</span><span class="p">));</span>
+
+
+<span class="c1">-- Option 2: Add UPDATE statement to set defaults for existing records</span>
+<span class="k">UPDATE</span><span class="w"> </span><span class="n">v_edit_node</span>
+<span class="k">SET</span><span class="w"> </span><span class="n">new_field</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;default_value&#39;</span>
+<span class="k">WHERE</span><span class="w"> </span><span class="n">new_field</span><span class="w"> </span><span class="k">IS</span><span class="w"> </span><span class="k">NULL</span><span class="p">;</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="step-3-add-an-update-script-for-existing-projects">
+<h3><a class="toc-backref" href="#id26" role="doc-backlink"><span class="section-number">4.5.4. </span>Step 3 - Add an Update Script for Existing Projects</a><a class="headerlink" href="#step-3-add-an-update-script-for-existing-projects" title="Link to this heading"></a></h3>
+<p>Existing projects will not see the new column unless you add an update script under:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">dbmodel</span><span class="o">/</span><span class="n">updates</span><span class="o">/&lt;</span><span class="n">major</span><span class="o">&gt;/&lt;</span><span class="n">minor</span><span class="o">&gt;/&lt;</span><span class="n">patch</span><span class="o">&gt;/</span>
+</pre></div>
+</div>
+<p>For example, if you are preparing version <code class="docutils literal notranslate"><span class="pre">1.2.0</span></code>, you might have:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">dbmodel</span><span class="o">/</span><span class="n">updates</span><span class="o">/</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="o">/</span><span class="mi">0</span><span class="o">/</span><span class="n">ddl</span><span class="o">.</span><span class="n">sql</span>
+<span class="n">dbmodel</span><span class="o">/</span><span class="n">updates</span><span class="o">/</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="o">/</span><span class="mi">0</span><span class="o">/</span><span class="n">dml</span><span class="o">.</span><span class="n">sql</span>
+<span class="n">dbmodel</span><span class="o">/</span><span class="n">updates</span><span class="o">/</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="o">/</span><span class="mi">0</span><span class="o">/</span><span class="n">changelog</span><span class="o">.</span><span class="n">txt</span>
+</pre></div>
+</div>
+<p>Typical actions in the update scripts:</p>
+<ul class="simple">
+<li><p>In <strong>ddl.sql:</strong></p>
+<ul>
+<li><p>Use <code class="docutils literal notranslate"><span class="pre">ALTER</span> <span class="pre">TABLE</span></code> statements to add the new column to the existing tables.</p></li>
+<li><p>Adjust indexes, triggers or views that depend on the modified table, if needed.</p></li>
+</ul>
+</li>
+<li><p>In <strong>dml.sql:</strong></p>
+<ul>
+<li><p>Initialize the new column for existing records (for example with a default value or a computed value based on existing fields).</p></li>
+</ul>
+</li>
+<li><p>In <strong>changelog.txt:</strong></p>
+<ul>
+<li><p>Document the change (what table/column was added or modified, and why).</p></li>
+</ul>
+</li>
+</ul>
+<p>Remember that, as explained in <a class="reference internal" href="dbmodel.html"><span class="doc">DB Model</span></a>, <strong>updates must also be reflected in the base files</strong> (<code class="docutils literal notranslate"><span class="pre">dbmodel/ddl/ddl.sql</span></code> and <code class="docutils literal notranslate"><span class="pre">dbmodel/dml/dml.sql</span></code>) so that new projects and upgraded projects share the same schema.</p>
+<section id="code-example-update-ddl-script">
+<h4><a class="toc-backref" href="#id27" role="doc-backlink"><span class="section-number">4.5.4.1. </span>Code Example - Update DDL Script</a><a class="headerlink" href="#code-example-update-ddl-script" title="Link to this heading"></a></h4>
+<p>Create <code class="docutils literal notranslate"><span class="pre">dbmodel/updates/1/2/0/ddl.sql</span></code>:</p>
+<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="c1">-- ============================================================</span>
+<span class="c1">-- Update script for version 1.2.0</span>
+<span class="c1">-- Adds new_field column to v_edit_node table</span>
+<span class="c1">-- ============================================================</span>
+
+<span class="c1">-- Add new column to existing table</span>
+<span class="k">ALTER</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">v_edit_node</span>
+<span class="k">ADD</span><span class="w"> </span><span class="k">COLUMN</span><span class="w"> </span><span class="n">new_field</span><span class="w"> </span><span class="nb">TEXT</span><span class="w"> </span><span class="k">DEFAULT</span><span class="w"> </span><span class="s1">&#39;default_value&#39;</span><span class="p">;</span>
+
+<span class="c1">-- If there&#39;s a view that depends on this table, recreate it</span>
+<span class="k">DROP</span><span class="w"> </span><span class="k">VIEW</span><span class="w"> </span><span class="k">IF</span><span class="w"> </span><span class="k">EXISTS</span><span class="w"> </span><span class="n">v_node_summary</span><span class="p">;</span>
+
+<span class="k">CREATE</span><span class="w"> </span><span class="k">VIEW</span><span class="w"> </span><span class="n">v_node_summary</span><span class="w"> </span><span class="k">AS</span>
+<span class="k">SELECT</span>
+<span class="w">    </span><span class="n">node_id</span><span class="p">,</span>
+<span class="w">    </span><span class="n">node_type</span><span class="p">,</span>
+<span class="w">    </span><span class="n">elevation</span><span class="p">,</span>
+<span class="w">    </span><span class="n">new_field</span><span class="p">,</span>
+<span class="w">    </span><span class="n">geom</span>
+<span class="k">FROM</span><span class="w"> </span><span class="n">v_edit_node</span><span class="p">;</span>
+
+<span class="c1">-- Add index if needed for performance</span>
+<span class="k">CREATE</span><span class="w"> </span><span class="k">INDEX</span><span class="w"> </span><span class="k">IF</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">EXISTS</span><span class="w"> </span><span class="n">idx_v_edit_node_new_field</span>
+<span class="k">ON</span><span class="w"> </span><span class="n">v_edit_node</span><span class="w"> </span><span class="p">(</span><span class="n">new_field</span><span class="p">);</span>
+</pre></div>
+</div>
+</section>
+<section id="code-example-update-dml-script">
+<h4><a class="toc-backref" href="#id28" role="doc-backlink"><span class="section-number">4.5.4.2. </span>Code Example - Update DML Script</a><a class="headerlink" href="#code-example-update-dml-script" title="Link to this heading"></a></h4>
+<p>Create <code class="docutils literal notranslate"><span class="pre">dbmodel/updates/1/2/0/dml.sql</span></code>:</p>
+<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="c1">-- ============================================================</span>
+<span class="c1">-- Data migration script for version 1.2.0</span>
+<span class="c1">-- Initializes new_field for existing records</span>
+<span class="c1">-- ============================================================</span>
+
+<span class="c1">-- Set default value for all existing records</span>
+<span class="k">UPDATE</span><span class="w"> </span><span class="n">v_edit_node</span>
+<span class="k">SET</span><span class="w"> </span><span class="n">new_field</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;default_value&#39;</span>
+<span class="k">WHERE</span><span class="w"> </span><span class="n">new_field</span><span class="w"> </span><span class="k">IS</span><span class="w"> </span><span class="k">NULL</span><span class="p">;</span>
+
+<span class="c1">-- Or set computed values based on existing data</span>
+<span class="k">UPDATE</span><span class="w"> </span><span class="n">v_edit_node</span>
+<span class="k">SET</span><span class="w"> </span><span class="n">new_field</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">CASE</span>
+<span class="w">    </span><span class="k">WHEN</span><span class="w"> </span><span class="n">node_type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;junction&#39;</span><span class="w"> </span><span class="k">THEN</span><span class="w"> </span><span class="s1">&#39;junction_default&#39;</span>
+<span class="w">    </span><span class="k">WHEN</span><span class="w"> </span><span class="n">node_type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;outfall&#39;</span><span class="w"> </span><span class="k">THEN</span><span class="w"> </span><span class="s1">&#39;outfall_default&#39;</span>
+<span class="w">    </span><span class="k">ELSE</span><span class="w"> </span><span class="s1">&#39;other_default&#39;</span>
+<span class="k">END</span>
+<span class="k">WHERE</span><span class="w"> </span><span class="n">new_field</span><span class="w"> </span><span class="k">IS</span><span class="w"> </span><span class="k">NULL</span><span class="p">;</span>
+</pre></div>
+</div>
+</section>
+<section id="code-example-changelog">
+<h4><a class="toc-backref" href="#id29" role="doc-backlink"><span class="section-number">4.5.4.3. </span>Code Example - Changelog</a><a class="headerlink" href="#code-example-changelog" title="Link to this heading"></a></h4>
+<p>Create <code class="docutils literal notranslate"><span class="pre">dbmodel/updates/1/2/0/changelog.txt</span></code>:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Version 1.2.0 - Database Changes
+================================
+
+Tables Modified:
+- v_edit_node: Added column &#39;new_field&#39; (TEXT, default &#39;default_value&#39;)
+  Purpose: Stores additional classification data for network nodes.
+
+Views Modified:
+- v_node_summary: Recreated to include new_field column.
+
+Indexes Added:
+- idx_v_edit_node_new_field: Index on v_edit_node.new_field for query optimization.
+
+Migration Notes:
+- Existing records will have new_field set to &#39;default_value&#39;.
+- No user action required; migration is automatic.
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+<section id="versioning-and-testing">
+<h2><a class="toc-backref" href="#id30" role="doc-backlink"><span class="section-number">4.6. </span>Versioning and Testing</a><a class="headerlink" href="#versioning-and-testing" title="Link to this heading"></a></h2>
+<p>Whenever you introduce schema changes or new Processing algorithms or major UI features:</p>
+<ol class="arabic simple">
+<li><p>Increment the version in the appropriate place (plugin metadata and <code class="docutils literal notranslate"><span class="pre">dbmodel/updates</span></code> folder structure).</p></li>
+<li><p>Create a <strong>new project</strong> with the updated plugin to verify the base DDL and DML.</p></li>
+<li><p>Open an <strong>existing project</strong> and run the update logic to ensure that the <code class="docutils literal notranslate"><span class="pre">updates/&lt;major&gt;/&lt;minor&gt;/&lt;patch&gt;</span></code> scripts correctly migrate the database.</p></li>
+<li><p>Run the tests shipped with the plugin, and add new tests when appropriate. Command to run the tests is <code class="docutils literal notranslate"><span class="pre">pytest</span> <span class="pre">-v</span></code>.</p></li>
+<li><p>Document user-visible changes in the changelog files and in the user manual when relevant.</p></li>
+</ol>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="python.html" class="btn btn-neutral float-left" title="3. Python Code" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../../for-admins/index.html" class="btn btn-neutral float-right" title="IberGIS Administrator Guide" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, IberGIS.
+      <span class="lastupdated">Last updated on 2025 Dec 09, 15:44 +0100.
+      </span></p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div
+	class="rst-versions"
+	data-toggle="rst-versions"
+	role="note"
+	aria-label="versions"
+>
+	<span class="rst-current-version" data-toggle="rst-current-version">
+		<span class="fa fa-info-circle"> IberGIS Documentation </span>
+		v: 1.0
+		<span class="fa fa-caret-down"></span>
+	</span>
+
+	<div class="rst-other-versions">
+		<dl>
+			<dt>Languages</dt>
+			
+			<dd><a href="https://ibergis.github.io/1.0/en/docs/ibergis/for-developers/developer-manual/examples.html">en</a></dd>
+			
+		</dl>
+
+		<dl>
+			<dt>Versions</dt>
+			
+			<dd>
+				<a href="https://ibergis.github.io/1.0/en/docs/ibergis/for-developers/developer-manual/examples.html">1.0</a>
+			</dd>
+			
+		</dl>
+
+		
+	</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

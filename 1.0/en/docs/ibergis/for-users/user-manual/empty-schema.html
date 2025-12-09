@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>4. Create an empty IberGIS schema &mdash; IberGIS Documentation  documentation</title>
       <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=b86133f3" />
-      <link rel="stylesheet" type="text/css" href="../../../../_static/css/ibergis_docs.css?v=05a3ee12" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/css/ibergis_docs.css?v=3f46d377" />
       <link rel="stylesheet" type="text/css" href="../../../../_static/togglebutton.css?v=13237357" />
       <link rel="stylesheet" type="text/css" href="../../../../_static/copybutton.css?v=76b2166b" />
 
@@ -78,20 +78,21 @@
 <li class="toctree-l2"><a class="reference internal" href="what-is-ibergis.html">2. What is IberGIS?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="installation.html">3. Installation</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">4. Create an empty IberGIS schema</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#create-an-empty-geopackage">4.1. Create an empty geopackage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#create-an-empty-geopackage">4.1. Create an empty GeoPackage</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#create-an-empty-qgis-project">4.2. Create an empty QGIS project</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="sample-schema.html">5. Create a sample IberGIS schema</a></li>
-<li class="toctree-l2"><a class="reference internal" href="toc.html">6. Table of Contents (ToC)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ibergis-plugin/ibergis-plugin.html">7. IberGIS Plugin</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ibergis-toolbox.html">8. IberGIS toolbox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="update-gpkg.html">6. Update a IberGIS GeoPackage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="toc.html">7. Table of Contents (ToC)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ibergis-plugin/ibergis-plugin.html">8. IberGIS Plugin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ibergis-toolbox.html">9. IberGIS toolbox</a></li>
 </ul>
 </li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">FOR DEVELOPERS</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../for-developers/index.html">Developer Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../for-developers/developer-manual/index.html">IberGIS Developer Manual</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">FOR ADMINISTRATORS</span></p>
 <ul>
@@ -130,13 +131,13 @@
 <h1><span class="section-number">4. </span>Create an empty IberGIS schema<a class="headerlink" href="#create-an-empty-ibergis-schema" title="Link to this heading"></a></h1>
 <nav class="contents local" id="contents">
 <ul class="simple">
-<li><p><a class="reference internal" href="#create-an-empty-geopackage" id="id3">Create an empty geopackage</a></p></li>
+<li><p><a class="reference internal" href="#create-an-empty-geopackage" id="id3">Create an empty GeoPackage</a></p></li>
 <li><p><a class="reference internal" href="#create-an-empty-qgis-project" id="id4">Create an empty QGIS project</a></p></li>
 </ul>
 </nav>
 <section id="create-an-empty-geopackage">
-<h2><a class="toc-backref" href="#id3" role="doc-backlink"><span class="section-number">4.1. </span>Create an empty geopackage</a><a class="headerlink" href="#create-an-empty-geopackage" title="Link to this heading"></a></h2>
-<p>To create an empty geopackage to start working, click on the IberGIS button and fill in the following fields:</p>
+<h2><a class="toc-backref" href="#id3" role="doc-backlink"><span class="section-number">4.1. </span>Create an empty GeoPackage</a><a class="headerlink" href="#create-an-empty-geopackage" title="Link to this heading"></a></h2>
+<p>To create an empty GeoPackage to start working, click on the IberGIS button and fill in the following fields:</p>
 <figure class="align-default" id="id1">
 <img alt="../../../../_images/empty_gpkg.png" src="../../../../_images/empty_gpkg.png" />
 <figcaption>
@@ -144,18 +145,18 @@
 </figcaption>
 </figure>
 <ul class="simple">
-<li><p>GPKG Name: name of the geopackage file.</p></li>
-<li><p>Description: a sort description of the project.</p></li>
-<li><p>Path: path where the geopackage will be stored.</p></li>
-<li><p>Locale: language of the geopackage.</p></li>
-<li><p>Filter SRID: coordinate reference system of the geopackage.</p></li>
-<li><p>Empty data: option to create an empty geopackage.</p></li>
+<li><p><strong>GPKG Name:</strong> name of the GeoPackage file.</p></li>
+<li><p><strong>Description:</strong> a short description of the project.</p></li>
+<li><p><strong>Path:</strong> path where the GeoPackage will be stored.</p></li>
+<li><p><strong>Locale:</strong> language of the GeoPackage.</p></li>
+<li><p><strong>Filter SRID:</strong> coordinate reference system of the GeoPackage.</p></li>
+<li><p><strong>Empty data:</strong> option to create an empty GeoPackage.</p></li>
 </ul>
-<p>After specifying the above, if we click on <em>Accept</em> button the empty geopackage will be created.</p>
+<p>After specifying the above, if we click on <em>Accept</em> button the empty GeoPackage will be created.</p>
 </section>
 <section id="create-an-empty-qgis-project">
 <h2><a class="toc-backref" href="#id4" role="doc-backlink"><span class="section-number">4.2. </span>Create an empty QGIS project</a><a class="headerlink" href="#create-an-empty-qgis-project" title="Link to this heading"></a></h2>
-<p>After the geopackage has been created we will see that we have available the tab <em>Create QGIS project</em> where we have to specify:</p>
+<p>After the GeoPackage has been created we will see that we have available the tab <em>Create QGIS project</em> where we have to specify:</p>
 <figure class="align-default" id="id2">
 <img alt="../../../../_images/empty_project.png" src="../../../../_images/empty_project.png" />
 <figcaption>
@@ -163,9 +164,9 @@
 </figcaption>
 </figure>
 <ul class="simple">
-<li><p>GPKG file: name and folder for the geopackage.</p></li>
-<li><p>GIS file name: name of the QGIS project.</p></li>
-<li><p>GIS folder: project folder.</p></li>
+<li><p><strong>GPKG file:</strong> name and folder for the GeoPackage.</p></li>
+<li><p><strong>GIS file name:</strong> name of the QGIS project.</p></li>
+<li><p><strong>GIS folder:</strong> project folder.</p></li>
 </ul>
 <p>By clicking on the <em>Accept</em> button, the empty project will be created.</p>
 <p>Now we are ready to import the inp file with the network or start to digitizing it.</p>
@@ -184,7 +185,7 @@
 
   <div role="contentinfo">
     <p>&#169; Copyright 2025, IberGIS.
-      <span class="lastupdated">Last updated on 2025 Dec 03, 14:18 +0100.
+      <span class="lastupdated">Last updated on 2025 Dec 09, 15:44 +0100.
       </span></p>
   </div>
 

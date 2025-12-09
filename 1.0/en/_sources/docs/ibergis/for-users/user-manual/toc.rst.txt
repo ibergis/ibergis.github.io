@@ -12,16 +12,16 @@ The following layer groups are organized by default in the table of contents (To
 TEMPORAL
 ========
 
-Layers automatically generated during the model validation and correction processes. They are not saved in the geopackage.
+Layers automatically generated during the model validation and correction processes. They are not saved in the GeoPackage.
 
 INPUT
 =====
 
 Groups all the model's input data.
 
-- SWMM: objects imported from the drainage network's INP file (junction, divider, outfall, storage, conduit, pump, orifice, weir and outlet), an their simbology.
-- IBER: hydraulic elements required for 2D surface calculations, including inlets, pinlets, hyetographs, boundary conditions, bridges, culverts, and inlet connections to the network.
-- MESH: ground and roof layers, along with mesh anchor lines and mesh anchor points.
+- **SWMM:** objects imported from the drainage network's INP file (dwf, inflow, junction, divider, outfall, storage, conduit, pump, orifice, weir and outlet), an their symbology.
+- **IBER:** hydraulic elements required for 2D surface calculations, including inlets, pinlets, hyetographs, boundary conditions, bridges, culverts, and inlet connections to the network.
+- **MESH:** ground and roof layers, along with mesh anchor lines and mesh anchor points.
 
 BASE MAP
 ========
