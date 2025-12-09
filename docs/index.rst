@@ -36,14 +36,14 @@ Please take a look at one of the documents below.
 .. toctree::
    :maxdepth: 2
    :caption: FOR USERS
-   
+
    IberGIS User Manual <ibergis/for-users/user-manual/index>
 
 .. toctree::
    :maxdepth: 2
    :caption: FOR DEVELOPERS
 
-   Developer Documentation <ibergis/for-developers/index>
+   IberGIS Developer Manual <ibergis/for-developers/developer-manual/index>
 
 .. toctree::
    :maxdepth: 2

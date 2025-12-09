@@ -100,3 +100,14 @@ from https://rackerlabs.github.io/docs-rackspace/tools/rtd-tables.html */
 		display: none;
 	}
 }
+
+/* Add specific style for the annotations */
+.rst-content .admonition.important {
+	background-color: #ffe4e1;
+	border-color: #dc5635;
+}
+
+.rst-content .admonition.important .admonition-title {
+	background-color: #dc5635;
+	color: #ffffff;
+}
