@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" data-content_root="../../../../../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>8.1.5. Diálogo Acciones de Puente &mdash; documentación de IberGIS Documentation - </title>
+      <link rel="stylesheet" type="text/css" href="../../../../../../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../../../../../../_static/css/ibergis_docs.css?v=3f46d377" />
+      <link rel="stylesheet" type="text/css" href="../../../../../../_static/togglebutton.css?v=13237357" />
+      <link rel="stylesheet" type="text/css" href="../../../../../../_static/copybutton.css?v=76b2166b" />
+
+  
+    <link rel="shortcut icon" href="../../../../../../_static/logo.png"/>
+    <link rel="canonical" href="https://ibergis.github.io/testing/en/docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/bridge-actions.html" />
+  <!--[if lt IE 9]>
+    <script src="../../../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../../../../_static/documentation_options.js?v=e2bb6099"></script>
+        <script src="../../../../../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../../../../../_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="../../../../../../_static/copybutton.js?v=f281be69"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../../../../../../_static/togglebutton.js?v=4a39c7ea"></script>
+        <script src="../../../../../../_static/translations.js?v=d190bf04"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../../../../../../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../../../../../../search.html" />
+    <link rel="next" title="8.2.1. Diálogo Opciones Go2Iber" href="go2iber-options.html" />
+    <link rel="prev" title="8.1.4. Diálogo Objetos no visuales" href="non-visual-obj.html" />
+<meta
+	name="description"
+	content="IberGIS 1.0 documentation: 8.1.5. Diálogo Acciones de Puente"
+/>
+</head>
+
+<body class="wy-body-for-nav">
+
+<nav class="release_status_topbar">
+</nav>
+
+  
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" > 
+
+          
+          
+          <a href="../../../../../index.html" class="icon icon-home">
+            IberGIS Documentation
+              <img src="../../../../../../_static/logo.png" class="logo" alt="Logotipo"/>
+          </a>
+              <div class="version">
+                1.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Buscar documentos" aria-label="Buscar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+<a href="../../../../../../genindex.html">Índice</a>
+
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">PARA USUARIOS</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Manual de Usuario de IberGIS</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../introduction.html">1. Introducción</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../what-is-ibergis.html">2. ¿Qué es IberGIS?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../installation.html">3. Instalación</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../empty-schema.html">4. Crear un esquema de IberGIS vacío</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../sample-schema.html">5. Crear un esquema de IberGIS de ejemplo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../update-gpkg.html">6. Actualizar un GeoPackage de IberGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../toc.html">7. Tabla de Contenidos (ToC)</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../ibergis-plugin.html">8. Plugin de IberGIS</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="../ibergis-plugin.html#toolbar-main">8.1. Barra de herramientas <em>Principal</em></a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="import-inp.html">8.1.1. Diálogo Importar INP</a></li>
+<li class="toctree-l4"><a class="reference internal" href="boundary-cond-manager.html">8.1.2. Diálogo Gestor de condiciones de contorno</a></li>
+<li class="toctree-l4"><a class="reference internal" href="create-boundary-cond.html">8.1.3. Diálogo Crear condiciones de contorno</a></li>
+<li class="toctree-l4"><a class="reference internal" href="non-visual-obj.html">8.1.4. Diálogo Objetos no visuales</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">8.1.5. Diálogo Acciones de Puente</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../ibergis-plugin.html#toolbar-utilities">8.2. Barra de herramientas <em>Utilidades</em></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../ibergis-toolbox.html">9. Caja de herramientas de IberGIS</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">PARA DESARROLLADORES</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../for-developers/developer-manual/index.html">Manual de Desarrollador de IberGIS</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">PARA ADMINISTRADORES</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../for-admins/index.html">Documentación para Administradores</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../../index.html">IberGIS Documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">Manual de Usuario de IberGIS</a></li>
+          <li class="breadcrumb-item"><a href="../ibergis-plugin.html"><span class="section-number">8. </span>Plugin de IberGIS</a></li>
+      <li class="breadcrumb-item active"><span class="section-number">8.1.5. </span>Diálogo Acciones de Puente</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/IberGIS/IberGIS-Documentation/blob/master/docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/bridge-actions.rst" class="fa fa-github"> Editar en GitHub</a>
+      </li>
+  </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="Sequential page navigation">
+        <a href="non-visual-obj.html" class="btn btn-neutral float-left" title="8.1.4. Diálogo Objetos no visuales" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="go2iber-options.html" class="btn btn-neutral float-right" title="8.2.1. Diálogo Opciones Go2Iber" accesskey="n">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+  </div>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="dialog-bridge-actions">
+<span id="id1"></span><h1><span class="section-number">8.1.5. </span>Diálogo Acciones de Puente<a class="headerlink" href="#dialog-bridge-actions" title="Link to this heading"></a></h1>
+<p>Herramienta para incorporar puentes al modelo.</p>
+<p>Puede crear un puente dibujándolo directamente sobre la geometría. Algunas características dimensionales deben definirse, como la elevación. La longitud del puente se calcula automáticamente desde la línea dibujada. Puede editar manualmente la geometría.</p>
+<figure class="align-default" id="id2">
+<img alt="../../../../../../_images/bridge-actions-definition.png" src="../../../../../../_images/bridge-actions-definition.png" />
+<figcaption>
+<p><span class="caption-number">Figura 8.13 </span><span class="caption-text">Ventana para configurar los parámetros del puente.</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Para definir correctamente las características de la sección, <strong>se debe cargar un Modelo Digital de Elevación (DEM) válido</strong> haciendo clic en <em>Archivo Ráster (DEM)</em> y eligiendo la capa con la información DEM. De lo contrario, el lecho del río permanecerá plano.</p>
+<figure class="align-default" id="id3">
+<img alt="../../../../../../_images/add-DEM-to-bridge.png" src="../../../../../../_images/add-DEM-to-bridge.png" />
+<figcaption>
+<p><span class="caption-number">Figura 8.14 </span><span class="caption-text">DEM cargado al puente.</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
+<div class="legend">
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>Asegúrese de que el modo <em>Digitalizar por segmento</em> esté habilitado en el menú de QGIS. Si se selecciona otro modo (por ejemplo, <em>Digitalizar por forma</em>), la geometría del puente seguirá ese estilo de dibujo.</p>
+</div>
+</div>
+</figcaption>
+</figure>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pie de página">
+        <a href="non-visual-obj.html" class="btn btn-neutral float-left" title="8.1.4. Diálogo Objetos no visuales" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="go2iber-options.html" class="btn btn-neutral float-right" title="8.2.1. Diálogo Opciones Go2Iber" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Derechos de autor 2025, IberGIS.
+      <span class="lastupdated">Actualizado por última vez en 2025 dic 12, 12:18 +0100.
+      </span></p>
+  </div>
+
+  Compilado con <a href="https://www.sphinx-doc.org/">Sphinx</a> usando un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    proporcionado por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div
+	class="rst-versions"
+	data-toggle="rst-versions"
+	role="note"
+	aria-label="versions"
+>
+	<span class="rst-current-version" data-toggle="rst-current-version">
+		<span class="fa fa-info-circle"> IberGIS Documentation </span>
+		v: 1.0
+		<span class="fa fa-caret-down"></span>
+	</span>
+
+	<div class="rst-other-versions">
+		<dl>
+			<dt>Idiomas</dt>
+			
+			<dd><a href="https://ibergis.github.io/1.0/en/docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/bridge-actions.html">en</a></dd>
+			
+			<dd><a href="https://ibergis.github.io/1.0/es/docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/bridge-actions.html">es</a></dd>
+			
+		</dl>
+
+		<dl>
+			<dt>Versiones</dt>
+			
+			<dd>
+				<a href="https://ibergis.github.io/1.0/es/docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/bridge-actions.html">1.0</a>
+			</dd>
+			
+		</dl>
+
+		
+	</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

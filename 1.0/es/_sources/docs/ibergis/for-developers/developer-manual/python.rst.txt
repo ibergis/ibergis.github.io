@@ -1,0 +1,238 @@
+===========
+Python Code
+===========
+
+.. only:: html
+
+   .. contents::
+      :local:
+
+This section describes how the Python code of IberGIS is organized, and which coding rules are followed in the QGIS plugin implementation.
+
+Plugin Location
+===============
+
+The IberGIS QGIS plugin is installed in the user profile under::
+
+   C:\Users\<USER>\AppData\Roaming\QGIS\<VERSION>\profiles\<PROFILE>\python\plugins\<IBERGIS_FOLDER>
+
+In this documentation we will refer to this directory as the *plugin root*.
+
+Folder Structure
+================
+
+The most relevant sub-folders inside the plugin root are:
+
+Top-level
+---------
+
+- **main.py**
+
+  - Entry point for the QGIS plugin.
+  - Contains the main class (``Drain``) that QGIS instantiates and that connects the plugin to the QGIS interface.
+  - Implements methods such as ``initGui()`` and ``unload()`` which are called by QGIS to create menus, toolbars and clean them up.
+
+- **global_vars.py**
+
+  - Central module that stores global state used across the plugin (paths, QGIS interface instance, configuration objects, loggers, etc.).
+  - Provides helper functions to initialize these globals when the plugin starts.
+
+- **config/**
+
+  - Contains default configuration files used by the plugin (for example ``drain.config`` and ``user_params.config``).
+  - The values from these files are read by helper functions in ``core.utils.tools_dr``.
+
+- **dbmodel/**
+
+  - Contains the SQL scripts used to create and update the GeoPackage database schema used by IberGIS projects.
+  - This folder is described in detail in :doc:`dbmodel`.
+
+- **resources/**
+
+  - Contains auxiliary data used by the plugin: example projects, scripts, templates, result styles, etc.
+
+- **icons/** and **i18n/**
+
+  - Store icons and translation files used by the user interface.
+
+Core Package
+------------
+
+- **core/**
+
+  - Contains most of the application logic that is specific to the IberGIS plugin.
+
+  Important sub-packages inside ``core/`` are:
+
+  - **core/admin/**
+
+    - Administrative tools and dialogs (for example, database maintenance tools and project configuration wizards).
+
+  - **core/models/**
+
+    - Python classes that represent higher-level domain objects used by the plugin (projects, layers, configuration models, etc.).
+
+  - **core/processing/**
+
+    - QGIS Processing algorithms implemented by IberGIS. These are the tools that appear in the QGIS Processing Toolbox under the IberGIS groups.
+    - Each ``*.py`` file usually implements one algorithm and follows the standard QGIS Processing API.
+
+  - **core/shared/**
+
+    - Modules shared by different parts of the core plugin, for example common constants or helper classes.
+
+  - **core/threads/**
+
+    - Threaded tasks that perform long-running operations (imports, validations, simulations, etc.) without blocking the QGIS user interface.
+
+  - **core/toolbars/**
+
+    - Code that builds and manages IberGIS toolbars and buttons in the QGIS user interface.
+
+  - **core/ui/**
+
+    - ``.ui`` files (Qt Designer) and Python wrappers used to construct dialogs and dock widgets.
+    - The ``ui_manager.py`` module helps to load and manage these forms.
+
+  - **core/utils/**
+
+    - Collection of utility modules used from many places in the plugin. Examples include configuration handling, signal management, time-series plotting and mesh generation helpers.
+
+Lib Package
+-----------
+
+- **lib/**
+
+  - Contains reusable helper modules that are not IberGIS-specific and can be considered a small support library on top of QGIS/PyQt.
+
+  Typical modules include:
+
+  - **tools_qgis.py:** Wrappers and helpers around QGIS API classes.
+  - **tools_qt.py:** Helpers for PyQt widgets and dialogs.
+  - **tools_db.py**, **tools_gpkgdao.py** and **tools_pgdao.py:** Data-access helpers for GeoPackage and PostgreSQL.
+  - **tools_log.py:** Logging helpers used throughout the plugin.
+
+Third-party Packages
+--------------------
+
+- **packages/**
+
+  - Contains vendored third-party Python packages used by IberGIS (for example ``geopandas``, SWMM helpers, etc.).
+  - These packages are treated as external libraries and are not expected to follow IberGIS' internal style rules completely.
+
+Python Coding Rules
+===================
+
+General Style
+-------------
+
+IberGIS follows a style that is largely compatible with `PEP 8 <https://www.python.org/dev/peps/pep-0008/>`_, with some adaptations to typical QGIS plugin needs.
+
+- **Line length**
+
+  - The plugin uses ``flake8`` with a maximum line length of **120 characters**. This allows for typical QGIS API calls and long translation strings while still keeping code reasonably readable.
+  - Long URLs or unavoidable long strings are explicitly marked with ``# noqa: E501`` when necessary.
+
+- **Imports**
+
+  - Standard library imports first, then third-party imports, and finally IberGIS/QGIS internal imports.
+  - Imports from the same package are usually grouped and ordered by module name.
+
+- **Indentation and spacing**
+
+  - Four spaces per indentation level.
+  - No hard tab characters in the source code.
+  - Blank lines are used to separate logical sections (for example, imports, class definitions, and groups of related functions).
+
+Naming Conventions
+------------------
+
+The naming conventions follow PEP 8 with some QGIS/Qt specific exceptions for signals and UI objects.
+
+- **Modules and packages**
+
+  - Lowercase with underscores (``tools_dr.py``, ``tools_qgis.py``, ``mesh_parser.py``).
+
+- **Classes**
+
+  - CapWords / PascalCase (``Drain``, ``DrMenuLoad``, ``DrMainWindow``).
+  - Many classes use the ``Dr`` prefix to indicate that they belong to the Drain/IberGIS plugin.
+
+- **Functions and methods**
+
+  - Lowercase with words separated by underscores (``init_global``, ``init_plugin_settings``, ``load_settings``, ``initialize_parsers``).
+  - Private or internal helpers start with a single underscore (``_init_plugin()``, ``_manage_buttons()``).
+
+- **Variables and attributes**
+
+  - Lowercase with underscores for local variables and instance attributes (``plugin_dir``, ``user_folder_dir``, ``project_loaded``).
+  - Constants and configuration keys are written in UPPERCASE when they represent values that should not change.
+  - Dictionaries used as simple data stores (for example ``project_vars``, ``session_vars``, ``user_level``) use descriptive, English keys in lowercase.
+
+- **Signals and slots**
+
+  - Qt signal handlers are usually named after the action they perform (``_set_signals()``, ``_unset_signals()``, ``_project_read()``), and are grouped in regions in the source code for clarity.
+
+Global Variables
+----------------
+
+Global state is centralized in ``global_vars.py``.
+
+- All globally shared objects (QGIS interfaces, parsers, loggers, data access objects, etc.) are defined once in ``global_vars`` and are initialized through helper functions such as ``init_global()`` or ``init_plugin_settings()``.
+- Other modules import ``global_vars`` instead of defining their own global singletons. This keeps the plugin's state in one predictable place and makes it easier to reset or reload the plugin during development.
+
+Configuration Handling
+----------------------
+
+Configuration files are read and written using helper functions in ``core.utils.tools_dr``.
+
+- The plugin distinguishes between **user configuration** (stored under the user folder, e.g. ``C:\Users\<USER>\AppData\Roaming\QGIS\<VERSION>\profiles\<PROFILE>\python\plugins\<IBERGIS_FOLDER>\config\user_params.config``) and **project configuration** (stored in project files).
+- Convenience functions such as ``get_config_parser()`` and ``set_config_parser()`` hide the details of the underlying ``configparser.ConfigParser`` objects and automatically manage prefixes by project type when needed.
+
+Error Handling and Logging
+--------------------------
+
+The plugin uses a combination of message boxes (via ``tools_qt``) and log files (via ``tools_log``) to report problems.
+
+- Exceptions are usually caught and wrapped with informative messages, including the name of the function that failed and the original exception text.
+- Long-running tasks running in threads write to the log so that users and developers can diagnose problems after the fact.
+
+Threaded Operations
+-------------------
+
+Modules under ``core/threads/`` implement threaded operations using Qt's threading facilities.
+
+- Thread instances are tracked in ``global_vars.session_vars['threads']`` so that they can be cleaned up when the plugin is unloaded or reset.
+- UI updates from threads are performed using Qt signals to avoid manipulating widgets from outside the main GUI thread.
+
+Working with QGIS and Qt
+========================
+
+Integration with QGIS
+---------------------
+
+- The main class in ``main.py`` (``Drain``) receives the QGIS interface object (``iface``) and stores it in ``global_vars``.
+- Standard QGIS plugin hooks are implemented:
+
+  - ``initGui()``: Creates menus, toolbars and connects signals.
+  - ``unload()``: Removes actions, disconnects signals and closes open dialogs and dock widgets.
+
+- QGIS Processing providers are registered and unregistered using ``QgsApplication.processingRegistry()`` in helper methods such as ``_initProcessing()`` and ``_initProcessingMesh()``.
+
+Qt Widgets and Dialogs
+----------------------
+
+- All large dialogs and dock widgets are defined in ``.ui`` files under ``core/ui/`` and loaded using helper classes (for example ``DrDialog``, ``DrMainWindow``, ``DrDocker``).
+- The plugin remembers user preferences such as dialog size and position using the configuration helpers. Functions like ``load_settings()`` and ``save_settings()`` in ``core.utils.tools_dr`` encapsulate this behaviour.
+
+Adding New Code
+===============
+
+When adding new Python code to IberGIS, it is recommended to:
+
+1. Place the new module in the most appropriate package (``core``, ``lib``, ``core/utils``, etc.), following the existing structure.
+2. Follow the naming and style conventions described above.
+3. Keep line length under 120 characters, and only use ``# noqa`` markers when absolutely necessary.
+4. Reuse existing helpers in ``lib`` and ``core/utils`` instead of duplicating logic.
+5. Ensure that any new global state is added to ``global_vars`` and initialized from a single place.
+6. If the new code adds user-visible behaviour, create or update the corresponding ``.ui`` forms and connect them through the appropriate manager modules.

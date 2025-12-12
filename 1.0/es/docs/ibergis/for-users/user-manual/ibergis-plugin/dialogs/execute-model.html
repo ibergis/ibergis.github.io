@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" data-content_root="../../../../../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>8.2.4. Diálogo Ejecutar modelo &mdash; documentación de IberGIS Documentation - </title>
+      <link rel="stylesheet" type="text/css" href="../../../../../../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../../../../../../_static/css/ibergis_docs.css?v=3f46d377" />
+      <link rel="stylesheet" type="text/css" href="../../../../../../_static/togglebutton.css?v=13237357" />
+      <link rel="stylesheet" type="text/css" href="../../../../../../_static/copybutton.css?v=76b2166b" />
+
+  
+    <link rel="shortcut icon" href="../../../../../../_static/logo.png"/>
+    <link rel="canonical" href="https://ibergis.github.io/testing/en/docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/execute-model.html" />
+  <!--[if lt IE 9]>
+    <script src="../../../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../../../../_static/documentation_options.js?v=e2bb6099"></script>
+        <script src="../../../../../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../../../../../_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="../../../../../../_static/copybutton.js?v=f281be69"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../../../../../../_static/togglebutton.js?v=4a39c7ea"></script>
+        <script src="../../../../../../_static/translations.js?v=d190bf04"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../../../../../../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../../../../../../search.html" />
+    <link rel="next" title="8.2.5. Diálogo Resultados" href="results.html" />
+    <link rel="prev" title="8.2.3. Diálogo Gestor de mallas" href="mesh-manager.html" />
+<meta
+	name="description"
+	content="IberGIS 1.0 documentation: 8.2.4. Diálogo Ejecutar modelo"
+/>
+</head>
+
+<body class="wy-body-for-nav">
+
+<nav class="release_status_topbar">
+</nav>
+
+  
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" > 
+
+          
+          
+          <a href="../../../../../index.html" class="icon icon-home">
+            IberGIS Documentation
+              <img src="../../../../../../_static/logo.png" class="logo" alt="Logotipo"/>
+          </a>
+              <div class="version">
+                1.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Buscar documentos" aria-label="Buscar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+<a href="../../../../../../genindex.html">Índice</a>
+
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">PARA USUARIOS</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Manual de Usuario de IberGIS</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../introduction.html">1. Introducción</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../what-is-ibergis.html">2. ¿Qué es IberGIS?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../installation.html">3. Instalación</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../empty-schema.html">4. Crear un esquema de IberGIS vacío</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../sample-schema.html">5. Crear un esquema de IberGIS de ejemplo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../update-gpkg.html">6. Actualizar un GeoPackage de IberGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../toc.html">7. Tabla de Contenidos (ToC)</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../ibergis-plugin.html">8. Plugin de IberGIS</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../ibergis-plugin.html#toolbar-main">8.1. Barra de herramientas <em>Principal</em></a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../ibergis-plugin.html#toolbar-utilities">8.2. Barra de herramientas <em>Utilidades</em></a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="go2iber-options.html">8.2.1. Diálogo Opciones Go2Iber</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generate-inp.html">8.2.2. Diálogo Generar INP</a></li>
+<li class="toctree-l4"><a class="reference internal" href="mesh-manager.html">8.2.3. Diálogo Gestor de mallas</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">8.2.4. Diálogo Ejecutar modelo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="results.html">8.2.5. Diálogo Resultados</a></li>
+<li class="toctree-l4"><a class="reference internal" href="check-project.html">8.2.6. Diálogo Verificar proyecto</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../ibergis-toolbox.html">9. Caja de herramientas de IberGIS</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">PARA DESARROLLADORES</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../for-developers/developer-manual/index.html">Manual de Desarrollador de IberGIS</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">PARA ADMINISTRADORES</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../for-admins/index.html">Documentación para Administradores</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../../index.html">IberGIS Documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">Manual de Usuario de IberGIS</a></li>
+          <li class="breadcrumb-item"><a href="../ibergis-plugin.html"><span class="section-number">8. </span>Plugin de IberGIS</a></li>
+      <li class="breadcrumb-item active"><span class="section-number">8.2.4. </span>Diálogo Ejecutar modelo</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/IberGIS/IberGIS-Documentation/blob/master/docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/execute-model.rst" class="fa fa-github"> Editar en GitHub</a>
+      </li>
+  </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="Sequential page navigation">
+        <a href="mesh-manager.html" class="btn btn-neutral float-left" title="8.2.3. Diálogo Gestor de mallas" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="results.html" class="btn btn-neutral float-right" title="8.2.5. Diálogo Resultados" accesskey="n">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+  </div>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="dialog-execute-model">
+<span id="id1"></span><h1><span class="section-number">8.2.4. </span>Diálogo Ejecutar modelo<a class="headerlink" href="#dialog-execute-model" title="Link to this heading"></a></h1>
+<figure class="align-default" id="id2">
+<img alt="../../../../../../_images/execute-model.png" src="../../../../../../_images/execute-model.png" />
+<figcaption>
+<p><span class="caption-number">Figura 8.27 </span><span class="caption-text">Ejecutar modelo.</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Herramienta para ejecutar las simulaciones. Debemos especificar la malla que queremos usar y la carpeta para guardarla. Al hacer clic en el botón <em>Opciones</em>, podemos acceder al panel <em>Go2Iber-options</em>, donde podemos configurar cualquier ajuste de simulación restante. Al marcar la casilla <em>Generar COG</em>, se generarán archivos <em>Cloud Optimized GeoTIFF</em> adicionales. La pestaña <em>Info Log</em> mostrará los pasos que el proceso está realizando en tiempo real y toda la información sobre los resultados.</p>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pie de página">
+        <a href="mesh-manager.html" class="btn btn-neutral float-left" title="8.2.3. Diálogo Gestor de mallas" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="results.html" class="btn btn-neutral float-right" title="8.2.5. Diálogo Resultados" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Derechos de autor 2025, IberGIS.
+      <span class="lastupdated">Actualizado por última vez en 2025 dic 12, 12:18 +0100.
+      </span></p>
+  </div>
+
+  Compilado con <a href="https://www.sphinx-doc.org/">Sphinx</a> usando un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    proporcionado por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div
+	class="rst-versions"
+	data-toggle="rst-versions"
+	role="note"
+	aria-label="versions"
+>
+	<span class="rst-current-version" data-toggle="rst-current-version">
+		<span class="fa fa-info-circle"> IberGIS Documentation </span>
+		v: 1.0
+		<span class="fa fa-caret-down"></span>
+	</span>
+
+	<div class="rst-other-versions">
+		<dl>
+			<dt>Idiomas</dt>
+			
+			<dd><a href="https://ibergis.github.io/1.0/en/docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/execute-model.html">en</a></dd>
+			
+			<dd><a href="https://ibergis.github.io/1.0/es/docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/execute-model.html">es</a></dd>
+			
+		</dl>
+
+		<dl>
+			<dt>Versiones</dt>
+			
+			<dd>
+				<a href="https://ibergis.github.io/1.0/es/docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/execute-model.html">1.0</a>
+			</dd>
+			
+		</dl>
+
+		
+	</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

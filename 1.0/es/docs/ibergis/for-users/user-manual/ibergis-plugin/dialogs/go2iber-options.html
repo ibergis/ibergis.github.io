@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" data-content_root="../../../../../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>8.2.1. Diálogo Opciones Go2Iber &mdash; documentación de IberGIS Documentation - </title>
+      <link rel="stylesheet" type="text/css" href="../../../../../../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../../../../../../_static/css/ibergis_docs.css?v=3f46d377" />
+      <link rel="stylesheet" type="text/css" href="../../../../../../_static/togglebutton.css?v=13237357" />
+      <link rel="stylesheet" type="text/css" href="../../../../../../_static/copybutton.css?v=76b2166b" />
+
+  
+    <link rel="shortcut icon" href="../../../../../../_static/logo.png"/>
+    <link rel="canonical" href="https://ibergis.github.io/testing/en/docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.html" />
+  <!--[if lt IE 9]>
+    <script src="../../../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../../../../_static/documentation_options.js?v=e2bb6099"></script>
+        <script src="../../../../../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../../../../../_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="../../../../../../_static/copybutton.js?v=f281be69"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../../../../../../_static/togglebutton.js?v=4a39c7ea"></script>
+        <script src="../../../../../../_static/translations.js?v=d190bf04"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../../../../../../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../../../../../../search.html" />
+    <link rel="next" title="8.2.2. Diálogo Generar INP" href="generate-inp.html" />
+    <link rel="prev" title="8.1.5. Diálogo Acciones de Puente" href="bridge-actions.html" />
+<meta
+	name="description"
+	content="IberGIS 1.0 documentation: 8.2.1. Diálogo Opciones Go2Iber"
+/>
+</head>
+
+<body class="wy-body-for-nav">
+
+<nav class="release_status_topbar">
+</nav>
+
+  
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" > 
+
+          
+          
+          <a href="../../../../../index.html" class="icon icon-home">
+            IberGIS Documentation
+              <img src="../../../../../../_static/logo.png" class="logo" alt="Logotipo"/>
+          </a>
+              <div class="version">
+                1.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Buscar documentos" aria-label="Buscar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+<a href="../../../../../../genindex.html">Índice</a>
+
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">PARA USUARIOS</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Manual de Usuario de IberGIS</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../introduction.html">1. Introducción</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../what-is-ibergis.html">2. ¿Qué es IberGIS?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../installation.html">3. Instalación</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../empty-schema.html">4. Crear un esquema de IberGIS vacío</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../sample-schema.html">5. Crear un esquema de IberGIS de ejemplo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../update-gpkg.html">6. Actualizar un GeoPackage de IberGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../toc.html">7. Tabla de Contenidos (ToC)</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../ibergis-plugin.html">8. Plugin de IberGIS</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../ibergis-plugin.html#toolbar-main">8.1. Barra de herramientas <em>Principal</em></a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../ibergis-plugin.html#toolbar-utilities">8.2. Barra de herramientas <em>Utilidades</em></a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">8.2.1. Diálogo Opciones Go2Iber</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generate-inp.html">8.2.2. Diálogo Generar INP</a></li>
+<li class="toctree-l4"><a class="reference internal" href="mesh-manager.html">8.2.3. Diálogo Gestor de mallas</a></li>
+<li class="toctree-l4"><a class="reference internal" href="execute-model.html">8.2.4. Diálogo Ejecutar modelo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="results.html">8.2.5. Diálogo Resultados</a></li>
+<li class="toctree-l4"><a class="reference internal" href="check-project.html">8.2.6. Diálogo Verificar proyecto</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../ibergis-toolbox.html">9. Caja de herramientas de IberGIS</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">PARA DESARROLLADORES</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../for-developers/developer-manual/index.html">Manual de Desarrollador de IberGIS</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">PARA ADMINISTRADORES</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../for-admins/index.html">Documentación para Administradores</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../../index.html">IberGIS Documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">Manual de Usuario de IberGIS</a></li>
+          <li class="breadcrumb-item"><a href="../ibergis-plugin.html"><span class="section-number">8. </span>Plugin de IberGIS</a></li>
+      <li class="breadcrumb-item active"><span class="section-number">8.2.1. </span>Diálogo Opciones Go2Iber</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/IberGIS/IberGIS-Documentation/blob/master/docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst" class="fa fa-github"> Editar en GitHub</a>
+      </li>
+  </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="Sequential page navigation">
+        <a href="bridge-actions.html" class="btn btn-neutral float-left" title="8.1.5. Diálogo Acciones de Puente" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="generate-inp.html" class="btn btn-neutral float-right" title="8.2.2. Diálogo Generar INP" accesskey="n">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+  </div>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="dialog-go2iber-options">
+<span id="id1"></span><h1><span class="section-number">8.2.1. </span>Diálogo Opciones Go2Iber<a class="headerlink" href="#dialog-go2iber-options" title="Link to this heading"></a></h1>
+<nav class="contents local" id="contenido">
+<ul class="simple">
+<li><p><a class="reference internal" href="#tab-ibergis-options" id="id11">Pestaña OPCIONES DE IBERGIS</a></p></li>
+<li><p><a class="reference internal" href="#tab-swmm-options" id="id12">Pestaña OPCIONES DE SWMM</a></p></li>
+<li><p><a class="reference internal" href="#tab-swmm-results" id="id13">Pestaña RESULTADOS DE SWMM</a></p></li>
+<li><p><a class="reference internal" href="#tab-iber-options" id="id14">Pestaña OPCIONES DE IBER</a></p>
+<ul>
+<li><p><a class="reference internal" href="#numerical-scheme" id="id15">Esquema numérico</a></p></li>
+<li><p><a class="reference internal" href="#time-simulation-control" id="id16">Control de Tiempo y Simulación</a></p></li>
+<li><p><a class="reference internal" href="#hydrological-processes" id="id17">Procesos hidrológicos</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#tab-iber-results" id="id18">Pestaña RESULTADOS DE IBER</a></p>
+<ul>
+<li><p><a class="reference internal" href="#hydrodynamics" id="id19">Hidrodinámica</a></p></li>
+<li><p><a class="reference internal" href="#maximums" id="id20">Máximos</a></p></li>
+<li><p><a class="reference internal" href="#other-results" id="id21">Otros resultados</a></p></li>
+<li><p><a class="reference internal" href="#hazard" id="id22">Peligrosidad</a></p></li>
+<li><p><a class="reference internal" href="#raster-results" id="id23">Resultados ráster</a></p></li>
+<li><p><a class="reference internal" href="#raster-results-frame" id="id24">Marco de resultados ráster</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#tab-iber-plugins" id="id25">Pestaña PLUGINS DE IBER</a></p>
+<ul>
+<li><p><a class="reference internal" href="#tab-check-project" id="id26">Pestaña VERIFICAR PROYECTO</a></p></li>
+<li><p><a class="reference internal" href="#tab-raster-options" id="id27">Pestaña OPCIONES DE RÁSTER</a></p></li>
+<li><p><a class="reference internal" href="#raster-results-symbology-mode" id="id28">Modo de simbología de resultados ráster</a></p></li>
+<li><p><a class="reference internal" href="#raster-configuration-for-each-layer" id="id29">Configuración ráster para cada capa</a></p></li>
+</ul>
+</li>
+</ul>
+</nav>
+<p>Herramienta para gestionar todas las opciones involucradas en la simulación. Podemos gestionar las opciones de SWMM e Iber.</p>
+<section id="tab-ibergis-options">
+<h2><a class="toc-backref" href="#id11" role="doc-backlink"><span class="section-number">8.2.1.1. </span>Pestaña OPCIONES DE IBERGIS</a><a class="headerlink" href="#tab-ibergis-options" title="Link to this heading"></a></h2>
+<figure class="align-default" id="id3">
+<img alt="../../../../../../_images/ibergis-options.png" src="../../../../../../_images/ibergis-options.png" />
+<figcaption>
+<p><span class="caption-number">Figura 8.16 </span><span class="caption-text">Opciones de IBERGIS.</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<ul class="simple">
+<li><p><strong>Nombre del proyecto:</strong> nombre del proyecto actual.</p></li>
+<li><p><strong>Descripción:</strong> una breve descripción del proyecto.</p></li>
+<li><p><strong>Usuario:</strong> nombre del usuario o autor del proyecto.</p></li>
+<li><p><strong>Fecha de creación:</strong> fecha de creación del proyecto.</p></li>
+<li><p><strong>Versión:</strong> versión de IberGIS.</p></li>
+</ul>
+</section>
+<section id="tab-swmm-options">
+<h2><a class="toc-backref" href="#id12" role="doc-backlink"><span class="section-number">8.2.1.2. </span>Pestaña OPCIONES DE SWMM</a><a class="headerlink" href="#tab-swmm-options" title="Link to this heading"></a></h2>
+<figure class="align-default" id="id4">
+<img alt="../../../../../../_images/swmm-options.png" src="../../../../../../_images/swmm-options.png" />
+<figcaption>
+<p><span class="caption-number">Figura 8.17 </span><span class="caption-text">Opciones de SWMM.</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Las siguientes opciones están disponibles:</p>
+<ul class="simple">
+<li><p><strong>Omitir estado estacionario:</strong> permite omitir la fase estacionaria al comienzo de la simulación hidráulica. El valor predeterminado es NO.</p></li>
+<li><p><strong>Permitir encharcamiento:</strong> determina si se permite que el agua en exceso se acumule sobre los nodos y se reintroduzca en el sistema cuando las condiciones lo permitan. El valor predeterminado es SÍ. Para que el encharcamiento realmente ocurra en un nodo particular, <strong>debe usarse un valor distinto de cero para su atributo de área encharcada</strong> (campo <em>apond</em> en la capa Junction).</p></li>
+<li><p><strong>Pendiente mínima:</strong> valor mínimo permitido para la pendiente de un conducto (%). Si es cero (el valor predeterminado) entonces no se impone ningún mínimo (aunque SWMM usa un límite inferior de caída de elevación de 0.00035 m al calcular la pendiente de un conducto).</p></li>
+<li><p><strong>Unidades de flujo:</strong> permite elegir las unidades de flujo. El valor predeterminado es CMS.</p></li>
+<li><p><strong>Enrutamiento de flujo:</strong> permite elegir qué método se usa para enrutar flujos a través del sistema de drenaje. El valor predeterminado es DYNWAVE.</p></li>
+<li><p><strong>Desplazamientos de enlace:</strong> determina la convención usada para especificar la posición de un desplazamiento de enlace sobre la cota inferior de su nodo de conexión. DEPTH indica que los desplazamientos se expresan como la distancia entre la cota inferior del nodo y el enlace, mientras que ELEVATION indica que se usa la elevación absoluta del desplazamiento. El valor predeterminado es ELEVATION.</p></li>
+<li><p><strong>Ignorar agua subterránea:</strong> permite elegir si los cálculos de agua subterránea deben ignorarse cuando un archivo de proyecto contiene objetos acuíferos. El valor predeterminado es NO.</p></li>
+<li><p><strong>Ignorar precipitación:</strong> permite elegir si todos los datos de precipitación y cálculos de escorrentía deben ignorarse. Si se establece en SÍ, SWMM solo realiza enrutamiento de flujo y contaminantes basado en entradas directas y de clima seco proporcionadas por el usuario. El valor predeterminado es NO.</p></li>
+<li><p><strong>Ignorar enrutamiento:</strong> permite elegir si solo debe calcularse la escorrentía incluso si el proyecto contiene enlaces y nodos del sistema de drenaje. El valor predeterminado es NO.</p></li>
+<li><p><strong>Ignorar deshielo:</strong> permite elegir si los cálculos de deshielo deben ignorarse cuando un archivo de proyecto contiene objetos de paquete de nieve. El valor predeterminado es NO.</p></li>
+<li><p><strong>Ignorar calidad:</strong> permite elegir si el lavado de contaminantes, enrutamiento y tratamiento deben ignorarse en un proyecto que tiene contaminantes definidos. El valor predeterminado es NO.</p></li>
+<li><p><strong>Ecuación de conducción forzada:</strong> establece si se usará la ecuación de Hazen-Williams (H-W) o la de Darcy-Weisbach (D-W) para calcular las pérdidas por fricción para flujo presurizado en conductos que tienen asignada una forma de sección transversal circular de conducción forzada. El valor predeterminado es H-W.</p></li>
+<li><p><strong>Amortiguamiento inercial:</strong> indica cómo se manejarán los términos inerciales en la ecuación de momento de Saint Venant bajo enrutamiento de onda dinámica. Elegir NONE (el valor predeterminado) mantiene estos términos en su valor completo bajo todas las condiciones. Seleccionar PARTIAL reducirá los términos a medida que el flujo se acerca a ser crítico (y los ignora cuando el flujo es supercrítico). Elegir FULL eliminará los términos por completo.</p></li>
+<li><p><strong>Tolerancia de flujo lateral:</strong> diferencia porcentual máxima entre la entrada lateral actual y la anterior en todos los nodos del sistema de conducción para que la opción <em>Omitir estado estacionario</em> surta efecto. El valor predeterminado es 5 por ciento.</p></li>
+<li><p><strong>Paso de alargamiento:</strong> paso de tiempo, en segundos, usado para alargar conductos bajo enrutamiento de onda dinámica, de modo que cumplan el criterio de estabilidad de Courant bajo condiciones de flujo completo (es decir, el tiempo de viaje de una onda no será menor que el paso de tiempo de alargamiento de conducto especificado). A medida que este valor disminuye, menos conductos requerirán alargamiento. Un valor de 0 significa que no se alargarán conductos. El valor predeterminado es 1.</p></li>
+<li><p><strong>Paso húmedo:</strong> longitud de paso de tiempo usada para calcular la escorrentía de subcuencas durante períodos de lluvia o cuando el agua encharcada aún permanece en la superficie. El valor predeterminado es 00:05:00.</p></li>
+<li><p><strong>Inicio de barrido:</strong> día del año (mes/día) cuando comienzan las operaciones de barrido de calles. El valor predeterminado es 01/01.</p></li>
+<li><p><strong>Fin de barrido:</strong> día del año (mes/día) cuando terminan las operaciones de barrido de calles. El valor predeterminado es 12/31.</p></li>
+<li><p><strong>Paso variable:</strong> factor de seguridad aplicado a un paso de tiempo variable calculado para cada período de tiempo bajo enrutamiento de onda dinámica. El paso de tiempo variable se calcula para satisfacer el criterio de estabilidad de Courant para cada conducto y aún así no exceder el valor de <em>Paso de enrutamiento</em>. Si el factor de seguridad es 0, entonces no se usa paso de tiempo variable. El valor predeterminado es 0.75.</p></li>
+<li><p><strong>Flujo normal limitado:</strong> especifica qué condición se verifica para determinar si el flujo en un conducto es supercrítico y por lo tanto debe limitarse al flujo normal. Use SLOPE para verificar si la pendiente de la superficie del agua es mayor que la pendiente del conducto, FROUDE para verificar si el número de Froude es mayor que 1 o BOTH para verificar ambas condiciones. El valor predeterminado es BOTH.</p></li>
+<li><p><strong>Área superficial mínima:</strong> área superficial mínima usada en los nodos al calcular cambios en la profundidad del agua bajo enrutamiento de onda dinámica. Si se ingresa 0, entonces se usa el valor predeterminado de 1.167 m² (es decir, el área de un pozo de inspección de 1,2192 m de diámetro).</p></li>
+<li><p><strong>Días secos:</strong> número de días sin lluvia antes del inicio de la simulación. El valor predeterminado es 10.</p></li>
+<li><p><strong>Paso seco:</strong> longitud de paso de tiempo usada para cálculos de escorrentía (que consiste esencialmente en acumulación de contaminantes) durante períodos cuando no hay lluvia ni agua encharcada. El valor predeterminado es 1:00:00.</p></li>
+<li><p><strong>Tolerancia de carga:</strong> diferencia en la carga calculada en cada nodo entre intentos sucesivos por debajo de la cual se asume que la solución de flujo para el paso de tiempo actual ha convergido. La tolerancia predeterminada es 0.</p></li>
+<li><p><strong>Intentos máximos:</strong> número máximo de intentos permitidos durante un paso de tiempo para alcanzar convergencia al actualizar las cargas hidráulicas en los nodos del sistema de conducción. El valor predeterminado es 0.</p></li>
+<li><p><strong>Tolerancia de flujo del sistema:</strong> diferencia porcentual máxima entre la entrada total del sistema y la salida total del sistema que puede ocurrir para que la opción <em>Omitir estado estacionario</em> surta efecto. El valor predeterminado es 5 por ciento.</p></li>
+<li><p><strong>Hilos:</strong> número de hilos de computación paralela a usar para enrutamiento de flujo de onda dinámica en máquinas equipadas con procesadores multinúcleo. El valor predeterminado es 1.</p></li>
+<li><p><strong>Paso mínimo:</strong> el paso de tiempo más pequeño permitido cuando se usan pasos de tiempo variables para enrutamiento de flujo de onda dinámica. El valor predeterminado es 0.5.</p></li>
+<li><p><strong>Paso de enrutamiento:</strong> longitud de paso de tiempo en segundos usada para enrutar flujos y constituyentes de calidad del agua a través del sistema de conducción. Esto puede aumentarse si no se usa enrutamiento de onda dinámica. El valor predeterminado es 00:00:02.</p></li>
+<li><p><strong>Fecha de inicio:</strong> la fecha cuando comienza la simulación. Si no se proporciona, se usa la fecha 01/01/2017.</p></li>
+<li><p><strong>Fecha de fin:</strong> la fecha cuando debe terminar la simulación. El valor predeterminado es la fecha de inicio.</p></li>
+<li><p><strong>Fecha de inicio de informe:</strong> la fecha cuando debe comenzar el informe de resultados. El valor predeterminado es la fecha de inicio de la simulación.</p></li>
+<li><p><strong>Paso de informe:</strong> intervalo de tiempo para informar resultados calculados. El valor predeterminado es 00:05:00.</p></li>
+<li><p><strong>Hora de inicio:</strong> hora del día en la fecha de inicio cuando comienza la simulación. El valor predeterminado es 00:00:00.</p></li>
+<li><p><strong>Hora de fin:</strong> hora del día en la fecha de finalización cuando terminará la simulación. El valor predeterminado es 03:00:00.</p></li>
+<li><p><strong>Hora de inicio de informe:</strong> hora del día en la fecha de inicio del informe cuando debe comenzar el informe. El valor predeterminado es la hora de inicio de la simulación.</p></li>
+</ul>
+</section>
+<section id="tab-swmm-results">
+<h2><a class="toc-backref" href="#id13" role="doc-backlink"><span class="section-number">8.2.1.3. </span>Pestaña RESULTADOS DE SWMM</a><a class="headerlink" href="#tab-swmm-results" title="Link to this heading"></a></h2>
+<figure class="align-default" id="id5">
+<img alt="../../../../../../_images/swmm-results.png" src="../../../../../../_images/swmm-results.png" />
+<figcaption>
+<p><span class="caption-number">Figura 8.18 </span><span class="caption-text">Resultados de SWMM.</span><a class="headerlink" href="#id5" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Las siguientes opciones están disponibles:</p>
+<ul class="simple">
+<li><p><strong>Continuidad:</strong> especifica si las verificaciones de continuidad deben reportarse o no. El valor predeterminado es SÍ.</p></li>
+<li><p><strong>Estadísticas de flujo:</strong> especifica si las estadísticas resumidas de flujo deben reportarse o no. El valor predeterminado es SÍ.</p></li>
+<li><p><strong>Controles:</strong> especifica si todas las acciones de control tomadas durante una simulación deben listarse o no. El valor predeterminado es SÍ.</p></li>
+<li><p><strong>Entrada:</strong> especifica si debe proporcionarse o no un resumen de los datos de entrada en el informe de salida. El valor predeterminado es NO.</p></li>
+<li><p><strong>Subcuencas detalladas por paso de tiempo:</strong> lista de subcuencas cuyos resultados deben reportarse. El valor predeterminado está en blanco.</p></li>
+<li><p><strong>Nodos detallados por paso de tiempo I y II:</strong> lista de nodos cuyos resultados deben reportarse. El valor predeterminado está en blanco. Se puede escribir un máximo de 40 nodos en cada uno de ellos.</p></li>
+<li><p><strong>Enlaces detallados por paso de tiempo:</strong> lista de enlaces cuyos resultados deben reportarse. El valor predeterminado está en blanco.</p></li>
+</ul>
+</section>
+<section id="tab-iber-options">
+<h2><a class="toc-backref" href="#id14" role="doc-backlink"><span class="section-number">8.2.1.4. </span>Pestaña OPCIONES DE IBER</a><a class="headerlink" href="#tab-iber-options" title="Link to this heading"></a></h2>
+<figure class="align-default" id="id6">
+<img alt="../../../../../../_images/iber-options.png" src="../../../../../../_images/iber-options.png" />
+<figcaption>
+<p><span class="caption-number">Figura 8.19 </span><span class="caption-text">Opciones de Iber.</span><a class="headerlink" href="#id6" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Las siguientes opciones están disponibles:</p>
+<section id="numerical-scheme">
+<h3><a class="toc-backref" href="#id15" role="doc-backlink">Esquema numérico</a><a class="headerlink" href="#numerical-scheme" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p><strong>Esquema numérico:</strong> define el esquema numérico para las ecuaciones de Saint-Venant usadas en el cálculo del flujo superficial. Las opciones disponibles son <em>1er Orden</em>, <em>2do Orden</em>, <em>DHD</em> y <em>DHD Basin</em>. El valor predeterminado es <em>DHD</em>.</p></li>
+<li><p><strong>CFL:</strong> condición de Courant-Friedrichs-Lewy. El usuario debe establecer el valor. Si se establece un valor muy alto, el tiempo de cálculo se reducirá, pero pueden surgir problemas de convergencia en la solución de las ecuaciones. Un valor de 0.45 puede considerarse apropiado como punto de partida, y puede reducirse a 0.3 si se observan problemas de convergencia.</p></li>
+<li><p><strong>Incremento de tiempo máximo:</strong> establece el valor máximo del paso de tiempo usado por el programa para integrar las ecuaciones de flujo. Este es un valor máximo. En la práctica, el paso de tiempo usado durante la simulación será el mínimo entre este valor y el calculado basándose en la condición CFL. El valor predeterminado es 1.</p></li>
+<li><p><strong>Límite húmedo-seco:</strong> este es el umbral de profundidad por encima del cual un elemento se considera húmedo. Por debajo de este valor, el elemento se considera seco, y por lo tanto no se realizan cálculos en él, a menos que se moje. Mientras que en ingeniería de ríos, un umbral de 0.01 m es generalmente razonable, en algunos casos este valor podría reducirse hasta 0.001 m. El valor predeterminado es 0.0001.</p></li>
+<li><p><strong>Viscosidad molecular:</strong> coeficiente de viscosidad molecular aplicado al flujo para representar efectos de difusión numérica. El valor predeterminado es 0.000001.</p></li>
+</ul>
+<div class="admonition important">
+<p class="admonition-title">Importante</p>
+<p>Los esquemas DHD y DHD Basin no deben usarse para simulaciones hidráulicas</p>
+</div>
+</section>
+<section id="time-simulation-control">
+<h3><a class="toc-backref" href="#id16" role="doc-backlink">Control de Tiempo y Simulación</a><a class="headerlink" href="#time-simulation-control" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p><strong>Intervalo de tiempo de resultados 2D:</strong> intervalo de tiempo, en segundos, que define cada cuánto se guarda un resultado 2D durante la simulación. Esto debe coincidir con el valor de <em>Paso de informe</em>. El valor predeterminado es 300.</p></li>
+<li><p><strong>Intervalo de tiempo de series temporales:</strong> intervalo de tiempo, en segundos, entre registros de datos en las series temporales. Si no está definido o es mayor que el <em>Intervalo de tiempo de resultado 2D</em>, se usa ese valor. El valor predeterminado es 300.</p></li>
+</ul>
+</section>
+<section id="hydrological-processes">
+<h3><a class="toc-backref" href="#id17" role="doc-backlink">Procesos hidrológicos</a><a class="headerlink" href="#hydrological-processes" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p><strong>Tiempo de inicio:</strong> tiempo de inicio de la simulación, en segundos. El valor predeterminado es 0.</p></li>
+<li><p><strong>Precipitación:</strong> selecciona el tipo de precipitación aplicada en el modelo. Las opciones disponibles son <em>Hietograma</em>, <em>Ráster</em> y <em>Sin lluvia</em>. El valor predeterminado es <em>Sin lluvia</em>.</p></li>
+<li><p><strong>Establecer ráster de precipitación:</strong> permite elegir entre los rásters de precipitación definidos.</p></li>
+<li><p><strong>Método de pérdidas:</strong> método usado para calcular pérdidas por infiltración. El valor predeterminado es <em>SCS</em>.</p></li>
+<li><p><strong>Multiplicador CN:</strong> factor multiplicador aplicado al Número de Curva para ajustar las pérdidas de escorrentía. El valor predeterminado es 1.</p></li>
+<li><p><strong>Ia:</strong> abstracción inicial. Relación de almacenamiento antes del inicio del flujo. El valor predeterminado es 0.2.</p></li>
+</ul>
+</section>
+</section>
+<section id="tab-iber-results">
+<h2><a class="toc-backref" href="#id18" role="doc-backlink"><span class="section-number">8.2.1.5. </span>Pestaña RESULTADOS DE IBER</a><a class="headerlink" href="#tab-iber-results" title="Link to this heading"></a></h2>
+<figure class="align-default" id="id7">
+<img alt="../../../../../../_images/iber-results.png" src="../../../../../../_images/iber-results.png" />
+<figcaption>
+<p><span class="caption-number">Figura 8.20 </span><span class="caption-text">Resultados de Iber. En el caso de la figura anterior, se mostrarán los resultados de Profundidad y Velocidad.</span><a class="headerlink" href="#id7" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Las siguientes opciones están disponibles:</p>
+<section id="hydrodynamics">
+<h3><a class="toc-backref" href="#id19" role="doc-backlink">Hidrodinámica</a><a class="headerlink" href="#hydrodynamics" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p><strong>Profundidad:</strong> resultados de profundidad del agua, en metros, en cada celda de la malla a lo largo del tiempo.</p></li>
+<li><p><strong>Velocidad:</strong> resultado de velocidad del flujo, en m/s, en cada celda de la malla a lo largo del tiempo.</p></li>
+<li><p><strong>Caudal específico:</strong> resultado de caudal específico, en m²/s</p></li>
+<li><p><strong>Elevación del agua:</strong> resultado del nivel total del agua, en metros, la suma de la elevación del terreno más la profundidad del agua.</p></li>
+</ul>
+</section>
+<section id="maximums">
+<h3><a class="toc-backref" href="#id20" role="doc-backlink">Máximos</a><a class="headerlink" href="#maximums" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p><strong>Profundidad máxima:</strong> profundidad máxima del agua, en metros, alcanzada en cada celda durante la simulación.</p></li>
+<li><p><strong>Velocidad máxima:</strong> velocidad máxima del flujo, en m/s, alcanzada en cada celda durante la simulación.</p></li>
+<li><p><strong>Caudal específico máximo:</strong> caudal específico máximo, en m²/s, durante la simulación.</p></li>
+<li><p><strong>Elevación máxima del agua:</strong> nivel máximo total del agua, en metros, durante la simulación.</p></li>
+</ul>
+</section>
+<section id="other-results">
+<h3><a class="toc-backref" href="#id21" role="doc-backlink">Otros resultados</a><a class="headerlink" href="#other-results" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p><strong>Energía:</strong> representa la energía total del flujo, calculada como la suma del nivel del agua y la energía cinética.</p></li>
+<li><p><strong>Número de Froude:</strong> número de Froude que indica el régimen de flujo hidráulico: subcrítico (Fr&lt;1), crítico (Fr=1) o supercrítico (Fr&gt;1).</p></li>
+<li><p><strong>Paso de tiempo local:</strong> paso de tiempo local calculado según la condición de estabilidad de Courant-Friedrichs-Lewy (CFL).</p></li>
+<li><p><strong>Paso de tiempo local máximo:</strong> valor máximo permitido del paso de tiempo local en cada celda del modelo, que limita el incremento de tiempo calculado según la condición de Courant.</p></li>
+</ul>
+</section>
+<section id="hazard">
+<h3><a class="toc-backref" href="#id22" role="doc-backlink">Peligrosidad</a><a class="headerlink" href="#hazard" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p><strong>Peligrosidad RD9/2008:</strong> criterio de peligrosidad hidráulica definido por el Ministerio Español de Medio Ambiente, que clasifica el riesgo basándose en la profundidad del agua y la velocidad del flujo.</p></li>
+<li><p><strong>Peligrosidad ACA 2003:</strong> criterio de peligrosidad de la Agencia Catalana del Agua (2003), que clasifica zonas de riesgo basándose en la profundidad del agua y la velocidad del flujo.</p></li>
+<li><p><strong>Peatones:</strong> evalúa los peligros del flujo para peatones, considerando la profundidad y velocidad del agua como factores determinantes de la estabilidad (criterio UPC).</p></li>
+<li><p><strong>Vehículos:</strong> evalúa la seguridad de los vehículos contra el arrastre por corrientes, basándose en parámetros hidráulicos como la profundidad del agua y la velocidad del flujo (criterio australiano (Shand et al., 2011)).</p></li>
+</ul>
+</section>
+<section id="raster-results">
+<h3><a class="toc-backref" href="#id23" role="doc-backlink">Resultados ráster</a><a class="headerlink" href="#raster-results" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p><strong>Resultados ráster:</strong> método de interpolación para resultados ráster. Las opciones disponibles son <em>Interpolación lineal</em> e <em>Interpolación del vecino más cercano</em>. El valor predeterminado es <em>Interpolación lineal</em>.</p></li>
+<li><p><strong>Tamaño de celda:</strong> tamaño de celda de los rásters de salida, en metros. El valor predeterminado es 100.</p></li>
+<li><p><strong>Máximos al final:</strong> añade un paso de tiempo más al final de los rásters de resultado con los valores máximos obtenidos.</p></li>
+<li><p><strong>Usar marco ráster:</strong> permite delimitar el área geográfica donde se generarán los resultados ráster. Los parámetros se definen en el siguiente grupo, <em>Marco de resultados ráster</em>.</p></li>
+</ul>
+</section>
+<section id="raster-results-frame">
+<h3><a class="toc-backref" href="#id24" role="doc-backlink">Marco de resultados ráster</a><a class="headerlink" href="#raster-results-frame" title="Link to this heading"></a></h3>
+<p>Permite especificar las coordenadas del límite del ráster.</p>
+</section>
+</section>
+<section id="tab-iber-plugins">
+<h2><a class="toc-backref" href="#id25" role="doc-backlink"><span class="section-number">8.2.1.6. </span>Pestaña PLUGINS DE IBER</a><a class="headerlink" href="#tab-iber-plugins" title="Link to this heading"></a></h2>
+<figure class="align-default" id="id8">
+<img alt="../../../../../../_images/iber-plugins.png" src="../../../../../../_images/iber-plugins.png" />
+<figcaption>
+<p><span class="caption-number">Figura 8.21 </span><span class="caption-text">Plugins de Iber.</span><a class="headerlink" href="#id8" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Las siguientes opciones están disponibles:</p>
+<ul class="simple">
+<li><p><strong>Solo entradas o red completa:</strong> permite elegir si simular solo la escorrentía superficial (solo entradas) o incluir la red de drenaje completa (red completa). El valor predeterminado es <em>Red completa</em>.</p></li>
+<li><p><strong>Habilitar o deshabilitar pérdida de salida:</strong> habilita o deshabilita la consideración de pérdidas de energía en las salidas del modelo.</p></li>
+</ul>
+<section id="tab-check-project">
+<h3><a class="toc-backref" href="#id26" role="doc-backlink">Pestaña VERIFICAR PROYECTO</a><a class="headerlink" href="#tab-check-project" title="Link to this heading"></a></h3>
+<figure class="align-default" id="id9">
+<img alt="../../../../../../_images/check-project-tab.png" src="../../../../../../_images/check-project-tab.png" />
+<figcaption>
+<p><span class="caption-number">Figura 8.22 </span><span class="caption-text">Verificar proyecto.</span><a class="headerlink" href="#id9" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Establece valores máximos y mínimos que pueden incluirse o excluirse, para parámetros: manning, cellsize, sfactor, slope, street_vol, orifice_cd, roughness, mfactor, ufactor, outlet_vol y weir_cd.</p>
+</section>
+<section id="tab-raster-options">
+<h3><a class="toc-backref" href="#id27" role="doc-backlink">Pestaña OPCIONES DE RÁSTER</a><a class="headerlink" href="#tab-raster-options" title="Link to this heading"></a></h3>
+<figure class="align-default" id="id10">
+<img alt="../../../../../../_images/raster-options.png" src="../../../../../../_images/raster-options.png" />
+<figcaption>
+<p><span class="caption-number">Figura 8.23 </span><span class="caption-text">Opciones de ráster.</span><a class="headerlink" href="#id10" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Las siguientes opciones están disponibles:</p>
+</section>
+<section id="raster-results-symbology-mode">
+<h3><a class="toc-backref" href="#id28" role="doc-backlink">Modo de simbología de resultados ráster</a><a class="headerlink" href="#raster-results-symbology-mode" title="Link to this heading"></a></h3>
+<dl class="simple">
+<dt>Establece el modo de simbología de resultados ráster. Las opciones disponibles son:</dt><dd><ul class="simple">
+<li><p><strong>Mín/Máx por banda:</strong> ajusta automáticamente la escala de color para cada banda ráster individualmente usando los valores mínimo y máximo detectados dentro de esa banda.</p></li>
+<li><p><strong>Mín/Máx para todas las bandas:</strong> aplica una sola escala de color a todas las bandas ráster, usando los valores mínimo y máximo globales encontrados en todas las bandas.</p></li>
+<li><p><strong>Mín/Máx personalizado:</strong> usa valores mínimo y máximo personalizados definidos en <a class="reference internal" href="#raster-configuration-for-each-layer"><span class="std std-ref">Configuración ráster para cada capa</span></a> para todas las bandas ráster.</p></li>
+</ul>
+</dd>
+</dl>
+</section>
+<section id="raster-configuration-for-each-layer">
+<span id="id2"></span><h3><a class="toc-backref" href="#id29" role="doc-backlink">Configuración ráster para cada capa</a><a class="headerlink" href="#raster-configuration-for-each-layer" title="Link to this heading"></a></h3>
+<dl class="simple">
+<dt>Permite configurar los resultados ráster para cada capa. Las siguientes opciones están disponibles:</dt><dd><ul class="simple">
+<li><p><strong>Valores personalizados máximo y mínimo:</strong> establece los valores máximo y mínimo para los resultados ráster.</p></li>
+<li><p><strong>Rampa de color de simbología:</strong> establece la rampa de color de simbología.</p></li>
+<li><p><strong>Excluir valores para los parámetros:</strong> permite excluir valores para facilitar la configuración.</p></li>
+</ul>
+</dd>
+<dt>Las capas disponibles para configurar son:</dt><dd><ul class="simple">
+<li><p>Profundidad</p></li>
+<li><p>Velocidad</p></li>
+<li><p>Elevación del Agua</p></li>
+<li><p>Peligrosidad ACA</p></li>
+<li><p>Peligrosidad Grave RD9-2008</p></li>
+<li><p>Paso de Tiempo Local</p></li>
+<li><p>Caudal Específico X</p></li>
+<li><p>Caudal Específico Y</p></li>
+<li><p>Energía</p></li>
+<li><p>Froude</p></li>
+<li><p>Tasa de Infiltración</p></li>
+<li><p>Profundidad de Lluvia</p></li>
+<li><p>Velocidad X</p></li>
+<li><p>Velocidad Y</p></li>
+<li><p>Rendimiento del Agua</p></li>
+<li><p>Profundidad Máxima</p></li>
+<li><p>Velocidad Máxima</p></li>
+<li><p>Elevación Máxima del Agua</p></li>
+<li><p>Peligrosidad ACA Máxima</p></li>
+<li><p>Peligrosidad Grave RD9-2008 Máxima</p></li>
+<li><p>Paso de Tiempo Local Máximo</p></li>
+<li><p>Caudal Específico Máximo</p></li>
+</ul>
+</dd>
+</dl>
+<div class="admonition important">
+<p class="admonition-title">Importante</p>
+<p>La configuración de máximo y mínimo solo funcionará con el modo de simbología personalizado.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>La ejecución puede generar más rásters que los disponibles para configurar en este diálogo. También se importarán, pero con configuración predeterminada.</p>
+</div>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pie de página">
+        <a href="bridge-actions.html" class="btn btn-neutral float-left" title="8.1.5. Diálogo Acciones de Puente" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="generate-inp.html" class="btn btn-neutral float-right" title="8.2.2. Diálogo Generar INP" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Derechos de autor 2025, IberGIS.
+      <span class="lastupdated">Actualizado por última vez en 2025 dic 12, 12:18 +0100.
+      </span></p>
+  </div>
+
+  Compilado con <a href="https://www.sphinx-doc.org/">Sphinx</a> usando un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    proporcionado por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div
+	class="rst-versions"
+	data-toggle="rst-versions"
+	role="note"
+	aria-label="versions"
+>
+	<span class="rst-current-version" data-toggle="rst-current-version">
+		<span class="fa fa-info-circle"> IberGIS Documentation </span>
+		v: 1.0
+		<span class="fa fa-caret-down"></span>
+	</span>
+
+	<div class="rst-other-versions">
+		<dl>
+			<dt>Idiomas</dt>
+			
+			<dd><a href="https://ibergis.github.io/1.0/en/docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.html">en</a></dd>
+			
+			<dd><a href="https://ibergis.github.io/1.0/es/docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.html">es</a></dd>
+			
+		</dl>
+
+		<dl>
+			<dt>Versiones</dt>
+			
+			<dd>
+				<a href="https://ibergis.github.io/1.0/es/docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.html">1.0</a>
+			</dd>
+			
+		</dl>
+
+		
+	</div>
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
