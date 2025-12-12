@@ -2,18 +2,6 @@
 IberGIS Documentation |version|
 ===============================
 
-.. only:: testing
-
-  .. attention::  You are reading the testing version of the IberGIS documentation,
-    a work in progress that includes the latest changes in the software and may
-    document features not yet available or supported in IberGIS.
-
-.. only:: not testing
-
-  .. hint:: Looking for documentation for versions newer than
-    |version|? Check out the
-    `testing documentation <https://ibergis.github.io/testing/en/>`_.
-
 .. note:: IberGIS documentation is available in multiple languages and versions.
   Expand the :guilabel:`IberGIS Documentation` menu at the bottom of the
   sidebar to see the list.
