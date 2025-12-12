@@ -1,0 +1,785 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, IberGIS
+# This file is distributed under the same license as the IberGIS
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IberGIS Documentation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-10 14:07+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: es\n"
+"Language-Team: es <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:3
+msgid "Python Code"
+msgstr "Código Python"
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:10
+msgid ""
+"This section describes how the Python code of IberGIS is organized, and "
+"which coding rules are followed in the QGIS plugin implementation."
+msgstr ""
+"Esta sección describe cómo está organizado el código Python de IberGIS y "
+"qué reglas de codificación se siguen en la implementación del plugin QGIS."
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:13
+msgid "Plugin Location"
+msgstr "Ubicación del Plugin"
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:15
+msgid "The IberGIS QGIS plugin is installed in the user profile under::"
+msgstr "El plugin IberGIS de QGIS se instala en el perfil de usuario bajo::"
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:19
+msgid ""
+"In this documentation we will refer to this directory as the *plugin "
+"root*."
+msgstr ""
+"En esta documentación nos referiremos a este directorio como la *raíz del "
+"plugin*."
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:22
+msgid "Folder Structure"
+msgstr "Estructura de Carpetas"
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:24
+msgid "The most relevant sub-folders inside the plugin root are:"
+msgstr "Las subcarpetas más relevantes dentro de la raíz del plugin son:"
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:27
+msgid "Top-level"
+msgstr "Nivel Superior"
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:29
+msgid "**main.py**"
+msgstr ""
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:31
+msgid "Entry point for the QGIS plugin."
+msgstr "Punto de entrada para el plugin QGIS."
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:32
+msgid ""
+"Contains the main class (``Drain``) that QGIS instantiates and that "
+"connects the plugin to the QGIS interface."
+msgstr ""
+"Contiene la clase principal (``Drain``) que QGIS instancia y que "
+"conecta el plugin a la interfaz de QGIS."
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:33
+msgid ""
+"Implements methods such as ``initGui()`` and ``unload()`` which are "
+"called by QGIS to create menus, toolbars and clean them up."
+msgstr ""
+"Implementa métodos como ``initGui()`` y ``unload()`` que son "
+"llamados por QGIS para crear menús, barras de herramientas y limpiarlos."
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:35
+msgid "**global_vars.py**"
+msgstr ""
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:37
+msgid ""
+"Central module that stores global state used across the plugin (paths, "
+"QGIS interface instance, configuration objects, loggers, etc.)."
+msgstr ""
+"Módulo central que almacena el estado global utilizado en todo el plugin (rutas, "
+"instancia de interfaz QGIS, objetos de configuración, registradores, etc.)."
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:38
+msgid ""
+"Provides helper functions to initialize these globals when the plugin "
+"starts."
+msgstr ""
+"Proporciona funciones auxiliares para inicializar estas variables globales cuando el plugin "
+"inicia."
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:40
+msgid "**config/**"
+msgstr ""
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:42
+msgid ""
+"Contains default configuration files used by the plugin (for example "
+"``drain.config`` and ``user_params.config``)."
+msgstr ""
+"Contiene archivos de configuración predeterminados utilizados por el plugin (por ejemplo "
+"``drain.config`` y ``user_params.config``)."
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:43
+msgid ""
+"The values from these files are read by helper functions in "
+"``core.utils.tools_dr``."
+msgstr ""
+"Los valores de estos archivos son leídos por funciones auxiliares en "
+"``core.utils.tools_dr``."
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:45
+msgid "**dbmodel/**"
+msgstr ""
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:47
+msgid ""
+"Contains the SQL scripts used to create and update the GeoPackage "
+"database schema used by IberGIS projects."
+msgstr ""
+"Contiene los scripts SQL utilizados para crear y actualizar el esquema de "
+"base de datos GeoPackage utilizado por los proyectos IberGIS."
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:48
+msgid "This folder is described in detail in :doc:`dbmodel`."
+msgstr "Esta carpeta se describe en detalle en :doc:`dbmodel`."
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:50
+msgid "**resources/**"
+msgstr ""
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:52
+msgid ""
+"Contains auxiliary data used by the plugin: example projects, scripts, "
+"templates, result styles, etc."
+msgstr ""
+"Contiene datos auxiliares utilizados por el plugin: proyectos de ejemplo, scripts, "
+"plantillas, estilos de resultados, etc."
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:54
+msgid "**icons/** and **i18n/**"
+msgstr ""
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:56
+msgid "Store icons and translation files used by the user interface."
+msgstr "Almacena iconos y archivos de traducción utilizados por la interfaz de usuario."
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:59
+msgid "Core Package"
+msgstr "Paquete Core"
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:61
+msgid "**core/**"
+msgstr ""
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:63
+msgid ""
+"Contains most of the application logic that is specific to the IberGIS "
+"plugin."
+msgstr ""
+"Contiene la mayor parte de la lógica de aplicación específica del "
+"plugin IberGIS."
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:65
+msgid "Important sub-packages inside ``core/`` are:"
+msgstr "Los subpaquetes importantes dentro de ``core/`` son:"
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:67
+msgid "**core/admin/**"
+msgstr ""
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:69
+msgid ""
+"Administrative tools and dialogs (for example, database maintenance tools"
+" and project configuration wizards)."
+msgstr ""
+"Herramientas administrativas y diálogos (por ejemplo, herramientas de mantenimiento de base de datos"
+" y asistentes de configuración de proyectos)."
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:71
+msgid "**core/models/**"
+msgstr ""
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:73
+msgid ""
+"Python classes that represent higher-level domain objects used by the "
+"plugin (projects, layers, configuration models, etc.)."
+msgstr ""
+"Clases Python que representan objetos de dominio de alto nivel utilizados por el "
+"plugin (proyectos, capas, modelos de configuración, etc.)."
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:75
+msgid "**core/processing/**"
+msgstr ""
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:77
+msgid ""
+"QGIS Processing algorithms implemented by IberGIS. These are the tools "
+"that appear in the QGIS Processing Toolbox under the IberGIS groups."
+msgstr ""
+"Algoritmos de procesamiento QGIS implementados por IberGIS. Estas son las herramientas "
+"que aparecen en la caja de herramientas de procesamiento de QGIS bajo los grupos IberGIS."
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:78
+msgid ""
+"Each ``*.py`` file usually implements one algorithm and follows the "
+"standard QGIS Processing API."
+msgstr ""
+"Cada archivo ``*.py`` generalmente implementa un algoritmo y sigue la "
+"API estándar de procesamiento QGIS."
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:80
+msgid "**core/shared/**"
+msgstr ""
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:82
+msgid ""
+"Modules shared by different parts of the core plugin, for example common "
+"constants or helper classes."
+msgstr ""
+"Módulos compartidos por diferentes partes del plugin central, por ejemplo constantes comunes "
+"o clases auxiliares."
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:84
+msgid "**core/threads/**"
+msgstr ""
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:86
+msgid ""
+"Threaded tasks that perform long-running operations (imports, "
+"validations, simulations, etc.) without blocking the QGIS user interface."
+msgstr ""
+"Tareas en hilos que realizan operaciones de larga duración (importaciones, "
+"validaciones, simulaciones, etc.) sin bloquear la interfaz de usuario de QGIS."
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:88
+msgid "**core/toolbars/**"
+msgstr ""
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:90
+msgid ""
+"Code that builds and manages IberGIS toolbars and buttons in the QGIS "
+"user interface."
+msgstr ""
+"Código que construye y gestiona las barras de herramientas y botones de IberGIS en la "
+"interfaz de usuario de QGIS."
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:92
+msgid "**core/ui/**"
+msgstr ""
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:94
+msgid ""
+"``.ui`` files (Qt Designer) and Python wrappers used to construct dialogs"
+" and dock widgets."
+msgstr ""
+"Archivos ``.ui`` (Qt Designer) y envoltorios Python utilizados para construir diálogos"
+" y widgets acoplables."
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:95
+msgid "The ``ui_manager.py`` module helps to load and manage these forms."
+msgstr "El módulo ``ui_manager.py`` ayuda a cargar y gestionar estos formularios."
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:97
+msgid "**core/utils/**"
+msgstr ""
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:99
+msgid ""
+"Collection of utility modules used from many places in the plugin. "
+"Examples include configuration handling, signal management, time-series "
+"plotting and mesh generation helpers."
+msgstr ""
+"Colección de módulos de utilidad utilizados desde muchos lugares del plugin. "
+"Los ejemplos incluyen manejo de configuración, gestión de señales, gráficas de series temporales "
+"y ayudantes de generación de mallas."
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:102
+msgid "Lib Package"
+msgstr "Paquete Lib"
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:104
+msgid "**lib/**"
+msgstr ""
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:106
+msgid ""
+"Contains reusable helper modules that are not IberGIS-specific and can be"
+" considered a small support library on top of QGIS/PyQt."
+msgstr ""
+"Contiene módulos auxiliares reutilizables que no son específicos de IberGIS y pueden considerarse"
+" una pequeña biblioteca de soporte sobre QGIS/PyQt."
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:108
+msgid "Typical modules include:"
+msgstr "Los módulos típicos incluyen:"
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:110
+msgid "**tools_qgis.py:** Wrappers and helpers around QGIS API classes."
+msgstr "**tools_qgis.py:** Envolturas y ayudantes alrededor de las clases de la API de QGIS."
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:111
+msgid "**tools_qt.py:** Helpers for PyQt widgets and dialogs."
+msgstr "**tools_qt.py:** Ayudantes para widgets y diálogos de PyQt."
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:112
+msgid ""
+"**tools_db.py**, **tools_gpkgdao.py** and **tools_pgdao.py:** Data-access"
+" helpers for GeoPackage and PostgreSQL."
+msgstr ""
+"**tools_db.py**, **tools_gpkgdao.py** y **tools_pgdao.py:** Ayudantes de acceso a datos"
+" para GeoPackage y PostgreSQL."
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:113
+msgid "**tools_log.py:** Logging helpers used throughout the plugin."
+msgstr "**tools_log.py:** Ayudantes de registro utilizados en todo el plugin."
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:116
+msgid "Third-party Packages"
+msgstr "Paquetes de Terceros"
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:118
+msgid "**packages/**"
+msgstr ""
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:120
+msgid ""
+"Contains vendored third-party Python packages used by IberGIS (for "
+"example ``geopandas``, SWMM helpers, etc.)."
+msgstr ""
+"Contiene paquetes Python de terceros incluidos utilizados por IberGIS (por "
+"ejemplo ``geopandas``, ayudantes SWMM, etc.)."
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:121
+msgid ""
+"These packages are treated as external libraries and are not expected to "
+"follow IberGIS' internal style rules completely."
+msgstr ""
+"Estos paquetes se tratan como bibliotecas externas y no se espera que "
+"sigan completamente las reglas de estilo internas de IberGIS."
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:124
+msgid "Python Coding Rules"
+msgstr "Reglas de Codificación Python"
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:127
+msgid "General Style"
+msgstr "Estilo General"
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:129
+msgid ""
+"IberGIS follows a style that is largely compatible with `PEP 8 "
+"<https://www.python.org/dev/peps/pep-0008/>`_, with some adaptations to "
+"typical QGIS plugin needs."
+msgstr ""
+"IberGIS sigue un estilo que es ampliamente compatible con `PEP 8 "
+"<https://www.python.org/dev/peps/pep-0008/>`_, con algunas adaptaciones a "
+"las necesidades típicas de los plugins QGIS."
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:131
+msgid "**Line length**"
+msgstr ""
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:133
+msgid ""
+"The plugin uses ``flake8`` with a maximum line length of **120 "
+"characters**. This allows for typical QGIS API calls and long translation"
+" strings while still keeping code reasonably readable."
+msgstr ""
+"El plugin usa ``flake8`` con una longitud máxima de línea de **120 "
+"caracteres**. Esto permite llamadas típicas a la API de QGIS y cadenas de traducción largas"
+" mientras mantiene el código razonablemente legible."
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:134
+msgid ""
+"Long URLs or unavoidable long strings are explicitly marked with ``# "
+"noqa: E501`` when necessary."
+msgstr ""
+"Las URLs largas o cadenas largas inevitables se marcan explícitamente con ``# "
+"noqa: E501`` cuando es necesario."
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:136
+msgid "**Imports**"
+msgstr ""
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:138
+msgid ""
+"Standard library imports first, then third-party imports, and finally "
+"IberGIS/QGIS internal imports."
+msgstr ""
+"Primero las importaciones de biblioteca estándar, luego las importaciones de terceros y finalmente "
+"las importaciones internas de IberGIS/QGIS."
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:139
+msgid ""
+"Imports from the same package are usually grouped and ordered by module "
+"name."
+msgstr ""
+"Las importaciones del mismo paquete generalmente se agrupan y ordenan por nombre de "
+"módulo."
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:141
+msgid "**Indentation and spacing**"
+msgstr ""
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:143
+msgid "Four spaces per indentation level."
+msgstr "Cuatro espacios por nivel de indentación."
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:144
+msgid "No hard tab characters in the source code."
+msgstr "Sin caracteres de tabulación en el código fuente."
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:145
+msgid ""
+"Blank lines are used to separate logical sections (for example, imports, "
+"class definitions, and groups of related functions)."
+msgstr ""
+"Se utilizan líneas en blanco para separar secciones lógicas (por ejemplo, importaciones, "
+"definiciones de clases y grupos de funciones relacionadas)."
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:148
+msgid "Naming Conventions"
+msgstr "Convenciones de Nomenclatura"
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:150
+msgid ""
+"The naming conventions follow PEP 8 with some QGIS/Qt specific exceptions"
+" for signals and UI objects."
+msgstr ""
+"Las convenciones de nomenclatura siguen PEP 8 con algunas excepciones específicas de QGIS/Qt"
+" para señales y objetos de interfaz."
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:152
+msgid "**Modules and packages**"
+msgstr "Módulos y paquetes"
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:154
+msgid ""
+"Lowercase with underscores (``tools_dr.py``, ``tools_qgis.py``, "
+"``mesh_parser.py``)."
+msgstr ""
+"Minúsculas con guiones bajos (``tools_dr.py``, ``tools_qgis.py``, "
+"``mesh_parser.py``)."
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:156
+msgid "**Classes**"
+msgstr "Clases"
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:158
+msgid "CapWords / PascalCase (``Drain``, ``DrMenuLoad``, ``DrMainWindow``)."
+msgstr "CapWords / PascalCase (``Drain``, ``DrMenuLoad``, ``DrMainWindow``)."
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:159
+msgid ""
+"Many classes use the ``Dr`` prefix to indicate that they belong to the "
+"Drain/IberGIS plugin."
+msgstr ""
+"Muchas clases usan el prefijo ``Dr`` para indicar que pertenecen al "
+"plugin Drain/IberGIS."
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:161
+msgid "**Functions and methods**"
+msgstr "Funciones y métodos"
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:163
+msgid ""
+"Lowercase with words separated by underscores (``init_global``, "
+"``init_plugin_settings``, ``load_settings``, ``initialize_parsers``)."
+msgstr ""
+"Minúsculas con palabras separadas por guiones bajos (``init_global``, "
+"``init_plugin_settings``, ``load_settings``, ``initialize_parsers``)."
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:164
+msgid ""
+"Private or internal helpers start with a single underscore "
+"(``_init_plugin()``, ``_manage_buttons()``)."
+msgstr ""
+"Los ayudantes privados o internos comienzan con un guion bajo "
+"(``_init_plugin()``, ``_manage_buttons()``)."
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:166
+msgid "**Variables and attributes**"
+msgstr "Variables y atributos"
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:168
+msgid ""
+"Lowercase with underscores for local variables and instance attributes "
+"(``plugin_dir``, ``user_folder_dir``, ``project_loaded``)."
+msgstr ""
+"Minúsculas con guiones bajos para variables locales y atributos de instancia "
+"(``plugin_dir``, ``user_folder_dir``, ``project_loaded``)."
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:169
+msgid ""
+"Constants and configuration keys are written in UPPERCASE when they "
+"represent values that should not change."
+msgstr ""
+"Las constantes y claves de configuración se escriben en MAYÚSCULAS cuando "
+"representan valores que no deben cambiar."
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:170
+msgid ""
+"Dictionaries used as simple data stores (for example ``project_vars``, "
+"``session_vars``, ``user_level``) use descriptive, English keys in "
+"lowercase."
+msgstr ""
+"Los diccionarios utilizados como almacenes de datos simples (por ejemplo ``project_vars``, "
+"``session_vars``, ``user_level``) usan claves descriptivas en inglés en "
+"minúsculas."
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:172
+msgid "**Signals and slots**"
+msgstr "Señales y ranuras"
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:174
+msgid ""
+"Qt signal handlers are usually named after the action they perform "
+"(``_set_signals()``, ``_unset_signals()``, ``_project_read()``), and are "
+"grouped in regions in the source code for clarity."
+msgstr ""
+"Los manejadores de señales Qt generalmente se nombran según la acción que realizan "
+"(``_set_signals()``, ``_unset_signals()``, ``_project_read()``), y se "
+"agrupan en regiones en el código fuente para mayor claridad."
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:177
+msgid "Global Variables"
+msgstr "Variables Globales"
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:179
+msgid "Global state is centralized in ``global_vars.py``."
+msgstr "El estado global está centralizado en ``global_vars.py``."
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:181
+msgid ""
+"All globally shared objects (QGIS interfaces, parsers, loggers, data "
+"access objects, etc.) are defined once in ``global_vars`` and are "
+"initialized through helper functions such as ``init_global()`` or "
+"``init_plugin_settings()``."
+msgstr ""
+"Todos los objetos compartidos globalmente (interfaces QGIS, analizadores, registradores, objetos "
+"de acceso a datos, etc.) se definen una vez en ``global_vars`` y se "
+"inicializan mediante funciones auxiliares como ``init_global()`` o "
+"``init_plugin_settings()``."
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:182
+msgid ""
+"Other modules import ``global_vars`` instead of defining their own global"
+" singletons. This keeps the plugin's state in one predictable place and "
+"makes it easier to reset or reload the plugin during development."
+msgstr ""
+"Otros módulos importan ``global_vars`` en lugar de definir sus propios "
+"singletons globales. Esto mantiene el estado del plugin en un lugar predecible y "
+"facilita reiniciar o recargar el plugin durante el desarrollo."
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:185
+msgid "Configuration Handling"
+msgstr "Manejo de Configuración"
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:187
+msgid ""
+"Configuration files are read and written using helper functions in "
+"``core.utils.tools_dr``."
+msgstr ""
+"Los archivos de configuración se leen y escriben utilizando funciones auxiliares en "
+"``core.utils.tools_dr``."
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:189
+msgid ""
+"The plugin distinguishes between **user configuration** (stored under the"
+" user folder, e.g. "
+"``C:\\Users\\<USER>\\AppData\\Roaming\\QGIS\\<VERSION>\\profiles\\<PROFILE>\\python\\plugins\\<IBERGIS_FOLDER>\\config\\user_params.config``)"
+" and **project configuration** (stored in project files)."
+msgstr ""
+"El plugin distingue entre **configuración de usuario** (almacenada en la"
+" carpeta de usuario, por ejemplo "
+"``C:\\Users\\<USER>\\AppData\\Roaming\\QGIS\\<VERSION>\\profiles\\<PROFILE>\\python\\plugins\\<IBERGIS_FOLDER>\\config\\user_params.config``)"
+" y **configuración de proyecto** (almacenada en archivos de proyecto)."
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:190
+msgid ""
+"Convenience functions such as ``get_config_parser()`` and "
+"``set_config_parser()`` hide the details of the underlying "
+"``configparser.ConfigParser`` objects and automatically manage prefixes "
+"by project type when needed."
+msgstr ""
+"Las funciones de conveniencia como ``get_config_parser()`` y "
+"``set_config_parser()`` ocultan los detalles de los objetos "
+"``configparser.ConfigParser`` subyacentes y gestionan automáticamente prefijos "
+"por tipo de proyecto cuando es necesario."
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:193
+msgid "Error Handling and Logging"
+msgstr "Manejo de Errores y Registro"
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:195
+msgid ""
+"The plugin uses a combination of message boxes (via ``tools_qt``) and log"
+" files (via ``tools_log``) to report problems."
+msgstr ""
+"El plugin utiliza una combinación de cuadros de mensaje (via ``tools_qt``) y archivos"
+" de registro (via ``tools_log``) para reportar problemas."
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:197
+msgid ""
+"Exceptions are usually caught and wrapped with informative messages, "
+"including the name of the function that failed and the original exception"
+" text."
+msgstr ""
+"Las excepciones generalmente se capturan y se envuelven con mensajes informativos, "
+"incluyendo el nombre de la función que falló y el texto de la excepción"
+" original."
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:198
+msgid ""
+"Long-running tasks running in threads write to the log so that users and "
+"developers can diagnose problems after the fact."
+msgstr ""
+"Las tareas de larga duración que se ejecutan en hilos escriben en el registro para que usuarios y "
+"desarrolladores puedan diagnosticar problemas después del hecho."
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:201
+msgid "Threaded Operations"
+msgstr "Operaciones en Hilos"
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:203
+msgid ""
+"Modules under ``core/threads/`` implement threaded operations using Qt's "
+"threading facilities."
+msgstr ""
+"Los módulos bajo ``core/threads/`` implementan operaciones en hilos utilizando las "
+"facilidades de hilos de Qt."
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:205
+msgid ""
+"Thread instances are tracked in ``global_vars.session_vars['threads']`` "
+"so that they can be cleaned up when the plugin is unloaded or reset."
+msgstr ""
+"Las instancias de hilos se rastrean en ``global_vars.session_vars['threads']`` "
+"para que puedan limpiarse cuando el plugin se descarga o reinicia."
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:206
+msgid ""
+"UI updates from threads are performed using Qt signals to avoid "
+"manipulating widgets from outside the main GUI thread."
+msgstr ""
+"Las actualizaciones de la interfaz desde hilos se realizan usando señales Qt para evitar "
+"manipular widgets desde fuera del hilo principal de la GUI."
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:209
+msgid "Working with QGIS and Qt"
+msgstr "Trabajando con QGIS y Qt"
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:212
+msgid "Integration with QGIS"
+msgstr "Integración con QGIS"
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:214
+msgid ""
+"The main class in ``main.py`` (``Drain``) receives the QGIS interface "
+"object (``iface``) and stores it in ``global_vars``."
+msgstr ""
+"La clase principal en ``main.py`` (``Drain``) recibe el objeto de interfaz "
+"QGIS (``iface``) y lo almacena en ``global_vars``."
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:215
+msgid "Standard QGIS plugin hooks are implemented:"
+msgstr "Los ganchos estándar de plugin QGIS están implementados:"
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:217
+msgid "``initGui()``: Creates menus, toolbars and connects signals."
+msgstr "``initGui()``: Crea menús, barras de herramientas y conecta señales."
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:218
+msgid ""
+"``unload()``: Removes actions, disconnects signals and closes open "
+"dialogs and dock widgets."
+msgstr ""
+"``unload()``: Elimina acciones, desconecta señales y cierra "
+"diálogos abiertos y widgets acoplables."
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:220
+msgid ""
+"QGIS Processing providers are registered and unregistered using "
+"``QgsApplication.processingRegistry()`` in helper methods such as "
+"``_initProcessing()`` and ``_initProcessingMesh()``."
+msgstr ""
+"Los proveedores de procesamiento QGIS se registran y desregistran usando "
+"``QgsApplication.processingRegistry()`` en métodos auxiliares como "
+"``_initProcessing()`` y ``_initProcessingMesh()``."
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:223
+msgid "Qt Widgets and Dialogs"
+msgstr "Widgets y Diálogos Qt"
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:225
+msgid ""
+"All large dialogs and dock widgets are defined in ``.ui`` files under "
+"``core/ui/`` and loaded using helper classes (for example ``DrDialog``, "
+"``DrMainWindow``, ``DrDocker``)."
+msgstr ""
+"Todos los diálogos grandes y widgets acoplables se definen en archivos ``.ui`` bajo "
+"``core/ui/`` y se cargan usando clases auxiliares (por ejemplo ``DrDialog``, "
+"``DrMainWindow``, ``DrDocker``)."
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:226
+msgid ""
+"The plugin remembers user preferences such as dialog size and position "
+"using the configuration helpers. Functions like ``load_settings()`` and "
+"``save_settings()`` in ``core.utils.tools_dr`` encapsulate this "
+"behaviour."
+msgstr ""
+"El plugin recuerda las preferencias del usuario como el tamaño y posición del diálogo "
+"usando los ayudantes de configuración. Funciones como ``load_settings()`` y "
+"``save_settings()`` en ``core.utils.tools_dr`` encapsulan este "
+"comportamiento."
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:229
+msgid "Adding New Code"
+msgstr "Añadiendo Nuevo Código"
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:231
+msgid "When adding new Python code to IberGIS, it is recommended to:"
+msgstr "Al añadir nuevo código Python a IberGIS, se recomienda:"
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:233
+msgid ""
+"Place the new module in the most appropriate package (``core``, ``lib``, "
+"``core/utils``, etc.), following the existing structure."
+msgstr ""
+"Colocar el nuevo módulo en el paquete más apropiado (``core``, ``lib``, "
+"``core/utils``, etc.), siguiendo la estructura existente."
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:234
+msgid "Follow the naming and style conventions described above."
+msgstr "Seguir las convenciones de nomenclatura y estilo descritas anteriormente."
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:235
+msgid ""
+"Keep line length under 120 characters, and only use ``# noqa`` markers "
+"when absolutely necessary."
+msgstr ""
+"Mantener la longitud de línea por debajo de 120 caracteres, y solo usar marcadores ``# noqa`` "
+"cuando sea absolutamente necesario."
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:236
+msgid ""
+"Reuse existing helpers in ``lib`` and ``core/utils`` instead of "
+"duplicating logic."
+msgstr ""
+"Reutilizar los ayudantes existentes en ``lib`` y ``core/utils`` en lugar de "
+"duplicar lógica."
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:237
+msgid ""
+"Ensure that any new global state is added to ``global_vars`` and "
+"initialized from a single place."
+msgstr ""
+"Asegurarse de que cualquier nuevo estado global se añada a ``global_vars`` y "
+"se inicialice desde un único lugar."
+
+#: ../../docs/ibergis/for-developers/developer-manual/python.rst:238
+msgid ""
+"If the new code adds user-visible behaviour, create or update the "
+"corresponding ``.ui`` forms and connect them through the appropriate "
+"manager modules."
+msgstr ""
+"Si el nuevo código añade comportamiento visible para el usuario, crear o actualizar los "
+"formularios ``.ui`` correspondientes y conectarlos a través de los "
+"módulos de gestión apropiados."

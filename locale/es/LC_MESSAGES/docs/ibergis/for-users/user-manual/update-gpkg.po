@@ -1,0 +1,72 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, IberGIS
+# This file is distributed under the same license as the IberGIS
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IberGIS Documentation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-10 14:07+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: es\n"
+"Language-Team: es <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../docs/ibergis/for-users/user-manual/update-gpkg.rst:3
+msgid "Update a IberGIS GeoPackage"
+msgstr "Actualizar un GeoPackage de IberGIS"
+
+#: ../../docs/ibergis/for-users/user-manual/update-gpkg.rst:10
+msgid "Tool for update a IberGIS GeoPackage to a new version."
+msgstr "Herramienta para actualizar un GeoPackage de IberGIS a una nueva versión."
+
+#: ../../docs/ibergis/for-users/user-manual/update-gpkg.rst:14
+msgid "Window for update a GeoPackage."
+msgstr "Ventana para actualizar un GeoPackage."
+
+#: ../../docs/ibergis/for-users/user-manual/update-gpkg.rst:16
+msgid ""
+"By clicking in the button with three dots, we open an explorer to search "
+"the GeoPackage file."
+msgstr ""
+"Al hacer clic en el botón con tres puntos, abrimos un explorador para buscar "
+"el archivo GeoPackage."
+
+#: ../../docs/ibergis/for-users/user-manual/update-gpkg.rst:18
+msgid ""
+"If the GeoPackage file is valid, its version will be displayed in the "
+"*Project version* field. Any differences between the current project "
+"version and the new version will be listed in the *Version description* "
+"field."
+msgstr ""
+"Si el archivo GeoPackage es válido, su versión se mostrará en el "
+"campo *Versión del proyecto*. Cualquier diferencia entre la versión actual del proyecto "
+"y la nueva versión se listará en el campo *Descripción de la versión*."
+
+#: ../../docs/ibergis/for-users/user-manual/update-gpkg.rst:21
+msgid ""
+"After selecting the GeoPackage file, we can click on the *Accept* button "
+"to update the GeoPackage."
+msgstr ""
+"Después de seleccionar el archivo GeoPackage, podemos hacer clic en el botón *Aceptar* "
+"para actualizar el GeoPackage."
+
+#: ../../docs/ibergis/for-users/user-manual/update-gpkg.rst:23
+msgid "The GeoPackage will be updated with the new data."
+msgstr "El GeoPackage se actualizará con los nuevos datos."
+
+#: ../../docs/ibergis/for-users/user-manual/update-gpkg.rst:25
+msgid ""
+"This tool only supports updates from a lower version to a higher version."
+" The minimum supported version is **1.0.0**."
+msgstr ""
+"Esta herramienta solo soporta actualizaciones de una versión inferior a una versión superior."
+" La versión mínima soportada es **1.0.0**."

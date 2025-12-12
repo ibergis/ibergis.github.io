@@ -1,0 +1,87 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, IberGIS
+# This file is distributed under the same license as the IberGIS
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IberGIS Documentation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-10 14:07+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: es\n"
+"Language-Team: es <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/boundary-cond-manager.rst:5
+msgid "Dialog Boundary conditions manager"
+msgstr "Diálogo Gestor de condiciones de contorno"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/boundary-cond-manager.rst:12
+msgid "Tool to manage the boundary conditions of the project."
+msgstr "Herramienta para gestionar las condiciones de contorno del proyecto."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/boundary-cond-manager.rst:16
+msgid "Window to manage the boundary conditions."
+msgstr "Ventana para gestionar las condiciones de contorno."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/boundary-cond-manager.rst:18
+msgid "The following buttons are available:"
+msgstr "Los siguientes botones están disponibles:"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/boundary-cond-manager.rst:20
+msgid ""
+"**Current scenario:** allows, by selecting a scenario, to set it as the "
+"current one. All the new boundary conditions established will be stored "
+"in the current scenario. The name of the current scenario will be "
+"displayed to the left of this button."
+msgstr ""
+"**Escenario actual:** permite, al seleccionar un escenario, establecerlo como el "
+"actual. Todas las nuevas condiciones de contorno establecidas se almacenarán "
+"en el escenario actual. El nombre del escenario actual se mostrará "
+"a la izquierda de este botón."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/boundary-cond-manager.rst:22
+msgid ""
+"**Create:** allows to create a new scenario of boundary conditions. We "
+"must specify the *idval*, the *Name* and, optionally, a short "
+"*Description* of the new scenario."
+msgstr ""
+"**Crear:** permite crear un nuevo escenario de condiciones de contorno. Debemos "
+"especificar el *idval*, el *Nombre* y, opcionalmente, una breve "
+"*Descripción* del nuevo escenario."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/boundary-cond-manager.rst:23
+msgid ""
+"**Duplicate:** allows, by selecting a scenario, to duplicate it. We must "
+"specify the *idval*, the *Name* and, optionally, a short *Description* of"
+" the new scenario."
+msgstr ""
+"**Duplicar:** permite, al seleccionar un escenario, duplicarlo. Debemos "
+"especificar el *idval*, el *Nombre* y, opcionalmente, una breve *Descripción* del"
+" nuevo escenario."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/boundary-cond-manager.rst:24
+msgid "**Edit:** allows, by selecting a scenario, edit it."
+msgstr "**Editar:** permite, al seleccionar un escenario, editarlo."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/boundary-cond-manager.rst:25
+msgid "**Delete:** allows, by selecting a scenario, delete it."
+msgstr "**Eliminar:** permite, al seleccionar un escenario, eliminarlo."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/boundary-cond-manager.rst:26
+msgid ""
+"**Save to mesh:** allows, by selecting a scenario, save the boundary "
+"conditions in the mesh. **To use this button, at least one mesh must have"
+" been created**."
+msgstr ""
+"**Guardar en malla:** permite, al seleccionar un escenario, guardar las condiciones de "
+"contorno en la malla. **Para usar este botón, se debe haber"
+" creado al menos una malla**."

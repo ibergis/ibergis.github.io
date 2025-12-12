@@ -1,0 +1,561 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, IberGIS
+# This file is distributed under the same license as the IberGIS
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IberGIS Documentation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-10 14:07+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: es\n"
+"Language-Team: es <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:3
+msgid "DB Model"
+msgstr "Modelo de Base de Datos"
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:10
+msgid ""
+"This section describes the database model structure and organization used"
+" by IberGIS."
+msgstr ""
+"Esta sección describe la estructura y organización del modelo de base de datos utilizado"
+" por IberGIS."
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:13
+msgid "Data File Format"
+msgstr "Formato de Archivo de Datos"
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:15
+msgid ""
+"IberGIS uses **GeoPackage (GPKG)** files as the primary data storage "
+"format. GeoPackage is an open, standards-based, platform-independent, "
+"portable, self-describing, compact format for transferring geospatial "
+"information. It is based on SQLite 3 database engine and supports both "
+"vector features and raster data."
+msgstr ""
+"IberGIS utiliza archivos **GeoPackage (GPKG)** como formato principal de almacenamiento de "
+"datos. GeoPackage es un formato abierto, basado en estándares, independiente de plataforma, "
+"portátil, autodescriptivo y compacto para transferir información geoespacial. Está basado en el motor de "
+"base de datos SQLite 3 y soporta tanto características vectoriales como datos ráster."
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:17
+msgid ""
+"The main project files created by IberGIS have the ``.gpkg`` extension "
+"and contain all the necessary tables, spatial data, configurations, and "
+"metadata for hydraulic modeling projects."
+msgstr ""
+"Los archivos de proyecto principales creados por IberGIS tienen la extensión ``.gpkg`` "
+"y contienen todas las tablas necesarias, datos espaciales, configuraciones y "
+"metadatos para proyectos de modelado hidráulico."
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:20
+msgid "Database Schema Organization"
+msgstr "Organización del Esquema de Base de Datos"
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:22
+msgid ""
+"The database schema is organized in the ``dbmodel/`` directory within the"
+" plugin installation folder. The structure follows a modular approach, "
+"separating different aspects of the database into logical components."
+msgstr ""
+"El esquema de base de datos está organizado en el directorio ``dbmodel/`` dentro de la"
+" carpeta de instalación del plugin. La estructura sigue un enfoque modular, "
+"separando diferentes aspectos de la base de datos en componentes lógicos."
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:25
+msgid "SQL Files Structure"
+msgstr "Estructura de Archivos SQL"
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:27
+msgid ""
+"The database model is defined through multiple SQL files organized in "
+"subdirectories."
+msgstr ""
+"El modelo de base de datos se define mediante múltiples archivos SQL organizados en "
+"subdirectorios."
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:30
+msgid "DDL (Data Definition Language)"
+msgstr "DDL (Lenguaje de Definición de Datos)"
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:32
+msgid "Located in ``dbmodel/ddl/ddl.sql``."
+msgstr "Ubicado en ``dbmodel/ddl/ddl.sql``."
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:34
+msgid "This file contains all the table definitions, including:"
+msgstr "Este archivo contiene todas las definiciones de tablas, incluyendo:"
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:36
+msgid "**Configuration tables:** Store plugin parameters and user configurations."
+msgstr "**Tablas de configuración:** Almacenan parámetros del plugin y configuraciones de usuario."
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:37
+msgid ""
+"**Catalog tables:** Define available types and categories for various "
+"elements (boundary scenarios, materials, curves, etc.)."
+msgstr ""
+"**Tablas de catálogo:** Definen tipos y categorías disponibles para varios "
+"elementos (escenarios de contorno, materiales, curvas, etc.)."
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:38
+msgid "**Feature tables:** Store the main hydraulic and geometric elements."
+msgstr "**Tablas de entidades:** Almacenan los principales elementos hidráulicos y geométricos."
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:39
+msgid ""
+"**System tables:** Manage internal plugin operations and form "
+"configurations."
+msgstr ""
+"**Tablas de sistema:** Gestionan operaciones internas del plugin y "
+"configuraciones de formularios."
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:40
+msgid ""
+"**Geometry tables:** Store spatial features for grounds, roofs, inlets, "
+"conduits, nodes, and other elements."
+msgstr ""
+"**Tablas de geometría:** Almacenan entidades espaciales para terrenos, techos, entradas, "
+"conductos, nodos y otros elementos."
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:42
+msgid ""
+"All tables include SQLite type checking constraints to ensure data "
+"integrity."
+msgstr ""
+"Todas las tablas incluyen restricciones de verificación de tipo de SQLite para garantizar la integridad de "
+"datos."
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:45
+msgid "DML (Data Manipulation Language)"
+msgstr "DML (Lenguaje de Manipulación de Datos)"
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:47
+msgid "Located in ``dbmodel/dml/dml.sql``."
+msgstr "Ubicado en ``dbmodel/dml/dml.sql``."
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:49
+msgid "This file contains the initial data population statements:"
+msgstr "Este archivo contiene las sentencias de población de datos inicial:"
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:51
+msgid ""
+"**Spatial reference system (SRID) configuration:** Sets up the coordinate"
+" reference system."
+msgstr ""
+"**Configuración del sistema de referencia espacial (SRID):** Configura el"
+" sistema de referencia de coordenadas."
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:52
+msgid ""
+"**System tables initialization:** Populates configuration and metadata "
+"tables."
+msgstr ""
+"**Inicialización de tablas de sistema:** Puebla las tablas de configuración y "
+"metadatos."
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:53
+msgid "**Catalog data:** Inserts default values for all catalog tables."
+msgstr "**Datos de catálogo:** Inserta valores predeterminados para todas las tablas de catálogo."
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:54
+msgid ""
+"**Form field definitions:** Configures the dynamic forms used throughout "
+"the plugin."
+msgstr ""
+"**Definiciones de campos de formulario:** Configura los formularios dinámicos utilizados en todo "
+"el plugin."
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:55
+msgid "**Type values:** Populates dropdown lists and selectable options."
+msgstr "**Valores de tipo:** Puebla listas desplegables y opciones seleccionables."
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:57
+msgid ""
+"The DML file uses placeholders like ``<SRID_VALUE>`` that are dynamically"
+" replaced when creating new projects."
+msgstr ""
+"El archivo DML usa marcadores de posición como ``<SRID_VALUE>`` que se reemplazan dinámicamente"
+" al crear nuevos proyectos."
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:60
+msgid "Triggers"
+msgstr "Disparadores"
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:62
+msgid "Located in ``dbmodel/trg/``."
+msgstr "Ubicado en ``dbmodel/trg/``."
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:64
+msgid "**trg_create.sql:** Contains CREATE triggers that:"
+msgstr "**trg_create.sql:** Contiene disparadores CREATE que:"
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:66
+msgid "Auto-generate unique codes for new elements (e.g., 'J1', 'C5', 'RF10')."
+msgstr "Generan automáticamente códigos únicos para elementos nuevos (por ejemplo, 'J1', 'C5', 'RF10')."
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:67
+msgid "Maintain topology relationships between nodes and arcs."
+msgstr "Mantienen relaciones topológicas entre nodos y arcos."
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:68
+msgid "Update parent-child table relationships."
+msgstr "Actualizan relaciones de tabla padre-hijo."
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:69
+msgid "Synchronize geometry changes across related tables."
+msgstr "Sincronizan cambios de geometría en tablas relacionadas."
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:71
+msgid "**trg_delete.sql:** Contains DELETE triggers that:"
+msgstr "**trg_delete.sql:** Contiene disparadores DELETE que:"
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:73
+msgid "Cascade deletions to related tables."
+msgstr "Propagan eliminaciones en cascada a tablas relacionadas."
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:74
+msgid "Clean up orphaned records."
+msgstr "Limpian registros huérfanos."
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:75
+msgid "Maintain referential integrity."
+msgstr "Mantienen la integridad referencial."
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:78
+msgid "Functions"
+msgstr "Funciones"
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:80
+msgid "Located in ``dbmodel/fct/``."
+msgstr "Ubicado en ``dbmodel/fct/``."
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:82
+msgid ""
+"**fct_after_import_ground_geometries.sql:** Post-processing for ground "
+"polygon imports."
+msgstr ""
+"**fct_after_import_ground_geometries.sql:** Post-procesamiento para importaciones de "
+"polígonos de terreno."
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:83
+msgid ""
+"**fct_after_import_inlet_geometries.sql:** Post-processing for inlet "
+"point imports."
+msgstr ""
+"**fct_after_import_inlet_geometries.sql:** Post-procesamiento para importaciones de "
+"puntos de entrada."
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:84
+msgid ""
+"**fct_after_import_roof_geometries.sql:** Post-processing for roof "
+"polygon imports."
+msgstr ""
+"**fct_after_import_roof_geometries.sql:** Post-procesamiento para importaciones de "
+"polígonos de techo."
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:85
+msgid ""
+"**fct_after_import_inp.sql:** Post-processing after importing EPA SWMM "
+".inp files."
+msgstr ""
+"**fct_after_import_inp.sql:** Post-procesamiento después de importar archivos EPA SWMM "
+".inp."
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:87
+msgid ""
+"These functions handle data normalization, code assignments, and "
+"relationship establishment after bulk imports."
+msgstr ""
+"Estas funciones manejan la normalización de datos, asignaciones de código y "
+"establecimiento de relaciones después de importaciones masivas."
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:90
+msgid "Internationalization (i18n)"
+msgstr "Internacionalización (i18n)"
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:92
+msgid "Located in ``dbmodel/i18n/``."
+msgstr "Ubicado en ``dbmodel/i18n/``."
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:94
+msgid "Contains language-specific DML files for multiple locales:"
+msgstr "Contiene archivos DML específicos de idioma para múltiples localizaciones:"
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:96
+msgid "**en_US/dml.sql:** English (United States)."
+msgstr "**en_US/dml.sql:** Inglés (Estados Unidos)."
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:97
+msgid "**es_ES/dml.sql:** Spanish (Spain)."
+msgstr "**es_ES/dml.sql:** Español (España)."
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:98
+msgid "**es_CR/dml.sql:** Spanish (Costa Rica)."
+msgstr "**es_CR/dml.sql:** Español (Costa Rica)."
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:100
+msgid ""
+"These files provide translated values for user-facing strings stored in "
+"the database, such as field labels, tooltips, and messages."
+msgstr ""
+"Estos archivos proporcionan valores traducidos para cadenas de cara al usuario almacenadas en "
+"la base de datos, como etiquetas de campos, información sobre herramientas y mensajes."
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:103
+msgid "Reports Database"
+msgstr "Base de Datos de Informes"
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:105
+msgid "Located in ``dbmodel/rpt_gpkg/``."
+msgstr "Ubicado en ``dbmodel/rpt_gpkg/``."
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:107
+msgid "Defines a separate schema for storing simulation results:"
+msgstr "Define un esquema separado para almacenar resultados de simulación:"
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:109
+msgid ""
+"**ddl.sql:** Tables for storing EPA SWMM simulation results (nodes, arcs,"
+" flow summaries, etc.)."
+msgstr ""
+"**ddl.sql:** Tablas para almacenar resultados de simulación EPA SWMM (nodos, arcos,"
+" resúmenes de flujo, etc.)."
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:110
+msgid "**dml.sql:** Initial configuration for result tables."
+msgstr "**dml.sql:** Configuración inicial para tablas de resultados."
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:112
+msgid ""
+"The reports database structure allows IberGIS to import and visualize "
+"simulation outputs directly in QGIS."
+msgstr ""
+"La estructura de base de datos de informes permite a IberGIS importar y visualizar "
+"salidas de simulación directamente en QGIS."
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:115
+msgid "System Tables"
+msgstr "Tablas de Sistema"
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:117
+msgid "Located in ``dbmodel/sys_gpkg/sys_gpkg.sql``."
+msgstr "Ubicado en ``dbmodel/sys_gpkg/sys_gpkg.sql``."
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:119
+msgid "Creates system-level tables required by GeoPackage and GDAL/OGR:"
+msgstr "Crea tablas de nivel de sistema requeridas por GeoPackage y GDAL/OGR:"
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:121
+msgid "**gpkg_ogr_contents:** Tracks feature counts for each table."
+msgstr "**gpkg_ogr_contents:** Rastrea recuentos de entidades para cada tabla."
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:122
+msgid "Additional metadata tables for GeoPackage compliance."
+msgstr "Tablas de metadatos adicionales para cumplimiento de GeoPackage."
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:125
+msgid "Example Data"
+msgstr "Datos de Ejemplo"
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:127
+msgid "Located in ``dbmodel/example/example_data.sql``."
+msgstr "Ubicado en ``dbmodel/example/example_data.sql``."
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:129
+msgid "Provides sample data for testing and demonstration purposes, including:"
+msgstr "Proporciona datos de muestra para propósitos de prueba y demostración, incluyendo:"
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:131
+msgid "Boundary conditions with geometries."
+msgstr "Condiciones de contorno con geometrías."
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:132
+msgid "Sample ground, roof, and inlet features."
+msgstr "Entidades de muestra de terreno, techo y entrada."
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:133
+msgid "Pre-configured scenarios."
+msgstr "Escenarios preconfigurados."
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:134
+msgid "Example hyetographs and time series."
+msgstr "Hietogramas y series temporales de ejemplo."
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:137
+msgid "Database Initialization"
+msgstr "Inicialización de Base de Datos"
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:139
+msgid ""
+"The file ``dbmodel/init.sql`` serves as the entry point for database "
+"creation. It references and executes all other SQL files in the correct "
+"order to build a complete project database."
+msgstr ""
+"El archivo ``dbmodel/init.sql`` sirve como punto de entrada para la creación de la base de "
+"datos. Hace referencia y ejecuta todos los demás archivos SQL en el orden correcto "
+"para construir una base de datos de proyecto completa."
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:141
+msgid "The typical initialization sequence is:"
+msgstr "La secuencia de inicialización típica es:"
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:143
+msgid "Create system GeoPackage tables."
+msgstr "Crear tablas de sistema GeoPackage."
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:144
+msgid "Execute DDL to create all tables."
+msgstr "Ejecutar DDL para crear todas las tablas."
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:145
+msgid "Execute DML to populate initial data."
+msgstr "Ejecutar DML para poblar datos iniciales."
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:146
+msgid "Apply internationalization for the selected language."
+msgstr "Aplicar internacionalización para el idioma seleccionado."
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:147
+msgid "Create triggers for data integrity."
+msgstr "Crear disparadores para integridad de datos."
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:148
+msgid "Load example data (if creating a sample project)."
+msgstr "Cargar datos de ejemplo (si se crea un proyecto de muestra)."
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:151
+msgid "Version Control and Updates"
+msgstr "Control de Versiones y Actualizaciones"
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:153
+msgid "Located in ``dbmodel/updates/``."
+msgstr "Ubicado en ``dbmodel/updates/``."
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:155
+msgid ""
+"The plugin includes a versioning system organized by major/minor/patch "
+"numbers:"
+msgstr ""
+"El plugin incluye un sistema de versionado organizado por números mayor/menor/parche:"
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:157
+msgid "**updates/1/1/0/:** Contains update scripts for version 1.1.0."
+msgstr "**updates/1/1/0/:** Contiene scripts de actualización para la versión 1.1.0."
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:159
+msgid "**changelog.txt:** Describes changes in this version."
+msgstr "**changelog.txt:** Describe los cambios en esta versión."
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:160
+msgid "**ddl.sql:** Schema modifications."
+msgstr "**ddl.sql:** Modificaciones de esquema."
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:161
+msgid "**dml.sql:** Data migrations."
+msgstr "**dml.sql:** Migraciones de datos."
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:163
+msgid ""
+"This structure allows IberGIS to automatically upgrade existing project "
+"databases when users update the plugin to a newer version."
+msgstr ""
+"Esta estructura permite a IberGIS actualizar automáticamente las bases de datos de proyectos existentes "
+"cuando los usuarios actualizan el plugin a una versión más reciente."
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:165
+msgid ""
+"Updates must also be applied to the base files for new projects. For "
+"example, if version 1.1.0 introduces a new table, you must update "
+"``dbmodel/ddl/ddl.sql`` to include the new table definition in addition "
+"to updating ``dbmodel/updates/1/1/0/ddl.sql``."
+msgstr ""
+"Las actualizaciones también deben aplicarse a los archivos base para proyectos nuevos. Por "
+"ejemplo, si la versión 1.1.0 introduce una nueva tabla, debe actualizar "
+"``dbmodel/ddl/ddl.sql`` para incluir la nueva definición de tabla además "
+"de actualizar ``dbmodel/updates/1/1/0/ddl.sql``."
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:168
+msgid "Key Features"
+msgstr "Características Clave"
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:171
+msgid "Type Checking"
+msgstr "Verificación de Tipo"
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:173
+msgid ""
+"All tables use SQLite's ``typeof()`` function in CHECK constraints to "
+"enforce strict type validation, preventing data corruption from incorrect"
+" value types."
+msgstr ""
+"Todas las tablas usan la función ``typeof()`` de SQLite en restricciones CHECK para "
+"aplicar validación de tipo estricta, previniendo corrupción de datos por tipos de"
+" valor incorrectos."
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:176
+msgid "Spatial Data"
+msgstr "Datos Espaciales"
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:178
+msgid ""
+"Geometric features use the GeoPackage geometry type and are registered in"
+" the standard ``gpkg_geometry_columns`` table. Supported geometry types "
+"include:"
+msgstr ""
+"Las entidades geométricas usan el tipo de geometría GeoPackage y se registran en"
+" la tabla estándar ``gpkg_geometry_columns``. Los tipos de geometría admitidos "
+"incluyen:"
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:180
+msgid "POINT (inlets, junctions, storage, outfalls, dividers, hyetographs)."
+msgstr "POINT (entradas, uniones, almacenamiento, desagües, divisores, hietogramas)."
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:181
+msgid "LINESTRING (conduits, orifices, weirs, pumps, outlets)."
+msgstr "LINESTRING (conductos, orificios, vertederos, bombas, salidas)."
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:182
+msgid "POLYGON (grounds, roofs)."
+msgstr "POLYGON (terrenos, techos)."
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:183
+msgid "MULTILINESTRING (boundary conditions)."
+msgstr "MULTILINESTRING (condiciones de contorno)."
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:186
+msgid "Foreign Keys"
+msgstr "Claves Foráneas"
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:188
+msgid ""
+"The database extensively uses foreign key constraints to maintain "
+"referential integrity between related tables. Cascading updates and "
+"restricted deletions ensure data consistency."
+msgstr ""
+"La base de datos usa extensivamente restricciones de clave foránea para mantener "
+"la integridad referencial entre tablas relacionadas. Las actualizaciones en cascada y "
+"las eliminaciones restringidas aseguran la consistencia de datos."
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:191
+msgid "JSON Fields"
+msgstr "Campos JSON"
+
+#: ../../docs/ibergis/for-developers/developer-manual/dbmodel.rst:193
+msgid ""
+"Some configuration tables use JSON-formatted TEXT fields to store complex"
+" structured data, such as form widget parameters and additional metadata."
+msgstr ""
+"Algunas tablas de configuración usan campos TEXT formateados JSON para almacenar datos"
+" estructurados complejos, como parámetros de widgets de formulario y metadatos adicionales."

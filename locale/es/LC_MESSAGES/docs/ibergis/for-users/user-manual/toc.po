@@ -1,0 +1,93 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, IberGIS
+# This file is distributed under the same license as the IberGIS
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IberGIS Documentation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-10 14:07+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: es\n"
+"Language-Team: es <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../docs/ibergis/for-users/user-manual/toc.rst:3
+msgid "Table of Contents (ToC)"
+msgstr "Tabla de Contenidos (ToC)"
+
+#: ../../docs/ibergis/for-users/user-manual/toc.rst:10
+msgid ""
+"The following layer groups are organized by default in the table of "
+"contents (ToC) of an IberGIS project:"
+msgstr ""
+"Los siguientes grupos de capas se organizan por defecto en la tabla de "
+"contenidos (ToC) de un proyecto IberGIS:"
+
+#: ../../docs/ibergis/for-users/user-manual/toc.rst:13
+msgid "TEMPORAL"
+msgstr "TEMPORAL"
+
+#: ../../docs/ibergis/for-users/user-manual/toc.rst:15
+msgid ""
+"Layers automatically generated during the model validation and correction"
+" processes. They are not saved in the GeoPackage."
+msgstr ""
+"Capas generadas automáticamente durante los procesos de validación y corrección"
+" del modelo. No se guardan en el GeoPackage."
+
+#: ../../docs/ibergis/for-users/user-manual/toc.rst:18
+msgid "INPUT"
+msgstr "ENTRADA"
+
+#: ../../docs/ibergis/for-users/user-manual/toc.rst:20
+msgid "Groups all the model's input data."
+msgstr "Agrupa todos los datos de entrada del modelo."
+
+#: ../../docs/ibergis/for-users/user-manual/toc.rst:22
+msgid ""
+"**SWMM:** objects imported from the drainage network's INP file (dwf, "
+"inflow, junction, divider, outfall, storage, conduit, pump, orifice, weir"
+" and outlet), an their symbology."
+msgstr ""
+"**SWMM:** objetos importados desde el archivo INP de la red de drenaje (dwf, "
+"inflow, junction, divider, outfall, storage, conduit, pump, orifice, weir"
+" and outlet), y su simbología."
+
+#: ../../docs/ibergis/for-users/user-manual/toc.rst:23
+msgid ""
+"**IBER:** hydraulic elements required for 2D surface calculations, "
+"including inlets, pinlets, hyetographs, boundary conditions, bridges, "
+"culverts, and inlet connections to the network."
+msgstr ""
+"**IBER:** elementos hidráulicos requeridos para cálculos de superficie 2D, "
+"incluyendo inlets, pinlets, hyetographs, boundary conditions, bridges, "
+"culverts, y inlets conectados a la red."
+
+#: ../../docs/ibergis/for-users/user-manual/toc.rst:24
+msgid ""
+"**MESH:** ground and roof layers, along with mesh anchor lines and mesh "
+"anchor points."
+msgstr ""
+"**MALLA:** capas de suelo y techo, junto con líneas de anclaje de malla y "
+"puntos de anclaje de malla."
+
+#: ../../docs/ibergis/for-users/user-manual/toc.rst:27
+msgid "BASE MAP"
+msgstr "MAPA BASE"
+
+#: ../../docs/ibergis/for-users/user-manual/toc.rst:29
+msgid "Reference map loaded by default in the project."
+msgstr "Mapa de referencia cargado por defecto en el proyecto."
+
+#: ../../docs/ibergis/for-users/user-manual/toc.rst:33
+msgid "Layers in table of contents."
+msgstr "Capas en la tabla de contenidos."

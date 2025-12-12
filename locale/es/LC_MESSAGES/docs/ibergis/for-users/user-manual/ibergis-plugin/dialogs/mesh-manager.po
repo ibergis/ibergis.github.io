@@ -1,0 +1,137 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, IberGIS
+# This file is distributed under the same license as the IberGIS
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IberGIS Documentation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-10 14:07+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: es\n"
+"Language-Team: es <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/mesh-manager.rst:5
+msgid "Dialog Mesh manager"
+msgstr "Diálogo Gestor de mallas"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/mesh-manager.rst:12
+msgid ""
+"Tool for incorporating the mesh into the model. Having a mesh is not only"
+" essential for the calculations to be done, since it defines the "
+"calculation elements; but is also the one getting the values of the "
+"distributed parameters of the model trough its net, such as land uses or "
+"curve number for the infiltration model. The mesh can be created or "
+"directly imported. The different scenarios created for diverse boundary "
+"conditions must be also saved to a existing mesh."
+msgstr ""
+"Herramienta para incorporar la malla al modelo. Tener una malla no solo"
+" es esencial para que se realicen los cálculos, ya que define los "
+"elementos de cálculo; sino que también es la que obtiene los valores de los "
+"parámetros distribuidos del modelo a través de su red, como usos del suelo o "
+"número de curva para el modelo de infiltración. La malla puede crearse o "
+"importarse directamente. Los diferentes escenarios creados para diversas condiciones "
+"de contorno también deben guardarse en una malla existente."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/mesh-manager.rst:19
+msgid "Mesh manager."
+msgstr "Gestor de mallas."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/mesh-manager.rst:21
+msgid "The following buttons are available:"
+msgstr "Los siguientes botones están disponibles:"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/mesh-manager.rst:23
+msgid "**Create:** allows to create a new mesh (see :ref:`dialog-create-mesh`)."
+msgstr "**Crear:** permite crear una nueva malla (ver :ref:`dialog-create-mesh`)."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/mesh-manager.rst:24
+msgid "**View:** allows, by selecting a mesh, see it in the ToC."
+msgstr "**Ver:** permite, al seleccionar una malla, verla en el ToC."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/mesh-manager.rst:25
+msgid "**Import:** allows to import a mesh from computer files."
+msgstr "**Importar:** permite importar una malla desde archivos del ordenador."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/mesh-manager.rst:26
+msgid "**Export:** allows to export a mesh."
+msgstr "**Exportar:** permite exportar una malla."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/mesh-manager.rst:27
+msgid "**Delete:** allows, by selecting a mesh, delete it."
+msgstr "**Eliminar:** permite, al seleccionar una malla, eliminarla."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/mesh-manager.rst:32
+msgid "Dialog Create Mesh"
+msgstr "Diálogo Crear Malla"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/mesh-manager.rst:36
+msgid "Dialog Create Mesh."
+msgstr "Diálogo Crear Malla."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/mesh-manager.rst:38
+msgid "Tool for creating a new mesh. The following options are available:"
+msgstr "Herramienta para crear una nueva malla. Las siguientes opciones están disponibles:"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/mesh-manager.rst:40
+msgid ""
+"**Input data:** checks to perform on layers to detect errors and allows "
+"to use selected features only."
+msgstr ""
+"**Datos de entrada:** comprobaciones a realizar en las capas para detectar errores y permite "
+"usar solo las entidades seleccionadas."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/mesh-manager.rst:41
+msgid ""
+"**Transitions:** allows the user to configure the mesh transition "
+"settings, which control how smoothly the mesh resolution decreases from "
+"the breaklines toward the interior of the domain. To this aim, the "
+"*Enable fine-tuned transitions* must be active. In this case, the user "
+"can define the value of the transition slope, the distance in which the "
+"transition begins, and the transition extent."
+msgstr ""
+"**Transiciones:** permite al usuario configurar los ajustes de transición "
+"de malla, que controlan qué tan suavemente disminuye la resolución de la malla desde "
+"las líneas de quiebre hacia el interior del dominio. Para este propósito, la opción "
+"*Habilitar transiciones ajustadas* debe estar activa. En este caso, el usuario "
+"puede definir el valor de la pendiente de transición, la distancia en la que comienza la "
+"transición y la extensión de la transición."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/mesh-manager.rst:44
+msgid ""
+"**Boundary conditions:** allows to apply the boundary conditions of the "
+"current scenario to the mesh."
+msgstr ""
+"**Condiciones de contorno:** permite aplicar las condiciones de contorno del "
+"escenario actual a la malla."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/mesh-manager.rst:45
+msgid "**Elevation:** DEM layer to obtain elevations."
+msgstr "**Elevación:** capa DEM para obtener elevaciones."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/mesh-manager.rst:46
+msgid "**Roughness:** layer to obtain roughness values (Manning's coefficient)."
+msgstr "**Rugosidad:** capa para obtener valores de rugosidad (coeficiente de Manning)."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/mesh-manager.rst:47
+msgid "**Losses:** layer to obtain loss values (Curve Number)."
+msgstr "**Pérdidas:** capa para obtener valores de pérdida (Número de Curva)."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/mesh-manager.rst:48
+msgid ""
+"**Mesh options:** this field allows  to save the mesh with a specific "
+"name. This name will later help you identify the mesh you want to work "
+"with when assigning the boundary conditions scenario."
+msgstr ""
+"**Opciones de malla:** este campo permite guardar la malla con un nombre "
+"específico. Este nombre le ayudará posteriormente a identificar la malla con la que desea trabajar "
+"al asignar el escenario de condiciones de contorno."

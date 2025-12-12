@@ -1,0 +1,113 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, IberGIS
+# This file is distributed under the same license as the IberGIS
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IberGIS Documentation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-10 14:07+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: es\n"
+"Language-Team: es <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-toolbox.rst:3
+msgid "IberGIS toolbox"
+msgstr "Caja de herramientas de IberGIS"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-toolbox.rst:10
+msgid ""
+"The toolbox is the set of IberGIS tools that allows to import, debug and "
+"validate project layers to run hydraulic simulations."
+msgstr ""
+"La caja de herramientas es el conjunto de herramientas de IberGIS que permite importar, depurar y "
+"validar capas de proyecto para ejecutar simulaciones hidráulicas."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-toolbox.rst:14
+msgid "IberGIS toolbox."
+msgstr "Caja de herramientas de IberGIS."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-toolbox.rst:16
+msgid "To run a process, simply double-click on its name in the toolbox."
+msgstr "Para ejecutar un proceso, simplemente haga doble clic en su nombre en la caja de herramientas."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-toolbox.rst:19
+msgid "Process dialog box"
+msgstr "Cuadro de diálogo de proceso"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-toolbox.rst:21
+msgid ""
+"After double-clicking on the process, a dialog box similar to the one "
+"shown in the following figure will open."
+msgstr ""
+"Después de hacer doble clic en el proceso, se abrirá un cuadro de diálogo similar al "
+"mostrado en la siguiente figura."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-toolbox.rst:25
+msgid "Dialog of Import Ground Geometries."
+msgstr "Diálogo de Importar Geometrías de Terreno."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-toolbox.rst:27
+msgid ""
+"The dialog show two tabs on the left (Config and Info log), the "
+"description of the process on the right and a set of buttons."
+msgstr ""
+"El diálogo muestra dos pestañas a la izquierda (Config e Infolog), la "
+"descripción del proceso a la derecha y un conjunto de botones."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-toolbox.rst:30
+msgid "Tab *Config*"
+msgstr "Pestaña *Config*"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-toolbox.rst:32
+msgid ""
+"In this tab, we must establish the input values that the process needs to"
+" be executed, as well as the configuration parameters that must be "
+"specified."
+msgstr ""
+"En esta pestaña, debemos establecer los valores de entrada que el proceso necesita para"
+" ser ejecutado, así como los parámetros de configuración que deben ser "
+"especificados."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-toolbox.rst:34
+msgid ""
+"The input values will depend on the process being executed, so the dialog"
+" box will be different for each process."
+msgstr ""
+"Los valores de entrada dependerán del proceso que se esté ejecutando, por lo que el cuadro de"
+" diálogo será diferente para cada proceso."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-toolbox.rst:37
+msgid "Tab *Info log*"
+msgstr "Pestaña *Info log*"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-toolbox.rst:39
+msgid "It shows a summary of the process that has been carried out."
+msgstr "Muestra un resumen del proceso que se ha llevado a cabo."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-toolbox.rst:43
+msgid "Example of a process summary."
+msgstr "Ejemplo de un resumen de proceso."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-toolbox.rst:46
+msgid "Process results"
+msgstr "Resultados del proceso"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-toolbox.rst:48
+msgid ""
+"The execution of certain processes involves the creation of temporary "
+"layers with the results. These layers will be loaded into the ToC in a "
+"group and their geometry will depend on the geometry of the input layer."
+msgstr ""
+"La ejecución de ciertos procesos implica la creación de capas temporales "
+"con los resultados. Estas capas se cargarán en la ToC en un "
+"grupo y su geometría dependerá de la geometría de la capa de entrada."

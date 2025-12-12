@@ -1,0 +1,49 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, IberGIS
+# This file is distributed under the same license as the IberGIS
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IberGIS Documentation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-10 14:07+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: es\n"
+"Language-Team: es <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/generate-inp.rst:5
+msgid "Dialog Generate INP"
+msgstr "Diálogo Generar INP"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/generate-inp.rst:12
+msgid "Tool that allows export the network to an inp file."
+msgstr "Herramienta que permite exportar la red a un archivo inp."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/generate-inp.rst:16
+msgid "Window to generate the inp file."
+msgstr "Ventana para generar el archivo inp."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/generate-inp.rst:18
+msgid ""
+"By clicking on the *Options* button will open a window where we can set "
+"the inp export options."
+msgstr ""
+"Al hacer clic en el botón *Opciones* se abrirá una ventana donde podemos configurar "
+"las opciones de exportación inp."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/generate-inp.rst:20
+msgid ""
+"Then we must specify a name and a path for the file by clicking ont the "
+"button with three dots."
+msgstr ""
+"Luego debemos especificar un nombre y una ruta para el archivo haciendo clic en el "
+"botón con tres puntos."

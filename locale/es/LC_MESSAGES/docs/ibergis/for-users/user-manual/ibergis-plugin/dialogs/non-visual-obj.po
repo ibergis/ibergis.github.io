@@ -1,0 +1,268 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, IberGIS
+# This file is distributed under the same license as the IberGIS
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IberGIS Documentation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-10 14:07+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: es\n"
+"Language-Team: es <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/non-visual-obj.rst:5
+msgid "Dialog Non visual objects"
+msgstr "Diálogo Objetos no visuales"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/non-visual-obj.rst:12
+msgid "Tool to manage the non visual objects of the project."
+msgstr "Herramienta para gestionar los objetos no visuales del proyecto."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/non-visual-obj.rst:16
+msgid "Window to manage the non visual objects."
+msgstr "Ventana para gestionar los objetos no visuales."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/non-visual-obj.rst:18
+msgid ""
+"We can manage curves, patterns, timeseries, controls and rasters. In all "
+"cases, the following buttons are available:"
+msgstr ""
+"Podemos gestionar curvas, patrones, series temporales, controles y rásters. En todos "
+"los casos, los siguientes botones están disponibles:"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/non-visual-obj.rst:21
+msgid "**Duplicate:** allows to duplicate a selected object."
+msgstr "**Duplicar:** permite duplicar un objeto seleccionado."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/non-visual-obj.rst:22
+msgid "**Create:** allows to create a new object."
+msgstr "**Crear:** permite crear un nuevo objeto."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/non-visual-obj.rst:23
+msgid "**Delete:** allows to delete a selected object."
+msgstr "**Eliminar:** permite eliminar un objeto seleccionado."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/non-visual-obj.rst:25
+msgid ""
+"This window is used to create and configure non-visual objects. These "
+"elements are stored in the model and can be selectively activated "
+"depending on the requirements of each simulation."
+msgstr ""
+"Esta ventana se utiliza para crear y configurar objetos no visuales. Estos "
+"elementos se almacenan en el modelo y pueden activarse selectivamente "
+"dependiendo de los requisitos de cada simulación."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/non-visual-obj.rst:29
+msgid "Curves"
+msgstr "Curvas"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/non-visual-obj.rst:31
+msgid ""
+"Allows to define curves of control, diversion, pump, rating, shape, "
+"storage or tidal type."
+msgstr ""
+"Permite definir curvas de tipo control, desviación, bomba, clasificación, forma, "
+"almacenamiento o mareal."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/non-visual-obj.rst:35
+msgid "Window to create or edit a curve."
+msgstr "Ventana para crear o editar una curva."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/non-visual-obj.rst:37
+msgid ""
+"To create a curve we will have to specify pairs of values until the curve"
+" is defined. Depending on the type of curve, several pairs of values may "
+"be necessary."
+msgstr ""
+"Para crear una curva tendremos que especificar pares de valores hasta que la curva"
+" esté definida. Dependiendo del tipo de curva, pueden ser necesarios varios pares de valores."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/non-visual-obj.rst:41
+msgid "Patterns"
+msgstr "Patrones"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/non-visual-obj.rst:43
+msgid ""
+"Allows to define temporal patterns that we can assign to certain network "
+"objects."
+msgstr ""
+"Permite definir patrones temporales que podemos asignar a ciertos objetos de la "
+"red."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/non-visual-obj.rst:47
+msgid "Window to create or edit a pattern."
+msgstr "Ventana para crear o editar un patrón."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/non-visual-obj.rst:49
+msgid "We can create daily, hourly, monthly or weekend patterns."
+msgstr "Podemos crear patrones diarios, horarios, mensuales o de fin de semana."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/non-visual-obj.rst:52
+msgid "Timeseries"
+msgstr "Series Temporales"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/non-visual-obj.rst:56
+msgid "Window to create or edit a time series."
+msgstr "Ventana para crear o editar una serie temporal."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/non-visual-obj.rst:58
+msgid "Allows to define different types of time series:"
+msgstr "Permite definir diferentes tipos de series temporales:"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/non-visual-obj.rst:60
+msgid ""
+"**BC elevation:** boundary condition to set a specific water surface "
+"elevation."
+msgstr ""
+"**Elevación BC:** condición de contorno para establecer una elevación específica de la superficie del agua."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/non-visual-obj.rst:61
+msgid "**BC flow:** boundary condition to set a specific flow."
+msgstr "**Flujo BC:** condición de contorno para establecer un flujo específico."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/non-visual-obj.rst:62
+msgid ""
+"**Evaporation:** a time series of evaporation rates can be loaded to "
+"account for water loss due to this factor during long hydrological "
+"simulations."
+msgstr ""
+"**Evaporación:** se puede cargar una serie temporal de tasas de evaporación para "
+"contabilizar la pérdida de agua debido a este factor durante simulaciones hidrológicas "
+"prolongadas."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/non-visual-obj.rst:63
+msgid ""
+"**Inflow hydrograph:** boundary condition used to define a specific "
+"inflow over time using a hydrograph (discharge vs time). This allows "
+"modeling variable flow entering the domain."
+msgstr ""
+"**Hidrograma de entrada:** condición de contorno utilizada para definir una entrada "
+"específica a lo largo del tiempo usando un hidrograma (descarga vs tiempo). Esto permite "
+"modelar flujo variable que entra al dominio."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/non-visual-obj.rst:65
+msgid "**Orifice:**"
+msgstr "**Orificio:**"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/non-visual-obj.rst:66
+msgid ""
+"**Rainfall:** allows the user to define a hyetograph to be used in the "
+"model. Each hyetograph is associated with specific spatial coordinates "
+"and its location can be manually adjusted using the vertex editor, by "
+"toggling the editing mode in QGIS and dragging the point to the desired "
+"location. - If only one hyetograph is provided, the entire domain will "
+"receive homogeneous rainfall based on that hyetograph. - If multiple "
+"hyetographs are loaded, rainfall distribution across the domain will be "
+"interpolated using Thiessen polygons."
+msgstr ""
+"**Precipitación:** permite al usuario definir un hietograma para usarse en el "
+"modelo. Cada hietograma está asociado con coordenadas espaciales específicas "
+"y su ubicación puede ajustarse manualmente usando el editor de vértices, activando "
+"el modo de edición en QGIS y arrastrando el punto a la ubicación deseada. - Si solo se proporciona un hietograma, todo el dominio recibirá "
+"precipitación homogénea basada en ese hietograma. - Si se cargan múltiples "
+"hietogramas, la distribución de precipitación en el dominio se "
+"interpolará usando polígonos de Thiessen."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/non-visual-obj.rst:71
+msgid "**Temperature:** a time series of temperature can be loaded."
+msgstr "**Temperatura:** se puede cargar una serie temporal de temperatura."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/non-visual-obj.rst:73
+msgid ""
+"Except for the *BC ELEVATION* option, in all other cases the data can be "
+"defined either manually (using relative or absolute times) or by "
+"importing it from an external file."
+msgstr ""
+"Excepto para la opción *BC ELEVATION*, en todos los demás casos los datos pueden "
+"definirse manualmente (usando tiempos relativos o absolutos) o "
+"importándolos desde un archivo externo."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/non-visual-obj.rst:75
+msgid ""
+"To assign any of the previously defined time series to the model, you "
+"must specify the location or geometry where the series will be applied. "
+"This can be done through the attribute table by toggling the editing mode"
+" and selecting the relevant geometry. The attribute table displays one "
+"row for each geometry or location in the domain. To assign the "
+"appropriate time series to each location, activate the editing mode and "
+"use the drop-down menu in the \"timeseries\" column to choose from the "
+"predefined time series."
+msgstr ""
+"Para asignar cualquiera de las series temporales previamente definidas al modelo, debe "
+"especificar la ubicación o geometría donde se aplicará la serie. "
+"Esto puede hacerse a través de la tabla de atributos activando el modo de edición"
+" y seleccionando la geometría relevante. La tabla de atributos muestra una "
+"fila para cada geometría o ubicación en el dominio. Para asignar la "
+"serie temporal apropiada a cada ubicación, active el modo de edición y "
+"use el menú desplegable en la columna \"timeseries\" para elegir entre las "
+"series temporales predefinidas."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/non-visual-obj.rst:82
+msgid "Hyetograph attribute table."
+msgstr "Tabla de atributos del hietograma."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/non-visual-obj.rst:85
+msgid "Controls"
+msgstr "Controles"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/non-visual-obj.rst:87
+msgid "Orders or instructions that determine how the network works over time."
+msgstr "Órdenes o instrucciones que determinan cómo funciona la red a lo largo del tiempo."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/non-visual-obj.rst:91
+msgid "Window to create or edit a control."
+msgstr "Ventana para crear o editar un control."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/non-visual-obj.rst:94
+msgid "Rasters"
+msgstr "Rásters"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/non-visual-obj.rst:98
+msgid "Window to manage the raster objects."
+msgstr "Ventana para gestionar los objetos ráster."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/non-visual-obj.rst:100
+msgid ""
+"They integrate spatial data to represent variability of parameters such "
+"as precipitation."
+msgstr ""
+"Integran datos espaciales para representar la variabilidad de parámetros como "
+"la precipitación."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/non-visual-obj.rst:102
+msgid ""
+"These rasters may represent either rainfall volume (mm) or rainfall "
+"intensity (mm/h). The user must specify the type of data contained in the"
+" rasters, as well as the corresponding timestamp for each file to ensure "
+"correct temporal assignment during the simulation."
+msgstr ""
+"Estos rásters pueden representar ya sea volumen de precipitación (mm) o intensidad de precipitación "
+"(mm/h). El usuario debe especificar el tipo de datos contenidos en los"
+" rásters, así como la marca de tiempo correspondiente para cada archivo para asegurar "
+"la asignación temporal correcta durante la simulación."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/non-visual-obj.rst:105
+msgid "Rasters can be imported with the import button on the manager."
+msgstr "Los rásters pueden importarse con el botón de importación en el gestor."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/non-visual-obj.rst:109
+msgid "Window to create or edit a raster."
+msgstr "Ventana para crear o editar un ráster."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/non-visual-obj.rst:111
+msgid ""
+"The non-visual objects must be assigned to their corresponding locations "
+"(geometries) in the model via their respective attribute tables."
+msgstr ""
+"Los objetos no visuales deben asignarse a sus ubicaciones correspondientes "
+"(geometrías) en el modelo a través de sus respectivas tablas de atributos."

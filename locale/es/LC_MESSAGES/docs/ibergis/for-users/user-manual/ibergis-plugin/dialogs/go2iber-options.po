@@ -1,0 +1,1082 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, IberGIS
+# This file is distributed under the same license as the IberGIS
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IberGIS Documentation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-10 14:07+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: es\n"
+"Language-Team: es <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:5
+msgid "Dialog Go2Iber options"
+msgstr "Diálogo Opciones Go2Iber"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:12
+msgid ""
+"Tool to manage all the options involved in the simulation. We can manage "
+"the SWMM and Iber options."
+msgstr ""
+"Herramienta para gestionar todas las opciones involucradas en la simulación. Podemos gestionar "
+"las opciones de SWMM e Iber."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:15
+msgid "Tab IBERGIS OPTIONS"
+msgstr "Pestaña OPCIONES DE IBERGIS"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:19
+msgid "IBERGIS options."
+msgstr "Opciones de IBERGIS."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:21
+msgid "**Project name:** name of the current project."
+msgstr "**Nombre del proyecto:** nombre del proyecto actual."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:22
+msgid "**Description:** a short description of the project."
+msgstr "**Descripción:** una breve descripción del proyecto."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:23
+msgid "**User:** name of the user or project author."
+msgstr "**Usuario:** nombre del usuario o autor del proyecto."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:24
+msgid "**Creation date:** creation date of the project."
+msgstr "**Fecha de creación:** fecha de creación del proyecto."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:25
+msgid "**Version:** IberGIS version."
+msgstr "**Versión:** versión de IberGIS."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:28
+msgid "Tab SWMM OPTIONS"
+msgstr "Pestaña OPCIONES DE SWMM"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:32
+msgid "SWMM options."
+msgstr "Opciones de SWMM."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:34
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:91
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:108
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:152
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:206
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:229
+msgid "The following options are available:"
+msgstr "Las siguientes opciones están disponibles:"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:36
+msgid ""
+"**Skip steady state:** allows to omit the steady phase at the beginning "
+"of the hydraulic simulation. The default is NO."
+msgstr ""
+"**Omitir estado estacionario:** permite omitir la fase estacionaria al comienzo "
+"de la simulación hidráulica. El valor predeterminado es NO."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:37
+msgid ""
+"**Allow ponding:** determines whether excess water is allowed to collect "
+"atop nodes and be re-introduced into the system as conditions permit. The"
+" default is YES. In order form ponding to actually occur at a particular "
+"node, **a non-zero value for its ponded area attribute must be used** "
+"(field *apond* on Junction layer)."
+msgstr ""
+"**Permitir encharcamiento:** determina si se permite que el agua en exceso se acumule "
+"sobre los nodos y se reintroduzca en el sistema cuando las condiciones lo permitan. El"
+" valor predeterminado es SÍ. Para que el encharcamiento realmente ocurra en un nodo particular, **debe usarse un valor distinto de cero para su atributo de área encharcada** "
+"(campo *apond* en la capa Junction)."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:39
+msgid ""
+"**Min slope:** minimum value allowed for a conduit's slope (%). If zero "
+"(the default) then no minimum is imposed (although SWMM uses a lower "
+"limit on elevation drop of 0.00035 m when computing a conduit slope)."
+msgstr ""
+"**Pendiente mínima:** valor mínimo permitido para la pendiente de un conducto (%). Si es cero "
+"(el valor predeterminado) entonces no se impone ningún mínimo (aunque SWMM usa un límite "
+"inferior de caída de elevación de 0.00035 m al calcular la pendiente de un conducto)."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:40
+msgid "**Flow units:** allow choice the flow units. The default is CMS."
+msgstr "**Unidades de flujo:** permite elegir las unidades de flujo. El valor predeterminado es CMS."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:41
+msgid ""
+"**Flow routing:** allow choice which method is used to route flows "
+"through the drainage system. The default is DYNWAVE."
+msgstr ""
+"**Enrutamiento de flujo:** permite elegir qué método se usa para enrutar flujos "
+"a través del sistema de drenaje. El valor predeterminado es DYNWAVE."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:42
+msgid ""
+"**Link offsets:** determines the convention used to specify the position "
+"of a link offset above the invert of its connecting node. DEPTH indicates"
+" that offsets are expressed as the distance between the node invert and "
+"the link, while ELEVATION indicates that the absolute elevation of the "
+"offset is used. The default is ELEVATION."
+msgstr ""
+"**Desplazamientos de enlace:** determina la convención usada para especificar la posición "
+"de un desplazamiento de enlace sobre la cota inferior de su nodo de conexión. DEPTH indica"
+" que los desplazamientos se expresan como la distancia entre la cota inferior del nodo y "
+"el enlace, mientras que ELEVATION indica que se usa la elevación absoluta del "
+"desplazamiento. El valor predeterminado es ELEVATION."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:44
+msgid ""
+"**Ignore groundwater:** allow choice if groundwater calculations should "
+"be ignored when a project file contains aquifer objects. The default is "
+"NO."
+msgstr ""
+"**Ignorar agua subterránea:** permite elegir si los cálculos de agua subterránea deben "
+"ignorarse cuando un archivo de proyecto contiene objetos acuíferos. El valor predeterminado es "
+"NO."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:45
+msgid ""
+"**Ignore rainfall:** allow choice if all rainfall data and runoff "
+"calculations should be ignored. If is set to YES, SWMM only performs flow"
+" and pollutant routing based on user-supplied direct and dry weather "
+"inflows. The default is NO."
+msgstr ""
+"**Ignorar precipitación:** permite elegir si todos los datos de precipitación y cálculos de escorrentía "
+"deben ignorarse. Si se establece en SÍ, SWMM solo realiza enrutamiento de flujo"
+" y contaminantes basado en entradas directas y de clima seco proporcionadas por el usuario. El valor predeterminado es NO."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:47
+msgid ""
+"**Ignore routing:** allow choice if only runoff should be computed even "
+"if the project contains drainage system links and nodes. The default is "
+"NO."
+msgstr ""
+"**Ignorar enrutamiento:** permite elegir si solo debe calcularse la escorrentía incluso "
+"si el proyecto contiene enlaces y nodos del sistema de drenaje. El valor predeterminado es "
+"NO."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:48
+msgid ""
+"**Ignore snowmelt:** allow choice if snowmelt calculations should be "
+"ignored when a project file contains snow pack objects. The default is "
+"NO."
+msgstr ""
+"**Ignorar deshielo:** permite elegir si los cálculos de deshielo deben "
+"ignorarse cuando un archivo de proyecto contiene objetos de paquete de nieve. El valor predeterminado es "
+"NO."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:49
+msgid ""
+"**Ignore quality:** allow choice if pollutant wash off, routing and "
+"treatment should be ignored in a project that has pollutants defined. The"
+" default is NO."
+msgstr ""
+"**Ignorar calidad:** permite elegir si el lavado de contaminantes, enrutamiento y "
+"tratamiento deben ignorarse en un proyecto que tiene contaminantes definidos. El"
+" valor predeterminado es NO."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:50
+msgid ""
+"**Force main equation:** establishes wheter the Hazen-Williams (H-W) or "
+"the Darcy-Wesbach (D-W) equation will be used to compute friction losses "
+"for pressurized flow in conduits that have been assigned a circular force"
+" main cross-section shape. The default is H-W."
+msgstr ""
+"**Ecuación de conducción forzada:** establece si se usará la ecuación de Hazen-Williams (H-W) o "
+"la de Darcy-Weisbach (D-W) para calcular las pérdidas por fricción "
+"para flujo presurizado en conductos que tienen asignada una forma de sección transversal circular de conducción"
+" forzada. El valor predeterminado es H-W."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:52
+msgid ""
+"**Inertial damping:** indicates how the inertial terms in the Saint "
+"Venant momentum equation will be handled under dynamic wave flow routing."
+" Choosing NONE (the default) maintains these terms at their full value "
+"under all conditions. Selecting PARTIAL will reduce the terms as flow "
+"comes closer to being critical (and ignores them when flow is "
+"supercritical). Choosing FULL will drop the terms altogether."
+msgstr ""
+"**Amortiguamiento inercial:** indica cómo se manejarán los términos inerciales en la ecuación de "
+"momento de Saint Venant bajo enrutamiento de onda dinámica."
+" Elegir NONE (el valor predeterminado) mantiene estos términos en su valor completo "
+"bajo todas las condiciones. Seleccionar PARTIAL reducirá los términos a medida que el flujo "
+"se acerca a ser crítico (y los ignora cuando el flujo es "
+"supercrítico). Elegir FULL eliminará los términos por completo."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:55
+msgid ""
+"**Lat flow tol:** maximum percent difference between the current and "
+"previous lateral inflow at all nodes in the conveyance system in order "
+"for the *Skip steady state* option to take effect. The default is 5 "
+"percent."
+msgstr ""
+"**Tolerancia de flujo lateral:** diferencia porcentual máxima entre la entrada lateral actual y "
+"la anterior en todos los nodos del sistema de conducción para que "
+"la opción *Omitir estado estacionario* surta efecto. El valor predeterminado es 5 "
+"por ciento."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:56
+msgid ""
+"**Lengthening step:** time step, in seconds, used to lengthen conduits "
+"under dynamic wave routing, so that they meet the Courant stability "
+"criterion under full-flow conditions (i.e., the travel time of a wave "
+"will not be smaller than the specified conduit lengthening time step). As"
+" this value is decreased, fewer conduits will require lengthening. A "
+"value of 0 means that no conduits will be lengthened. The default is 1."
+msgstr ""
+"**Paso de alargamiento:** paso de tiempo, en segundos, usado para alargar conductos "
+"bajo enrutamiento de onda dinámica, de modo que cumplan el criterio de estabilidad de "
+"Courant bajo condiciones de flujo completo (es decir, el tiempo de viaje de una onda "
+"no será menor que el paso de tiempo de alargamiento de conducto especificado). A medida"
+" que este valor disminuye, menos conductos requerirán alargamiento. Un "
+"valor de 0 significa que no se alargarán conductos. El valor predeterminado es 1."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:59
+msgid ""
+"**Wet step:** time step length used to compute runoff from subcatchments "
+"during periods of rainfall or when ponded water still remains on the "
+"surface. The default is 00:05:00."
+msgstr ""
+"**Paso húmedo:** longitud de paso de tiempo usada para calcular la escorrentía de subcuencas "
+"durante períodos de lluvia o cuando el agua encharcada aún permanece en la "
+"superficie. El valor predeterminado es 00:05:00."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:60
+msgid ""
+"**Sweep start:** day of the year (month/day) when street sweeping "
+"operations begin. The default is 01/01."
+msgstr ""
+"**Inicio de barrido:** día del año (mes/día) cuando comienzan las operaciones de barrido de calles. El valor predeterminado es 01/01."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:61
+msgid ""
+"**Sweep end:** day of the year (month/day) when street sweeping "
+"operations end. The default is 12/31."
+msgstr ""
+"**Fin de barrido:** día del año (mes/día) cuando terminan las operaciones de barrido de calles. El valor predeterminado es 12/31."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:62
+msgid ""
+"**Variable step:** safety factor applied to a variable time step computed"
+" for each time period under dynamic wave flow routing. The variable time "
+"step is computed so as to satisfy the Courant stability criterion for "
+"each conduit and yet not exceed the *Routing step* value. If the safety "
+"factor is 0, then no variable time step is used. The default is 0.75."
+msgstr ""
+"**Paso variable:** factor de seguridad aplicado a un paso de tiempo variable calculado"
+" para cada período de tiempo bajo enrutamiento de onda dinámica. El paso de tiempo "
+"variable se calcula para satisfacer el criterio de estabilidad de Courant para "
+"cada conducto y aún así no exceder el valor de *Paso de enrutamiento*. Si el factor de seguridad "
+"es 0, entonces no se usa paso de tiempo variable. El valor predeterminado es 0.75."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:64
+msgid ""
+"**Normal flow limited:** specifies which condition is checked to "
+"determine if flow in a conduit is supercritical and should thus be "
+"limited to the normal flow. Use SLOPE to check if the water surface slope"
+" is greater than the conduit slope, FROUDE to check if the Froude number "
+"is greater than 1 or BOTH to check both conditions. The default is BOTH."
+msgstr ""
+"**Flujo normal limitado:** especifica qué condición se verifica para "
+"determinar si el flujo en un conducto es supercrítico y por lo tanto debe "
+"limitarse al flujo normal. Use SLOPE para verificar si la pendiente de la superficie del agua"
+" es mayor que la pendiente del conducto, FROUDE para verificar si el número de Froude "
+"es mayor que 1 o BOTH para verificar ambas condiciones. El valor predeterminado es BOTH."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:66
+msgid ""
+"**Min surfarea:** minimum surface area used at nodes when computing "
+"changes in water depth under dynamic wave routing. If 0 is entered, then "
+"the default value of 1.167 m² is used (i.e., the area of a 1,2192 m "
+"diameter manhole)."
+msgstr ""
+"**Área superficial mínima:** área superficial mínima usada en los nodos al calcular "
+"cambios en la profundidad del agua bajo enrutamiento de onda dinámica. Si se ingresa 0, entonces "
+"se usa el valor predeterminado de 1.167 m² (es decir, el área de un pozo de inspección de "
+"1,2192 m de diámetro)."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:67
+msgid ""
+"**Dry days:** number of days with no rainfall prior to the start of the "
+"simulation. The default is 10."
+msgstr ""
+"**Días secos:** número de días sin lluvia antes del inicio de la "
+"simulación. El valor predeterminado es 10."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:68
+msgid ""
+"**Dry step:** time step length used for runoff computations (consisting "
+"essentially of pollutant buildup) during periods when there is no "
+"rainfall and no ponded water. The default is 1:00:00."
+msgstr ""
+"**Paso seco:** longitud de paso de tiempo usada para cálculos de escorrentía (que consiste "
+"esencialmente en acumulación de contaminantes) durante períodos cuando no hay "
+"lluvia ni agua encharcada. El valor predeterminado es 1:00:00."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:69
+msgid ""
+"**Head tolerance:** difference in computed head at each node between "
+"successive trials below which the flow solution for the current time step"
+" is assumed to have converged. The default tolerance is 0."
+msgstr ""
+"**Tolerancia de carga:** diferencia en la carga calculada en cada nodo entre "
+"intentos sucesivos por debajo de la cual se asume que la solución de flujo para el paso de tiempo actual"
+" ha convergido. La tolerancia predeterminada es 0."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:70
+msgid ""
+"**Max trials:** maximum number of trials allowed during a time step to "
+"reach convergence when updating hydraulic heads at the conveyance "
+"system's nodes. The default value is 0."
+msgstr ""
+"**Intentos máximos:** número máximo de intentos permitidos durante un paso de tiempo para "
+"alcanzar convergencia al actualizar las cargas hidráulicas en los nodos del "
+"sistema de conducción. El valor predeterminado es 0."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:71
+msgid ""
+"**Sys flow tol:** maximum percent difference between total system inflow "
+"and total system outflow which can occur in order for the *Skip steady "
+"state* option to take effect. The default is 5 percent."
+msgstr ""
+"**Tolerancia de flujo del sistema:** diferencia porcentual máxima entre la entrada total del sistema "
+"y la salida total del sistema que puede ocurrir para que la opción *Omitir estado "
+"estacionario* surta efecto. El valor predeterminado es 5 por ciento."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:72
+msgid ""
+"**Threads:** number of parallel computing threads to use for dynamic wave"
+" flow routing on machines equipped with multi-core processors. The "
+"default is 1."
+msgstr ""
+"**Hilos:** número de hilos de computación paralela a usar para enrutamiento de flujo de onda dinámica"
+" en máquinas equipadas con procesadores multinúcleo. El "
+"valor predeterminado es 1."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:73
+msgid ""
+"**Minimum step:** the smallest time step allowed when variable time steps"
+" are used for dynamic wave flow routing. The default is 0.5."
+msgstr ""
+"**Paso mínimo:** el paso de tiempo más pequeño permitido cuando se usan pasos de tiempo variables"
+" para enrutamiento de flujo de onda dinámica. El valor predeterminado es 0.5."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:74
+msgid ""
+"**Routing step:** time step length in seconds used for routing flows and "
+"water quality constituents through the conveyance system. This can be "
+"increased if dynamic wave routing is not used. The default is 00:00:02."
+msgstr ""
+"**Paso de enrutamiento:** longitud de paso de tiempo en segundos usada para enrutar flujos y "
+"constituyentes de calidad del agua a través del sistema de conducción. Esto puede "
+"aumentarse si no se usa enrutamiento de onda dinámica. El valor predeterminado es 00:00:02."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:76
+msgid ""
+"**Start date:** the date when the simulation begins. If not supplied, a "
+"date of 01/01/2017 is used."
+msgstr ""
+"**Fecha de inicio:** la fecha cuando comienza la simulación. Si no se proporciona, se usa "
+"la fecha 01/01/2017."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:77
+msgid ""
+"**End date:** the date when the simulation is to end. The default is the "
+"start date."
+msgstr ""
+"**Fecha de fin:** la fecha cuando debe terminar la simulación. El valor predeterminado es la "
+"fecha de inicio."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:78
+msgid ""
+"**Report start date:** the date when reporting of results is to begin. "
+"The default is the simulations start date."
+msgstr ""
+"**Fecha de inicio de informe:** la fecha cuando debe comenzar el informe de resultados. "
+"El valor predeterminado es la fecha de inicio de la simulación."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:79
+msgid ""
+"**Report step:** time interval for reporting of computed results. The "
+"default is 00:05:00."
+msgstr ""
+"**Paso de informe:** intervalo de tiempo para informar resultados calculados. El "
+"valor predeterminado es 00:05:00."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:80
+msgid ""
+"**Start time:** time of day on the starting date when the simulation "
+"begins. The default is 00:00:00."
+msgstr ""
+"**Hora de inicio:** hora del día en la fecha de inicio cuando comienza la simulación. El valor predeterminado es 00:00:00."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:81
+msgid ""
+"**End time:** time of day on the ending date when the simulation will "
+"end. The default is 03:00:00."
+msgstr ""
+"**Hora de fin:** hora del día en la fecha de finalización cuando terminará la simulación. El valor predeterminado es 03:00:00."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:82
+msgid ""
+"**Report start time:** time of day on the report starting date when "
+"reporting is to begin. The default is the simulation start time of day."
+msgstr ""
+"**Hora de inicio de informe:** hora del día en la fecha de inicio del informe cuando "
+"debe comenzar el informe. El valor predeterminado es la hora de inicio de la simulación."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:85
+msgid "Tab SWMM RESULTS"
+msgstr "Pestaña RESULTADOS DE SWMM"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:89
+msgid "SWMM results."
+msgstr "Resultados de SWMM."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:93
+msgid ""
+"**Continuity:** specifies if continuity checks should be reported or not."
+" The default is YES."
+msgstr ""
+"**Continuidad:** especifica si las verificaciones de continuidad deben reportarse o no."
+" El valor predeterminado es SÍ."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:94
+msgid ""
+"**Flowstats:** specifies whether summary flow statistics should be "
+"reported or not. The default is YES."
+msgstr ""
+"**Estadísticas de flujo:** especifica si las estadísticas resumidas de flujo deben "
+"reportarse o no. El valor predeterminado es SÍ."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:95
+msgid ""
+"**Controls:** specifies whether all control actions taken during a "
+"simulation should be listed or not. The default is YES."
+msgstr ""
+"**Controles:** especifica si todas las acciones de control tomadas durante una "
+"simulación deben listarse o no. El valor predeterminado es SÍ."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:96
+msgid ""
+"**Input:** specifies whether or not a summary of the input data should be"
+" provided in the output report. The default is NO."
+msgstr ""
+"**Entrada:** especifica si debe proporcionarse o no un resumen de los datos de entrada"
+" en el informe de salida. El valor predeterminado es NO."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:97
+msgid ""
+"**Timestep detailed subcatchments:** list of subcatchments whose results "
+"are to be reported. The default is blank."
+msgstr ""
+"**Subcuencas detalladas por paso de tiempo:** lista de subcuencas cuyos resultados "
+"deben reportarse. El valor predeterminado está en blanco."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:98
+msgid ""
+"**Timestep detailed nodes I and II:** list of nodes whose results are to "
+"be reported. The default is blank. A maximum of 40 nodes can be written "
+"in each of them."
+msgstr ""
+"**Nodos detallados por paso de tiempo I y II:** lista de nodos cuyos resultados deben "
+"reportarse. El valor predeterminado está en blanco. Se puede escribir un máximo de 40 nodos "
+"en cada uno de ellos."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:99
+msgid ""
+"**Timestep detailed links:** list of links whose results are to be "
+"reported. The default is blank."
+msgstr ""
+"**Enlaces detallados por paso de tiempo:** lista de enlaces cuyos resultados deben "
+"reportarse. El valor predeterminado está en blanco."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:102
+msgid "Tab IBER OPTIONS"
+msgstr "Pestaña OPCIONES DE IBER"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:106
+msgid "Iber options."
+msgstr "Opciones de Iber."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:111
+msgid "Numerical scheme"
+msgstr "Esquema numérico"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:113
+msgid ""
+"**Numerical scheme:** defines the numerical scheme for the Saint-Venant "
+"equations used in calculating surface flow. Available options are *1st "
+"Order*, *2nd Order*, *DHD*  and *DHD Basin*. The default is *DHD*."
+msgstr ""
+"**Esquema numérico:** define el esquema numérico para las ecuaciones de Saint-Venant "
+"usadas en el cálculo del flujo superficial. Las opciones disponibles son *1er "
+"Orden*, *2do Orden*, *DHD* y *DHD Basin*. El valor predeterminado es *DHD*."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:115
+msgid ""
+"**CFL:** Courant-Friedrichs-Lewy condition. The user must set the value. "
+"If a very high value is set, the computation time will be reduced, but "
+"convergence issues may arise in the solution of the equations. A value of"
+" 0.45 can be considered appropriate as a starting point, and it can be "
+"lowered to 0.3 if convergence problems are observed."
+msgstr ""
+"**CFL:** condición de Courant-Friedrichs-Lewy. El usuario debe establecer el valor. "
+"Si se establece un valor muy alto, el tiempo de cálculo se reducirá, pero "
+"pueden surgir problemas de convergencia en la solución de las ecuaciones. Un valor de"
+" 0.45 puede considerarse apropiado como punto de partida, y puede "
+"reducirse a 0.3 si se observan problemas de convergencia."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:118
+msgid ""
+"**Max time increment:** sets the maximum value of the time step used by "
+"the program to integrate the flow equations. This is a maximum value. In "
+"practice, the time step used during the simulation will be the minimum "
+"between this value and the one computed based on the CFL condition. The "
+"default is 1."
+msgstr ""
+"**Incremento de tiempo máximo:** establece el valor máximo del paso de tiempo usado por "
+"el programa para integrar las ecuaciones de flujo. Este es un valor máximo. En "
+"la práctica, el paso de tiempo usado durante la simulación será el mínimo "
+"entre este valor y el calculado basándose en la condición CFL. El "
+"valor predeterminado es 1."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:120
+msgid ""
+"**Wet-dry limit:** this is the depth threshold above which an element is "
+"considered wet. Below this value, the element is considered dry, and "
+"therefore no computations are performed on it, unless it becomes wet. "
+"While in river engineering, a threshold of 0.01 m is generally "
+"reasonable, in some cases this value could be reduced to as little as "
+"0.001 m. The default is 0.0001."
+msgstr ""
+"**Límite húmedo-seco:** este es el umbral de profundidad por encima del cual un elemento se "
+"considera húmedo. Por debajo de este valor, el elemento se considera seco, y "
+"por lo tanto no se realizan cálculos en él, a menos que se moje. "
+"Mientras que en ingeniería de ríos, un umbral de 0.01 m es generalmente "
+"razonable, en algunos casos este valor podría reducirse hasta "
+"0.001 m. El valor predeterminado es 0.0001."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:123
+msgid ""
+"**Molecular viscosity:** molecular viscosity coefficient applied to the "
+"flow to represent numerical diffusion effects. The default is 0.000001."
+msgstr ""
+"**Viscosidad molecular:** coeficiente de viscosidad molecular aplicado al "
+"flujo para representar efectos de difusión numérica. El valor predeterminado es 0.000001."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:125
+msgid "DHD and DHD Basin schemes must not be used for hydraulic simulations"
+msgstr "Los esquemas DHD y DHD Basin no deben usarse para simulaciones hidráulicas"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:128
+msgid "Time & Simulation control"
+msgstr "Control de Tiempo y Simulación"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:130
+msgid ""
+"**Results 2D time interval:** time interval, in seconds, that defines how"
+" often a 2D result is saved during the simulation. This must match the "
+"*Report step* value. The default is 300."
+msgstr ""
+"**Intervalo de tiempo de resultados 2D:** intervalo de tiempo, en segundos, que define cada"
+" cuánto se guarda un resultado 2D durante la simulación. Esto debe coincidir con el "
+"valor de *Paso de informe*. El valor predeterminado es 300."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:132
+msgid ""
+"**Timeseries time interval:** time interval, in seconds, between data "
+"records in the time series. If not defined or greater than the *Result 2D"
+" time interval*, we use that value. The default is 300."
+msgstr ""
+"**Intervalo de tiempo de series temporales:** intervalo de tiempo, en segundos, entre registros de datos "
+"en las series temporales. Si no está definido o es mayor que el *Intervalo de tiempo de resultado 2D"
+"*, se usa ese valor. El valor predeterminado es 300."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:136
+msgid "Hydrological processes"
+msgstr "Procesos hidrológicos"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:138
+msgid "**Start time:** simulation start time, in seconds. The default is 0."
+msgstr "**Tiempo de inicio:** tiempo de inicio de la simulación, en segundos. El valor predeterminado es 0."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:139
+msgid ""
+"**Precipitation:** selects the type of precipitation applied in the "
+"model. The available options are *Hyetograph*, *Raster* and *No rain*. "
+"The default is *No rain*."
+msgstr ""
+"**Precipitación:** selecciona el tipo de precipitación aplicada en el "
+"modelo. Las opciones disponibles son *Hietograma*, *Ráster* y *Sin lluvia*. "
+"El valor predeterminado es *Sin lluvia*."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:140
+msgid ""
+"**Set rainfall raster:** allows to choose between the defined "
+"precipitation rasters."
+msgstr ""
+"**Establecer ráster de precipitación:** permite elegir entre los rásters de "
+"precipitación definidos."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:141
+msgid ""
+"**Losses method:** method used to calculate infiltration losses. The "
+"default is *SCS*."
+msgstr ""
+"**Método de pérdidas:** método usado para calcular pérdidas por infiltración. El "
+"valor predeterminado es *SCS*."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:142
+msgid ""
+"**CN multiplier:** multiplier factor applied to the Curve Number to "
+"adjust runoff losses. The default is 1."
+msgstr ""
+"**Multiplicador CN:** factor multiplicador aplicado al Número de Curva para "
+"ajustar las pérdidas de escorrentía. El valor predeterminado es 1."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:143
+msgid ""
+"**Ia:** initial abstraction. Storage ratio before the start of flow. The "
+"default is 0.2."
+msgstr ""
+"**Ia:** abstracción inicial. Relación de almacenamiento antes del inicio del flujo. El "
+"valor predeterminado es 0.2."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:146
+msgid "Tab IBER RESULTS"
+msgstr "Pestaña RESULTADOS DE IBER"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:150
+msgid ""
+"Iber results. In the case of the figure above, the results Depth and "
+"Velocity will be displayed."
+msgstr ""
+"Resultados de Iber. En el caso de la figura anterior, se mostrarán los resultados de Profundidad y "
+"Velocidad."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:155
+msgid "Hydrodynamics"
+msgstr "Hidrodinámica"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:157
+msgid "**Depth:** water depth results, in meters, in each mesh cell over time."
+msgstr "**Profundidad:** resultados de profundidad del agua, en metros, en cada celda de la malla a lo largo del tiempo."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:158
+msgid "**Velocity:** flow velocity result, in m/s, in each mesh cell over time."
+msgstr "**Velocidad:** resultado de velocidad del flujo, en m/s, en cada celda de la malla a lo largo del tiempo."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:159
+msgid "**Specific discharge:** specific discharge result, in m²/s"
+msgstr "**Caudal específico:** resultado de caudal específico, en m²/s"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:160
+msgid ""
+"**Water elevation:** total water level result, in meters, the sum of the "
+"ground elevation plus the water depth."
+msgstr ""
+"**Elevación del agua:** resultado del nivel total del agua, en metros, la suma de la "
+"elevación del terreno más la profundidad del agua."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:163
+msgid "Maximums"
+msgstr "Máximos"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:165
+msgid ""
+"**Maximum depth:** maximum water depth, in meters, reached in each cell "
+"during the simulation."
+msgstr ""
+"**Profundidad máxima:** profundidad máxima del agua, en metros, alcanzada en cada celda "
+"durante la simulación."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:166
+msgid ""
+"**Maximum velocity:** maximum flow velocity, in m/s, reached in each cell"
+" during the simulation."
+msgstr ""
+"**Velocidad máxima:** velocidad máxima del flujo, en m/s, alcanzada en cada celda"
+" durante la simulación."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:167
+msgid ""
+"**Maximum specific discharge:** maximum specific flow rate, in m²/s, "
+"during the simulation."
+msgstr ""
+"**Caudal específico máximo:** caudal específico máximo, en m²/s, "
+"durante la simulación."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:168
+msgid ""
+"**Maximum water elevation:** maximum total water level, in meters, during"
+" the simulation."
+msgstr ""
+"**Elevación máxima del agua:** nivel máximo total del agua, en metros, durante"
+" la simulación."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:171
+msgid "Other results"
+msgstr "Otros resultados"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:173
+msgid ""
+"**Energy:** represents the total energy of the flow, calculated as the "
+"sum of the water level and the kinetic energy."
+msgstr ""
+"**Energía:** representa la energía total del flujo, calculada como la "
+"suma del nivel del agua y la energía cinética."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:174
+msgid ""
+"**Froude number:** Froude number indicating the hydraulic flow regime: "
+"subcritical (Fr<1), critical (Fr=1) or supercritical (Fr>1)."
+msgstr ""
+"**Número de Froude:** número de Froude que indica el régimen de flujo hidráulico: "
+"subcrítico (Fr<1), crítico (Fr=1) o supercrítico (Fr>1)."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:175
+msgid ""
+"**Local time step:** local time step calculated according to the Courant-"
+"Friedrichs-Lewy (CFL) stability condition."
+msgstr ""
+"**Paso de tiempo local:** paso de tiempo local calculado según la condición de estabilidad de Courant-"
+"Friedrichs-Lewy (CFL)."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:176
+msgid ""
+"**Maximum local time step:** maximum allowable value of the local time "
+"step in each model cell, which limits the time increment calculated "
+"according to the Courant condition."
+msgstr ""
+"**Paso de tiempo local máximo:** valor máximo permitido del paso de tiempo "
+"local en cada celda del modelo, que limita el incremento de tiempo calculado "
+"según la condición de Courant."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:179
+msgid "Hazard"
+msgstr "Peligrosidad"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:181
+msgid ""
+"**Hazard RD9/2008:** hydraulic hazard criterion defined by the Spanish "
+"Ministry of the Environment, which classifies risk based on water depth "
+"and flow velocity."
+msgstr ""
+"**Peligrosidad RD9/2008:** criterio de peligrosidad hidráulica definido por el Ministerio "
+"Español de Medio Ambiente, que clasifica el riesgo basándose en la profundidad del agua "
+"y la velocidad del flujo."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:182
+msgid ""
+"**Hazard ACA 2003:** hazard criterion of the Catalan Water Agency (2003),"
+" which classifies risk zones based on water depth and flow velocity."
+msgstr ""
+"**Peligrosidad ACA 2003:** criterio de peligrosidad de la Agencia Catalana del Agua (2003),"
+" que clasifica zonas de riesgo basándose en la profundidad del agua y la velocidad del flujo."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:183
+msgid ""
+"**Pedestrians:** evaluates flow hazards for pedestrians, considering "
+"water depth and velocity as determining stability factors (UPC "
+"criterion)."
+msgstr ""
+"**Peatones:** evalúa los peligros del flujo para peatones, considerando "
+"la profundidad y velocidad del agua como factores determinantes de la estabilidad (criterio "
+"UPC)."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:184
+msgid ""
+"**Vehicles:** evaluates the safety of vehicles against entrainment by "
+"currents, based on hydraulic parameters such as water depth and flow "
+"velocity (Australian criterion (Shand et al., 2011))."
+msgstr ""
+"**Vehículos:** evalúa la seguridad de los vehículos contra el arrastre por "
+"corrientes, basándose en parámetros hidráulicos como la profundidad del agua y la velocidad del flujo "
+"(criterio australiano (Shand et al., 2011))."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:187
+msgid "Raster results"
+msgstr "Resultados ráster"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:189
+msgid ""
+"**Raster results:** interpolation method for raster results. The "
+"available options are *Linear interpolation* and *Nearest interpolation*."
+" The default is *Linear interpolation*."
+msgstr ""
+"**Resultados ráster:** método de interpolación para resultados ráster. Las "
+"opciones disponibles son *Interpolación lineal* e *Interpolación del vecino más cercano*."
+" El valor predeterminado es *Interpolación lineal*."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:190
+msgid ""
+"**Cell size:** cell size of the output rasters, in meters. The default is"
+" 100."
+msgstr ""
+"**Tamaño de celda:** tamaño de celda de los rásters de salida, en metros. El valor predeterminado es"
+" 100."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:191
+msgid ""
+"**Maximums at the end:** adds one more timestep at the end of the result "
+"rasters with the maximum values obtained."
+msgstr ""
+"**Máximos al final:** añade un paso de tiempo más al final de los rásters de resultado "
+"con los valores máximos obtenidos."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:192
+msgid ""
+"**Use raster frame:** allows to delimit the geographic area where the "
+"raster results will be generated. The parameters are defined in the "
+"following group, *Raster results frame*."
+msgstr ""
+"**Usar marco ráster:** permite delimitar el área geográfica donde se "
+"generarán los resultados ráster. Los parámetros se definen en el "
+"siguiente grupo, *Marco de resultados ráster*."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:195
+msgid "Raster results frame"
+msgstr "Marco de resultados ráster"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:197
+msgid "Allows to specify the coordinates of the raster boundary."
+msgstr "Permite especificar las coordenadas del límite del ráster."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:200
+msgid "Tab IBER PLUGINS"
+msgstr "Pestaña PLUGINS DE IBER"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:204
+msgid "Iber plugins."
+msgstr "Plugins de Iber."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:208
+msgid ""
+"**Only inlets or complete network:** allows to choose whether to simulate"
+" only surface runoff (only inlets) or to include the complete drainage "
+"network (complete network). The default is *Complete network*."
+msgstr ""
+"**Solo entradas o red completa:** permite elegir si simular"
+" solo la escorrentía superficial (solo entradas) o incluir la red de drenaje completa "
+"(red completa). El valor predeterminado es *Red completa*."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:210
+msgid ""
+"**Enable or disable outlet loss:** enables or disables the consideration "
+"of energy losses in the model outputs."
+msgstr ""
+"**Habilitar o deshabilitar pérdida de salida:** habilita o deshabilita la consideración "
+"de pérdidas de energía en las salidas del modelo."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:213
+msgid "Tab CHECK PROJECT"
+msgstr "Pestaña VERIFICAR PROYECTO"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:217
+msgid "Check project."
+msgstr "Verificar proyecto."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:219
+msgid ""
+"Sets maximum and minimum values that can be included or excluded, for "
+"parameters: manning, cellsize, sfactor, slope, street_vol, orifice_cd, "
+"roughness, mfactor, ufactor, outlet_vol and weir_cd."
+msgstr ""
+"Establece valores máximos y mínimos que pueden incluirse o excluirse, para "
+"parámetros: manning, cellsize, sfactor, slope, street_vol, orifice_cd, "
+"roughness, mfactor, ufactor, outlet_vol y weir_cd."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:223
+msgid "Tab RASTER OPTIONS"
+msgstr "Pestaña OPCIONES DE RÁSTER"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:227
+msgid "Raster options."
+msgstr "Opciones de ráster."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:232
+msgid "Raster results symbology mode"
+msgstr "Modo de simbología de resultados ráster"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:237
+msgid "Sets the raster results symbology mode. The available options are:"
+msgstr "Establece el modo de simbología de resultados ráster. Las opciones disponibles son:"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:235
+msgid ""
+"**Min/Max per band:** automatically adjusts the color scale for each "
+"raster band individually using the minimum and maximum values detected "
+"within that band."
+msgstr ""
+"**Mín/Máx por banda:** ajusta automáticamente la escala de color para cada "
+"banda ráster individualmente usando los valores mínimo y máximo detectados "
+"dentro de esa banda."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:236
+msgid ""
+"**Min/Max for all bands:** applies a single color scale to all raster "
+"bands, using the overall minimum and maximum values found across every "
+"band."
+msgstr ""
+"**Mín/Máx para todas las bandas:** aplica una sola escala de color a todas las bandas "
+"ráster, usando los valores mínimo y máximo globales encontrados en todas las "
+"bandas."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:237
+msgid ""
+"**Custom Min/Max:** uses custom minimum and maximum values defined in the"
+" :ref:`raster-configuration-for-each-layer` for all raster bands."
+msgstr ""
+"**Mín/Máx personalizado:** usa valores mínimo y máximo personalizados definidos en"
+" :ref:`raster-configuration-for-each-layer` para todas las bandas ráster."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:242
+msgid "Raster configuration for each layer"
+msgstr "Configuración ráster para cada capa"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:247
+msgid ""
+"Allows to configure the raster results for each layer. The following "
+"options are available:"
+msgstr ""
+"Permite configurar los resultados ráster para cada capa. Las siguientes "
+"opciones están disponibles:"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:245
+msgid ""
+"**Maximum and minimum custom values:** sets the maximum and minimum "
+"values for the raster results."
+msgstr ""
+"**Valores personalizados máximo y mínimo:** establece los valores máximo y mínimo "
+"para los resultados ráster."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:246
+msgid "**Symbology color ramp:** sets the symbology color ramp."
+msgstr "**Rampa de color de simbología:** establece la rampa de color de simbología."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:247
+msgid ""
+"**Exclude values for the parameters:** allows you to exclude values to "
+"make the configuration easier."
+msgstr ""
+"**Excluir valores para los parámetros:** permite excluir valores para "
+"facilitar la configuración."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:271
+msgid "The available layers to be configured are:"
+msgstr "Las capas disponibles para configurar son:"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:250
+msgid "Depth"
+msgstr "Profundidad"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:251
+msgid "Velocity"
+msgstr "Velocidad"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:252
+msgid "Water Elevation"
+msgstr "Elevación del Agua"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:253
+msgid "Hazard ACA"
+msgstr "Peligrosidad ACA"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:254
+msgid "Severe Hazard RD9-2008"
+msgstr "Peligrosidad Grave RD9-2008"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:255
+msgid "Local Time Step"
+msgstr "Paso de Tiempo Local"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:256
+msgid "Specific Discharge X"
+msgstr "Caudal Específico X"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:257
+msgid "Specific Discharge Y"
+msgstr "Caudal Específico Y"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:258
+msgid "Energy"
+msgstr "Energía"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:259
+msgid "Froude"
+msgstr "Froude"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:260
+msgid "Infiltration Rate"
+msgstr "Tasa de Infiltración"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:261
+msgid "Rain Depth"
+msgstr "Profundidad de Lluvia"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:262
+msgid "Velocity X"
+msgstr "Velocidad X"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:263
+msgid "Velocity Y"
+msgstr "Velocidad Y"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:264
+msgid "Water Performance"
+msgstr "Rendimiento del Agua"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:265
+msgid "Max Depth"
+msgstr "Profundidad Máxima"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:266
+msgid "Max Velocity"
+msgstr "Velocidad Máxima"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:267
+msgid "Max Water Elevation"
+msgstr "Elevación Máxima del Agua"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:268
+msgid "Max Hazard ACA"
+msgstr "Peligrosidad ACA Máxima"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:269
+msgid "Max Severe Hazard RD9-2008"
+msgstr "Peligrosidad Grave RD9-2008 Máxima"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:270
+msgid "Max Local Time Step"
+msgstr "Paso de Tiempo Local Máximo"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:271
+msgid "Max Specific Discharge"
+msgstr "Caudal Específico Máximo"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:273
+msgid ""
+"The maximum and minimum configuration will only work with the custom "
+"symbology mode."
+msgstr ""
+"La configuración de máximo y mínimo solo funcionará con el modo de "
+"simbología personalizado."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/go2iber-options.rst:275
+msgid ""
+"The execution can output more rasters than the available to configure on "
+"this dialog. They will get imported too, but with default configuration."
+msgstr ""
+"La ejecución puede generar más rásters que los disponibles para configurar en "
+"este diálogo. También se importarán, pero con configuración predeterminada."

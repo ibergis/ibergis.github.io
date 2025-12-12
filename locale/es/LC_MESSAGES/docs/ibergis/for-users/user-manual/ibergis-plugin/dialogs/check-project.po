@@ -1,0 +1,93 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, IberGIS
+# This file is distributed under the same license as the IberGIS
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IberGIS Documentation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-10 14:07+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: es\n"
+"Language-Team: es <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/check-project.rst:5
+msgid "Dialog Check project"
+msgstr "Diálogo Verificar proyecto"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/check-project.rst:15
+msgid "Check project."
+msgstr "Verificar proyecto."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/check-project.rst:17
+msgid ""
+"It allows to verify that all elements of the simulation are complete and "
+"error-free."
+msgstr ""
+"Permite verificar que todos los elementos de la simulación están completos y "
+"libres de errores."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/check-project.rst:19
+msgid "This tool has a checkbox to display only the warnings and errors."
+msgstr "Esta herramienta tiene una casilla de verificación para mostrar solo las advertencias y errores."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/check-project.rst:21
+msgid "Clicking in *Accept* button will start the check."
+msgstr "Al hacer clic en el botón *Aceptar* se iniciará la verificación."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/check-project.rst:24
+msgid "Error Management"
+msgstr "Gestión de Errores"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/check-project.rst:28
+msgid "The errors can be displayed in two ways:"
+msgstr "Los errores pueden mostrarse de dos formas:"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/check-project.rst:27
+msgid "**Log message:** shows an error message on the *Database log* panel."
+msgstr "**Mensaje de registro:** muestra un mensaje de error en el panel *Database log*."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/check-project.rst:28
+msgid ""
+"**Load an error layer:** loads an error layer with the incorrect objects "
+"and errors as fields to display the problematic objects on the map."
+msgstr ""
+"**Cargar capa de errores:** carga una capa de errores con los objetos incorrectos "
+"y errores como campos para mostrar los objetos problemáticos en el mapa."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/check-project.rst:30
+msgid ""
+"All errors are reported as log messages, but there are some errors that "
+"create a layer with the problematic objects."
+msgstr ""
+"Todos los errores se reportan como mensajes de registro, pero hay algunos errores que "
+"crean una capa con los objetos problemáticos."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/check-project.rst:34
+msgid "There are three types of messages on the *Database log* panel:"
+msgstr "Hay tres tipos de mensajes en el panel *Database log*:"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/check-project.rst:33
+msgid "**Info:** the check is completed successfully."
+msgstr "**Info:** la verificación se completó con éxito."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/check-project.rst:34
+msgid "**Warning:** the check found errors that do not break the simulation."
+msgstr "**Advertencia:** la verificación encontró errores que no rompen la simulación."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/check-project.rst:35
+msgid ""
+"**Error:** the check found errors that most likely will break the "
+"simulation."
+msgstr ""
+"**Error:** la verificación encontró errores que muy probablemente romperán la "
+"simulación."

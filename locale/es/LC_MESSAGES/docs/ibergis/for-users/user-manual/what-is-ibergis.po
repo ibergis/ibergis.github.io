@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, IberGIS
+# This file is distributed under the same license as the IberGIS
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IberGIS Documentation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-10 14:07+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: es\n"
+"Language-Team: es <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../docs/ibergis/for-users/user-manual/what-is-ibergis.rst:5
+msgid "What is IberGIS?"
+msgstr "¿Qué es IberGIS?"
+
+#: ../../docs/ibergis/for-users/user-manual/what-is-ibergis.rst:12
+msgid ""
+"IberGIS is the first free software designed for the 1D-2D simulation of "
+"sewerage networks in QGIS environment."
+msgstr ""
+"IberGIS es el primer software libre diseñado para la simulación 1D-2D de "
+"redes de saneamiento en el entorno de QGIS."
+
+#: ../../docs/ibergis/for-users/user-manual/what-is-ibergis.rst:14
+msgid ""
+"Designed as a QGIS plugin, one of the main challenges of the project has "
+"been to accoplate the SWMM calculation engine (1D simulation) with the "
+"Iber calculation engine (2D simulation) in order to simulate together the"
+" sewage and urban drainage networks."
+msgstr ""
+"Diseñado como un plugin de QGIS, uno de los principales desafíos del proyecto ha "
+"sido acoplar el motor de cálculo SWMM (simulación 1D) con el "
+"motor de cálculo Iber (simulación 2D) para simular conjuntamente las"
+" redes de saneamiento y drenaje urbano."
+
+#: ../../docs/ibergis/for-users/user-manual/what-is-ibergis.rst:17
+msgid ""
+"All the necessary data corresponding to SWMM (junction, divider, outfall,"
+" storage, conduit, pump, orifice, weir and outlet) and to Iber "
+"(hyetograph, boundary conditions, inlet, roof and ground) are stored in "
+"GeoPackage format (gpkg) in the working scheme created in QGIS."
+msgstr ""
+"Todos los datos necesarios correspondientes a SWMM (junction, divider, outfall,"
+" storage, conduit, pump, orifice, weir and outlet) y a Iber "
+"(hyetograph, boundary conditions, inlet, roof and ground) se almacenan en "
+"formato GeoPackage (gpkg) en el esquema de trabajo creado en QGIS."
+
+#: ../../docs/ibergis/for-users/user-manual/what-is-ibergis.rst:20
+msgid "To work with IberGIS we can create two types of schemes:"
+msgstr "Para trabajar con IberGIS podemos crear dos tipos de esquemas:"
+
+#: ../../docs/ibergis/for-users/user-manual/what-is-ibergis.rst:22
+msgid "**Empty data:** empty data schema in which we will import our data."
+msgstr "**Datos vacíos:** esquema de datos vacío en el que importaremos nuestros datos."
+
+#: ../../docs/ibergis/for-users/user-manual/what-is-ibergis.rst:23
+msgid ""
+"**Example data:** schema that contains a project with example data to "
+"practice and become familiar with IberGIS."
+msgstr ""
+"**Datos de ejemplo:** esquema que contiene un proyecto con datos de ejemplo para "
+"practicar y familiarizarse con IberGIS."

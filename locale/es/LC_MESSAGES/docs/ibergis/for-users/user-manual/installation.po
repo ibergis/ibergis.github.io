@@ -1,0 +1,174 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, IberGIS
+# This file is distributed under the same license as the IberGIS
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IberGIS Documentation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-10 14:07+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: es\n"
+"Language-Team: es <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../docs/ibergis/for-users/user-manual/installation.rst:3
+msgid "Installation"
+msgstr "Instalación"
+
+#: ../../docs/ibergis/for-users/user-manual/installation.rst:10
+msgid ""
+"As we have just seen in the section :ref:`what-is-ibergis`, in order to "
+"work with IberGIS we need to have QGIS installed."
+msgstr ""
+"Como acabamos de ver en la sección :ref:`what-is-ibergis`, para "
+"trabajar con IberGIS necesitamos tener QGIS instalado."
+
+#: ../../docs/ibergis/for-users/user-manual/installation.rst:12
+msgid ""
+"Although it is not mandatory, it is recommended to have installed SWMM "
+"and Iber."
+msgstr ""
+"Aunque no es obligatorio, se recomienda tener instalados SWMM "
+"e Iber."
+
+#: ../../docs/ibergis/for-users/user-manual/installation.rst:14
+msgid ""
+"To download the software to be used, it is recommended to do it from the "
+"official pages of each one of them."
+msgstr ""
+"Para descargar el software a utilizar, se recomienda hacerlo desde las "
+"páginas oficiales de cada uno de ellos."
+
+#: ../../docs/ibergis/for-users/user-manual/installation.rst:17
+msgid "QGIS installation"
+msgstr "Instalación de QGIS"
+
+#: ../../docs/ibergis/for-users/user-manual/installation.rst:19
+msgid "QGIS is the GIS client we use to work with IberGIS."
+msgstr "QGIS es el cliente GIS que usamos para trabajar con IberGIS."
+
+#: ../../docs/ibergis/for-users/user-manual/installation.rst:21
+msgid ""
+"To download it we will go to the `download center of the QGIS web site "
+"<https://www.qgis.org/download/>`_ and close the donation window."
+msgstr ""
+"Para descargarlo iremos al `centro de descargas del sitio web de QGIS "
+"<https://www.qgis.org/download/>`_ y cerraremos la ventana de donación."
+
+#: ../../docs/ibergis/for-users/user-manual/installation.rst:25
+msgid "Close donation window to QGIS project."
+msgstr "Cerrar ventana de donación al proyecto QGIS."
+
+#: ../../docs/ibergis/for-users/user-manual/installation.rst:27
+msgid ""
+"QGIS is available for many different operating systems, but IberGIS will "
+"only work fully on Windows and Linux so we will have to select one or the"
+" other depending on our operating system. Once located, we can download "
+"it."
+msgstr ""
+"QGIS está disponible para muchos sistemas operativos diferentes, pero IberGIS solo "
+"funcionará completamente en Windows y Linux, por lo que tendremos que seleccionar uno u"
+" otro dependiendo de nuestro sistema operativo. Una vez localizado, podemos descargarlo."
+
+#: ../../docs/ibergis/for-users/user-manual/installation.rst:32
+msgid "Download QGIS for Windows."
+msgstr "Descargar QGIS para Windows."
+
+#: ../../docs/ibergis/for-users/user-manual/installation.rst:34
+msgid ""
+"Once QGIS has been downloaded, run the downloaded file and follow the "
+"instructions to install it."
+msgstr ""
+"Una vez descargado QGIS, ejecute el archivo descargado y siga las "
+"instrucciones para instalarlo."
+
+#: ../../docs/ibergis/for-users/user-manual/installation.rst:36
+msgid "IberGIS **requires** the latest available LTR version of QGIS."
+msgstr "IberGIS **requiere** la última versión LTR disponible de QGIS."
+
+#: ../../docs/ibergis/for-users/user-manual/installation.rst:39
+msgid "IberGIS installation"
+msgstr "Instalación de IberGIS"
+
+#: ../../docs/ibergis/for-users/user-manual/installation.rst:41
+msgid "To download it, go to..."
+msgstr "Para descargarlo, vaya a..."
+
+#: ../../docs/ibergis/for-users/user-manual/installation.rst:44
+msgid "SWMM installation (optional)"
+msgstr "Instalación de SWMM (opcional)"
+
+#: ../../docs/ibergis/for-users/user-manual/installation.rst:46
+msgid ""
+"SWMM is a program developed by the Environmental Protection Agency (EPA) "
+"of the United States which allows to simulate the sewage and urban "
+"drainage networks in urban areas."
+msgstr ""
+"SWMM es un programa desarrollado por la Agencia de Protección Ambiental (EPA) "
+"de los Estados Unidos que permite simular las redes de alcantarillado y "
+"drenaje urbano en áreas urbanas."
+
+#: ../../docs/ibergis/for-users/user-manual/installation.rst:48
+msgid ""
+"To download it we will go to the `official website <https://www.epa.gov"
+"/water-research/storm-water-management-model-swmm>`_ where we will scroll"
+" through the page until we locate the file that we have to download to be"
+" able to install it."
+msgstr ""
+"Para descargarlo iremos al `sitio web oficial <https://www.epa.gov"
+"/water-research/storm-water-management-model-swmm>`_ donde desplazaremos"
+" por la página hasta localizar el archivo que debemos descargar para poder"
+" instalarlo."
+
+#: ../../docs/ibergis/for-users/user-manual/installation.rst:53
+msgid "Download SWMM for Windows."
+msgstr "Descargar SWMM para Windows."
+
+#: ../../docs/ibergis/for-users/user-manual/installation.rst:55
+msgid ""
+"Once SWMM has been downloaded, run the downloaded file and follow the "
+"instructions to install it."
+msgstr ""
+"Una vez descargado SWMM, ejecute el archivo descargado y siga las "
+"instrucciones para instalarlo."
+
+#: ../../docs/ibergis/for-users/user-manual/installation.rst:58
+msgid "Iber installation (optional)"
+msgstr "Instalación de Iber (opcional)"
+
+#: ../../docs/ibergis/for-users/user-manual/installation.rst:60
+msgid ""
+"Iber is a two-dimensional hydraulic model for the simulation of free "
+"surface flow distributed for free in English and Spanish."
+msgstr ""
+"Iber es un modelo hidráulico bidimensional para la simulación de flujo de "
+"superficie libre distribuido gratuitamente en inglés y español."
+
+#: ../../docs/ibergis/for-users/user-manual/installation.rst:62
+msgid ""
+"To download it we must be registered in the `official website "
+"<https://www.iberaula.es/54/iber-model/downloads>`_."
+msgstr ""
+"Para descargarlo debemos estar registrados en el `sitio web oficial "
+"<https://www.iberaula.es/54/iber-model/downloads>`_."
+
+#: ../../docs/ibergis/for-users/user-manual/installation.rst:66
+msgid "Download Iber for Windows."
+msgstr "Descargar Iber para Windows."
+
+#: ../../docs/ibergis/for-users/user-manual/installation.rst:68
+msgid ""
+"Once Iber has been downloaded, run the downloaded file and follow the "
+"instructions to install it."
+msgstr ""
+"Una vez descargado Iber, ejecute el archivo descargado y siga las "
+"instrucciones para instalarlo."

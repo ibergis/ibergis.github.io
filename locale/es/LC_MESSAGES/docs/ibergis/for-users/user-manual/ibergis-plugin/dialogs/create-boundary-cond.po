@@ -1,0 +1,116 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, IberGIS
+# This file is distributed under the same license as the IberGIS
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IberGIS Documentation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-10 14:07+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: es\n"
+"Language-Team: es <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/create-boundary-cond.rst:5
+msgid "Dialog Create boundary conditions"
+msgstr "Diálogo Crear condiciones de contorno"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/create-boundary-cond.rst:12
+msgid ""
+"Tool for setting boundary conditions. By clicking on the button we can "
+"click on the corresponding lines to set the boundary conditions. Then, a "
+"form will appear where we must specify:"
+msgstr ""
+"Herramienta para establecer condiciones de contorno. Al hacer clic en el botón podemos "
+"hacer clic en las líneas correspondientes para establecer las condiciones de contorno. Luego, "
+"aparecerá un formulario donde debemos especificar:"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/create-boundary-cond.rst:18
+msgid "Window to create a new boundary condition - 2D Inlet."
+msgstr "Ventana para crear una nueva condición de contorno - Entrada 2D."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/create-boundary-cond.rst:20
+msgid "**ID:** identifier of the boundary condition."
+msgstr "**ID:** identificador de la condición de contorno."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/create-boundary-cond.rst:21
+msgid "**Code:** code of the boundary condition."
+msgstr "**Código:** código de la condición de contorno."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/create-boundary-cond.rst:22
+msgid "**Descript:** a short description of the boundary condition."
+msgstr "**Descripción:** una breve descripción de la condición de contorno."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/create-boundary-cond.rst:23
+msgid ""
+"**BC Scenario:** boundary condition scenario in which the new boundary "
+"condition will be stored."
+msgstr ""
+"**Escenario BC:** escenario de condición de contorno en el que se almacenará la nueva "
+"condición de contorno."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/create-boundary-cond.rst:24
+msgid "**Bounday Type:** we can select two options:"
+msgstr "**Tipo de Contorno:** podemos seleccionar dos opciones:"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/create-boundary-cond.rst:26
+msgid ""
+"*2D Inlet*: we use it to specify an inlet flow. It is necessary to select"
+" an option for the inlet (*Total Discharge* or *Water Elevation*) and the"
+" inlet condition (*Critical/Subcritical*)."
+msgstr ""
+"*Entrada 2D*: la usamos para especificar un flujo de entrada. Es necesario seleccionar"
+" una opción para la entrada (*Descarga Total* o *Elevación de Agua*) y la"
+" condición de entrada (*Crítico/Subcrítico*)."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/create-boundary-cond.rst:27
+msgid ""
+"*2D Outlet*: we use it to specify an outlet flow. You must select the "
+"flow condition, either Subcritical or Supercritical/Critical. - If "
+"*Subcritical* is selected, you must also define the outlet type (*Weir* "
+"or *Given level*) and the crest definition (*Height* or *Elevation*), "
+"along with their corresponding values. - If *Supercritical/Critical* is "
+"selected, no additional parameters are required, it simply allows the "
+"generated flow to leave the model domain."
+msgstr ""
+"*Salida 2D*: la usamos para especificar un flujo de salida. Debe seleccionar la "
+"condición de flujo, ya sea Subcrítico o Supercrítico/Crítico. - Si se selecciona "
+"*Subcrítico*, también debe definir el tipo de salida (*Vertedero* "
+"o *Nivel dado*) y la definición de cresta (*Altura* o *Elevación*), "
+"junto con sus valores correspondientes. - Si se selecciona *Supercrítico/Crítico*, no se requieren parámetros adicionales, simplemente permite que el "
+"flujo generado salga del dominio del modelo."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/create-boundary-cond.rst:31
+msgid ""
+"**Time Series:** this option allows us to specify an inlet hydrograph. "
+"**It is only available when we select 2D inlet option**."
+msgstr ""
+"**Series Temporales:** esta opción nos permite especificar un hidrograma de entrada. "
+"**Solo está disponible cuando seleccionamos la opción de entrada 2D**."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/create-boundary-cond.rst:33
+msgid ""
+"The boundary conditions are directly applied to the current scenario. The"
+" current scenario can be set on :ref:`dialog-boundary-cond-manager`."
+msgstr ""
+"Las condiciones de contorno se aplican directamente al escenario actual. El"
+" escenario actual puede establecerse en :ref:`dialog-boundary-cond-manager`."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/create-boundary-cond.rst:35
+msgid ""
+"Once boundary conditions exist, they can be edited directly by enabling "
+"editing through the *Toggle Editing* button, either from the map or the "
+"attribute table."
+msgstr ""
+"Una vez que existen las condiciones de contorno, pueden editarse directamente habilitando la "
+"edición a través del botón *Activar edición*, ya sea desde el mapa o la "
+"tabla de atributos."

@@ -1,0 +1,647 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, IberGIS
+# This file is distributed under the same license as the IberGIS
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IberGIS Documentation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-10 14:07+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: es\n"
+"Language-Team: es <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:3
+msgid "Examples"
+msgstr "Ejemplos"
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:10
+msgid ""
+"This section provides practical, high-level examples for developers "
+"working with the IberGIS plugin. The goal is to illustrate **typical "
+"workflows**, not to document every implementation detail."
+msgstr ""
+"Esta sección proporciona ejemplos prácticos de alto nivel para desarrolladores "
+"trabajando con el plugin de IberGIS. El objetivo es ilustrar **flujos de trabajo "
+"típicos**, no documentar cada detalle de implementación."
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:12
+msgid ""
+"The examples below build on the concepts described in :doc:`python` and "
+":doc:`dbmodel`."
+msgstr ""
+"Los ejemplos a continuación se basan en los conceptos descritos en :doc:`python` y "
+":doc:`dbmodel`."
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:15
+msgid "Typical Development Tasks"
+msgstr "Tareas de Desarrollo Típicas"
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:17
+msgid "Common changes you will perform in IberGIS include:"
+msgstr "Los cambios comunes que realizará en IberGIS incluyen:"
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:19
+msgid "Adding or modifying **QGIS Processing algorithms**."
+msgstr "Añadir o modificar **algoritmos de Procesamiento de QGIS**."
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:20
+msgid "Creating new **toolbars, buttons or dialogs**."
+msgstr "Crear nuevas **barras de herramientas, botones o diálogos**."
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:21
+msgid "Reading and writing **configuration values** for new features."
+msgstr "Leer y escribir **valores de configuración** para nuevas características."
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:22
+msgid "Evolving the **database model** while keeping existing projects working."
+msgstr "Evolucionar el **modelo de base de datos** manteniendo los proyectos existentes funcionando."
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:24
+msgid "The following sections walk through representative examples of each area."
+msgstr "Las siguientes secciones recorren ejemplos representativos de cada área."
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:27
+msgid "Example 1 - Creating a New Processing Algorithm"
+msgstr "Ejemplo 1 - Creación de un Nuevo Algoritmo de Procesamiento"
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:29
+msgid ""
+"This example describes the typical steps to add a new QGIS Processing "
+"algorithm to IberGIS."
+msgstr ""
+"Este ejemplo describe los pasos típicos para añadir un nuevo algoritmo de Procesamiento "
+"de QGIS a IberGIS."
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:32
+msgid "Locate the Processing Package"
+msgstr "Localizar el Paquete de Procesamiento"
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:34
+msgid "Processing algorithms are implemented under the plugin root in::"
+msgstr "Los algoritmos de procesamiento se implementan bajo la raíz del plugin en::"
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:38
+msgid ""
+"Each ``*.py`` file usually exposes one or more algorithms that appear in "
+"the QGIS Processing Toolbox under the IberGIS groups."
+msgstr ""
+"Cada archivo ``*.py`` generalmente expone uno o más algoritmos que aparecen en "
+"la Caja de herramientas de Procesamiento de QGIS bajo los grupos de IberGIS."
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:41
+msgid "Create and Register the Algorithm"
+msgstr "Crear y Registrar el Algoritmo"
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:42
+msgid ""
+"There is a QGIS Official Guide for Processing Algorithms that can be "
+"found at "
+"https://docs.qgis.org/3.40/en/docs/pyqgis_developer_cookbook/processing.html."
+msgstr ""
+"Existe una Guía Oficial de QGIS para Algoritmos de Procesamiento que se puede "
+"encontrar en "
+"https://docs.qgis.org/3.40/en/docs/pyqgis_developer_cookbook/processing.html."
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:44
+msgid "Choose a clear, descriptive name for your algorithm file, for example::"
+msgstr "Elija un nombre claro y descriptivo para su archivo de algoritmo, por ejemplo::"
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:48
+msgid ""
+"Implement your algorithm class following the standard QGIS Processing API"
+" (subclassing ``QgsProcessingAlgorithm``). Reuse utilities from "
+"``lib/tools_qgis.py`` and ``core/utils`` whenever possible for logging, "
+"configuration and data access."
+msgstr ""
+"Implemente su clase de algoritmo siguiendo la API estándar de Procesamiento de QGIS"
+" (subclase de ``QgsProcessingAlgorithm``). Reutilice utilidades de "
+"``lib/tools_qgis.py`` y ``core/utils`` siempre que sea posible para registro, "
+"configuración y acceso a datos."
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:50
+msgid ""
+"Keep line length under 120 characters and follow the naming conventions "
+"described in :doc:`python`."
+msgstr ""
+"Mantenga la longitud de línea por debajo de 120 caracteres y siga las convenciones de nomenclatura "
+"descritas en :doc:`python`."
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:52
+msgid "Register the algorithm in the appropriate provider file::"
+msgstr "Registre el algoritmo en el archivo de proveedor apropiado::"
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:57
+msgid "Import your new algorithm class."
+msgstr "Importe su nueva clase de algoritmo."
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:58
+msgid "Add an instance of it in the provider's ``loadAlgorithms`` method."
+msgstr "Añada una instancia de ella en el método ``loadAlgorithms`` del proveedor."
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:60
+msgid ""
+"Reload the plugin in QGIS and verify that the algorithm appears in the "
+"Processing Toolbox and behaves as expected."
+msgstr ""
+"Recargue el plugin en QGIS y verifique que el algoritmo aparece en la "
+"Caja de herramientas de Procesamiento y se comporta como se esperaba."
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:63
+msgid "Code Example - Minimal Processing Algorithm"
+msgstr "Ejemplo de Código - Algoritmo de Procesamiento Mínimo"
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:65
+msgid ""
+"Below is a minimal implementation of a Processing algorithm following the"
+" IberGIS patterns. Create this file as "
+"``core/processing/check_custom_rule.py``:"
+msgstr ""
+"A continuación se muestra una implementación mínima de un algoritmo de Procesamiento siguiendo los"
+" patrones de IberGIS. Cree este archivo como "
+"``core/processing/check_custom_rule.py``:"
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:174
+msgid "Code Example - Register in Provider"
+msgstr "Ejemplo de Código - Registrar en Proveedor"
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:176
+msgid ""
+"Add the algorithm to the provider in "
+"``core/processing/drain_provider.py``:"
+msgstr ""
+"Añada el algoritmo al proveedor en "
+"``core/processing/drain_provider.py``:"
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:204
+msgid "Example 2 - Adding a New Toolbar Button and Dialog"
+msgstr "Ejemplo 2 - Añadir un Nuevo Botón de Barra de Herramientas y Diálogo"
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:206
+msgid "This example shows how to expose new functionality through the QGIS GUI."
+msgstr "Este ejemplo muestra cómo exponer nueva funcionalidad a través de la interfaz de QGIS."
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:209
+msgid "Decide Where the Feature Belongs"
+msgstr "Decidir Dónde Pertenece la Característica"
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:211
+msgid "**Core logic** for the feature should live in ``core`` or ``core/utils``."
+msgstr "**Lógica central** para la característica debe residir en ``core`` o ``core/utils``."
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:212
+msgid "**UI elements** (dialogs, dock widgets) should live under ``core/ui``."
+msgstr "**Elementos de interfaz** (diálogos, widgets acoplables) deben residir bajo ``core/ui``."
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:213
+msgid ""
+"**Toolbar/button wiring** usually lives under ``core/toolbars`` or is "
+"triggered from ``main.py`` / ``core/load_project_menu.py``."
+msgstr ""
+"**Conexión de barra de herramientas/botón** generalmente reside bajo ``core/toolbars`` o se "
+"activa desde ``main.py`` / ``core/load_project_menu.py``."
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:216
+msgid "Create the Dialog"
+msgstr "Crear el Diálogo"
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:218
+msgid "Design a new form using Qt Designer and save it under::"
+msgstr "Diseñe un nuevo formulario usando Qt Designer y guárdelo bajo::"
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:222
+msgid "Register the UI class in ``core/ui/ui_manager.py``."
+msgstr "Registre la clase UI en ``core/ui/ui_manager.py``."
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:224
+msgid ""
+"Create a button class that inherits from ``DrAction`` and opens your "
+"dialog."
+msgstr ""
+"Cree una clase de botón que herede de ``DrAction`` y abra su "
+"diálogo."
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:227
+msgid "Code Example - Register Dialog in ui_manager.py"
+msgstr "Ejemplo de Código - Registrar Diálogo en ui_manager.py"
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:229
+msgid "Add your dialog class to ``core/ui/ui_manager.py``:"
+msgstr "Añada su clase de diálogo a ``core/ui/ui_manager.py``:"
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:244
+msgid "Code Example - Create Button Class"
+msgstr "Ejemplo de Código - Crear Clase de Botón"
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:246
+msgid ""
+"Create the button class in "
+"``core/toolbars/utilities/custom_feature_btn.py``:"
+msgstr ""
+"Cree la clase de botón en "
+"``core/toolbars/utilities/custom_feature_btn.py``:"
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:309
+msgid "Code Example - Export Button in buttons.py"
+msgstr "Ejemplo de Código - Exportar Botón en buttons.py"
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:311
+msgid "Export the button class in ``core/toolbars/buttons.py``:"
+msgstr "Exporte la clase de botón en ``core/toolbars/buttons.py``:"
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:321
+msgid "Wire the Button in drain.config"
+msgstr "Conectar el Botón en drain.config"
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:323
+msgid "Register the button in ``config/drain.config``:"
+msgstr "Registre el botón en ``config/drain.config``:"
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:340
+msgid ""
+"After these changes, reload the plugin and the new button will appear in "
+"the utilities toolbar."
+msgstr ""
+"Después de estos cambios, recargue el plugin y el nuevo botón aparecerá en "
+"la barra de herramientas de utilidades."
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:343
+msgid "Example 3 - Using Configuration and Global State"
+msgstr "Ejemplo 3 - Uso de Configuración y Estado Global"
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:345
+msgid ""
+"Many IberGIS features are controlled by configuration files and global "
+"variables. This example shows how to add a new user-configurable option."
+msgstr ""
+"Muchas características de IberGIS están controladas por archivos de configuración y "
+"variables globales. Este ejemplo muestra cómo añadir una nueva opción configurable por el usuario."
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:348
+msgid "Configuration Files Overview"
+msgstr "Visión General de los Archivos de Configuración"
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:350
+msgid ""
+"IberGIS uses several configuration files managed through "
+"``global_vars.configs``:"
+msgstr ""
+"IberGIS utiliza varios archivos de configuración gestionados a través de "
+"``global_vars.configs``:"
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:352
+msgid ""
+"**init.config**: User configuration stored in the user folder (persistent"
+" across sessions)"
+msgstr ""
+"**init.config**: Configuración de usuario almacenada en la carpeta de usuario (persistente "
+"entre sesiones)"
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:353
+msgid ""
+"**session.config**: Session-specific settings (dialog positions, "
+"temporary values)"
+msgstr ""
+"**session.config**: Configuración específica de sesión (posiciones de diálogos, "
+"valores temporales)"
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:354
+msgid ""
+"**drain.config**: Plugin configuration (toolbars, buttons, system "
+"settings)"
+msgstr ""
+"**drain.config**: Configuración del plugin (barras de herramientas, botones, "
+"configuración del sistema)"
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:355
+msgid "**user_params.config**: Default values for user parameters"
+msgstr "**user_params.config**: Valores predeterminados para parámetros de usuario"
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:358
+msgid "Define the Configuration Key"
+msgstr "Definir la Clave de Configuración"
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:360
+msgid ""
+"Decide whether the setting belongs to **user config** (per installation) "
+"or **project config** (per project). See the explanations in "
+":doc:`python` and :doc:`dbmodel`."
+msgstr ""
+"Decida si la configuración pertenece a **configuración de usuario** (por instalación) "
+"o **configuración de proyecto** (por proyecto). Consulte las explicaciones en "
+":doc:`python` y :doc:`dbmodel`."
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:362
+msgid "Add default values in ``config/user_params.config`` if needed:"
+msgstr "Añada valores predeterminados en ``config/user_params.config`` si es necesario:"
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:372
+msgid "Code Example - Read Configuration"
+msgstr "Ejemplo de Código - Leer Configuración"
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:374
+msgid "Use ``tools_dr.get_config_parser()`` to read configuration values:"
+msgstr "Use ``tools_dr.get_config_parser()`` para leer valores de configuración:"
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:423
+msgid "Code Example - Write Configuration"
+msgstr "Ejemplo de Código - Escribir Configuración"
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:425
+msgid "Use ``tools_dr.set_config_parser()`` to write configuration values:"
+msgstr "Use ``tools_dr.set_config_parser()`` para escribir valores de configuración:"
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:462
+msgid "Code Example - Using Global Variables"
+msgstr "Ejemplo de Código - Uso de Variables Globales"
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:464
+msgid "Access shared state through ``global_vars``:"
+msgstr "Acceda al estado compartido a través de ``global_vars``:"
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:507
+msgid "Example 4 - Modifying a Database Table"
+msgstr "Ejemplo 4 - Modificación de una Tabla de Base de Datos"
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:509
+msgid ""
+"IberGIS stores its project data in GeoPackage files created from SQL "
+"scripts in the ``dbmodel/`` directory. When you change the schema you "
+"**must** carefully update both the base DDL/DML and the corresponding "
+"``updates/`` sub-folder if this change is part of a new plugin version."
+msgstr ""
+"IberGIS almacena los datos de su proyecto en archivos GeoPackage creados a partir de "
+"scripts SQL en el directorio ``dbmodel/``. Cuando cambia el esquema, **debe** "
+"actualizar cuidadosamente tanto el DDL/DML base como la subcarpeta ``updates/`` "
+"correspondiente si este cambio es parte de una nueva versión del plugin."
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:512
+msgid "Scenario"
+msgstr "Escenario"
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:514
+msgid ""
+"Suppose you want to add a new column ``new_field`` to an existing table "
+"``v_edit_node``."
+msgstr ""
+"Supongamos que desea añadir una nueva columna ``new_field`` a una tabla existente "
+"``v_edit_node``."
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:516
+msgid "**Update the base DDL** so that new projects include the field."
+msgstr "**Actualizar el DDL base** para que los nuevos proyectos incluyan el campo."
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:517
+msgid "**Update the base DML** if the new field needs default values."
+msgstr "**Actualizar el DML base** si el nuevo campo necesita valores predeterminados."
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:518
+msgid ""
+"**Create an update script** under ``dbmodel/updates/`` so that existing "
+"projects can be migrated to the new schema when the plugin is updated."
+msgstr ""
+"**Crear un script de actualización** en ``dbmodel/updates/`` para que los proyectos "
+"existentes puedan migrarse al nuevo esquema cuando se actualice el plugin."
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:521
+msgid "Step 1 - Modify DDL for New Projects"
+msgstr "Paso 1 - Modificar el DDL para Nuevos Proyectos"
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:523
+msgid "The base table definitions are stored in::"
+msgstr "Las definiciones de tabla base se almacenan en::"
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:527
+msgid "Actions:"
+msgstr "Acciones:"
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:529
+msgid "Locate the ``CREATE TABLE`` statement for ``v_edit_node``."
+msgstr "Localice la sentencia ``CREATE TABLE`` para ``v_edit_node``."
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:530
+msgid "Add the new column definition (type, constraints, default value, etc.)."
+msgstr "Añada la nueva definición de columna (tipo, restricciones, valor predeterminado, etc.)."
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:531
+msgid ""
+"Respect the existing style: indentation, type checking using ``CHECK "
+"(typeof(...))`` where applicable, and naming conventions."
+msgstr ""
+"Respete el estilo existente: indentación, verificación de tipos usando ``CHECK "
+"(typeof(...))`` donde sea aplicable, y convenciones de nomenclatura."
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:533
+msgid ""
+"After this change, **newly created** project GeoPackages will contain the"
+" new column."
+msgstr ""
+"Después de este cambio, los GeoPackages de proyectos **recién creados** contendrán la "
+"nueva columna."
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:536
+msgid "Code Example - DDL Modification"
+msgstr "Ejemplo de Código - Modificación del DDL"
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:538
+msgid "In ``dbmodel/ddl/ddl.sql``, locate and modify the table definition:"
+msgstr "En ``dbmodel/ddl/ddl.sql``, localice y modifique la definición de la tabla:"
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:565
+msgid "Step 2 - Modify DML for Default Data"
+msgstr "Paso 2 - Modificar el DML para Datos Predeterminados"
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:567
+msgid "Initial data population is defined in::"
+msgstr "La población de datos inicial se define en::"
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:571
+msgid ""
+"If your new column requires a specific default value or must be populated"
+" for system tables:"
+msgstr ""
+"Si su nueva columna requiere un valor predeterminado específico o debe ser poblada "
+"para tablas del sistema:"
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:573
+msgid "Extend the corresponding ``INSERT`` statements."
+msgstr "Extienda las sentencias ``INSERT`` correspondientes."
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:574
+msgid ""
+"Or add explicit ``UPDATE`` statements that set appropriate default values"
+" for the new column."
+msgstr ""
+"O añada sentencias ``UPDATE`` explícitas que establezcan valores predeterminados "
+"apropiados para la nueva columna."
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:576
+msgid "Again, follow the existing style and structure of the file."
+msgstr "Nuevamente, siga el estilo y la estructura existentes del archivo."
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:579
+msgid "Code Example - DML Modification"
+msgstr "Ejemplo de Código - Modificación del DML"
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:581
+msgid "In ``dbmodel/dml/dml.sql``:"
+msgstr "En ``dbmodel/dml/dml.sql``:"
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:601
+msgid "Step 3 - Add an Update Script for Existing Projects"
+msgstr "Paso 3 - Añadir un Script de Actualización para Proyectos Existentes"
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:603
+msgid ""
+"Existing projects will not see the new column unless you add an update "
+"script under::"
+msgstr ""
+"Los proyectos existentes no verán la nueva columna a menos que añada un script de "
+"actualización en::"
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:607
+msgid "For example, if you are preparing version ``1.2.0``, you might have::"
+msgstr "Por ejemplo, si está preparando la versión ``1.2.0``, podría tener::"
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:613
+msgid "Typical actions in the update scripts:"
+msgstr "Acciones típicas en los scripts de actualización:"
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:615
+msgid "In **ddl.sql:**"
+msgstr "En **ddl.sql:**"
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:617
+msgid ""
+"Use ``ALTER TABLE`` statements to add the new column to the existing "
+"tables."
+msgstr ""
+"Use sentencias ``ALTER TABLE`` para añadir la nueva columna a las tablas "
+"existentes."
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:618
+msgid ""
+"Adjust indexes, triggers or views that depend on the modified table, if "
+"needed."
+msgstr ""
+"Ajuste índices, triggers o vistas que dependan de la tabla modificada, si es "
+"necesario."
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:620
+msgid "In **dml.sql:**"
+msgstr "En **dml.sql:**"
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:622
+msgid ""
+"Initialize the new column for existing records (for example with a "
+"default value or a computed value based on existing fields)."
+msgstr ""
+"Inicialice la nueva columna para los registros existentes (por ejemplo, con un "
+"valor predeterminado o un valor calculado basado en campos existentes)."
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:624
+msgid "In **changelog.txt:**"
+msgstr "En **changelog.txt:**"
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:626
+msgid "Document the change (what table/column was added or modified, and why)."
+msgstr "Documente el cambio (qué tabla/columna se añadió o modificó, y por qué)."
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:628
+msgid ""
+"Remember that, as explained in :doc:`dbmodel`, **updates must also be "
+"reflected in the base files** (``dbmodel/ddl/ddl.sql`` and "
+"``dbmodel/dml/dml.sql``) so that new projects and upgraded projects share"
+" the same schema."
+msgstr ""
+"Recuerde que, como se explica en :doc:`dbmodel`, **las actualizaciones también deben "
+"reflejarse en los archivos base** (``dbmodel/ddl/ddl.sql`` y "
+"``dbmodel/dml/dml.sql``) para que los proyectos nuevos y los proyectos actualizados "
+"compartan el mismo esquema."
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:631
+msgid "Code Example - Update DDL Script"
+msgstr "Ejemplo de Código - Script de Actualización DDL"
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:633
+msgid "Create ``dbmodel/updates/1/2/0/ddl.sql``:"
+msgstr "Cree ``dbmodel/updates/1/2/0/ddl.sql``:"
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:663
+msgid "Code Example - Update DML Script"
+msgstr "Ejemplo de Código - Script de Actualización DML"
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:665
+msgid "Create ``dbmodel/updates/1/2/0/dml.sql``:"
+msgstr "Cree ``dbmodel/updates/1/2/0/dml.sql``:"
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:689
+msgid "Code Example - Changelog"
+msgstr "Ejemplo de Código - Changelog"
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:691
+msgid "Create ``dbmodel/updates/1/2/0/changelog.txt``:"
+msgstr "Cree ``dbmodel/updates/1/2/0/changelog.txt``:"
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:713
+msgid "Versioning and Testing"
+msgstr "Versionado y Pruebas"
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:715
+msgid ""
+"Whenever you introduce schema changes or new Processing algorithms or "
+"major UI features:"
+msgstr ""
+"Siempre que introduzca cambios de esquema o nuevos algoritmos de Processing o "
+"características importantes de la UI:"
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:717
+msgid ""
+"Increment the version in the appropriate place (plugin metadata and "
+"``dbmodel/updates`` folder structure)."
+msgstr ""
+"Incremente la versión en el lugar apropiado (metadatos del plugin y estructura de "
+"carpetas ``dbmodel/updates``)."
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:718
+msgid ""
+"Create a **new project** with the updated plugin to verify the base DDL "
+"and DML."
+msgstr ""
+"Cree un **nuevo proyecto** con el plugin actualizado para verificar el DDL y DML "
+"base."
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:719
+msgid ""
+"Open an **existing project** and run the update logic to ensure that the "
+"``updates/<major>/<minor>/<patch>`` scripts correctly migrate the "
+"database."
+msgstr ""
+"Abra un **proyecto existente** y ejecute la lógica de actualización para asegurar que "
+"los scripts ``updates/<major>/<minor>/<patch>`` migren correctamente la base de "
+"datos."
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:720
+msgid ""
+"Run the tests shipped with the plugin, and add new tests when "
+"appropriate. Command to run the tests is ``pytest -v``."
+msgstr ""
+"Ejecute las pruebas incluidas con el plugin, y añada nuevas pruebas cuando sea "
+"apropiado. El comando para ejecutar las pruebas es ``pytest -v``."
+
+#: ../../docs/ibergis/for-developers/developer-manual/examples.rst:721
+msgid ""
+"Document user-visible changes in the changelog files and in the user "
+"manual when relevant."
+msgstr ""
+"Documente los cambios visibles para el usuario en los archivos de changelog y en el "
+"manual de usuario cuando sea relevante."

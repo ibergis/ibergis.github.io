@@ -1,0 +1,242 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, IberGIS
+# This file is distributed under the same license as the IberGIS
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IberGIS Documentation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-10 14:07+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: es\n"
+"Language-Team: es <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/results.rst:5
+msgid "Dialog Results"
+msgstr "Diálogo Resultados"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/results.rst:12
+msgid "Tool to work with the simulation results."
+msgstr "Herramienta para trabajar con los resultados de la simulación."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/results.rst:16
+msgid "Window to manage the simulation results."
+msgstr "Ventana para gestionar los resultados de la simulación."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/results.rst:18
+msgid ""
+"We can manage profile, report summary, time series graph, load raster "
+"results, load vector results and set results folder."
+msgstr ""
+"Podemos gestionar perfil, resumen de informe, gráfico de series temporales, cargar resultados "
+"ráster, cargar resultados vectoriales y establecer carpeta de resultados."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/results.rst:21
+msgid "Profile"
+msgstr "Perfil"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/results.rst:23
+msgid "Draws the profile, the longitudinal section between two or more nodes."
+msgstr "Dibuja el perfil, la sección longitudinal entre dos o más nodos."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/results.rst:27
+msgid "Dialog Create Profile."
+msgstr "Diálogo Crear Perfil."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/results.rst:29
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/results.rst:69
+msgid "The following options are available:"
+msgstr "Las siguientes opciones están disponibles:"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/results.rst:31
+msgid "**Profile:** allows to select the initial and final nodes of the profile."
+msgstr "**Perfil:** permite seleccionar los nodos inicial y final del perfil."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/results.rst:33
+msgid ""
+"**Parameters:** allows to select parameters like mode or offsets. The "
+"available options are:"
+msgstr ""
+"**Parámetros:** permite seleccionar parámetros como modo o desplazamientos. Las "
+"opciones disponibles son:"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/results.rst:35
+msgid ""
+"**Mode:** allows to select the mode of the profile. The available modes "
+"are: *Dry* and *With water*."
+msgstr ""
+"**Modo:** permite seleccionar el modo del perfil. Los modos disponibles "
+"son: *Seco* y *Con agua*."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/results.rst:36
+msgid ""
+"**Offsets:** allows to select the offsets of the profile. The available "
+"offsets are: *Depth* and *Elevation*."
+msgstr ""
+"**Desplazamientos:** permite seleccionar los desplazamientos del perfil. Los desplazamientos "
+"disponibles son: *Profundidad* y *Elevación*."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/results.rst:37
+msgid ""
+"**Timestamp:** allows to select the timestamp of the profile. There is "
+"the option to select an instant or a period."
+msgstr ""
+"**Marca de tiempo:** permite seleccionar la marca de tiempo del perfil. Existe "
+"la opción de seleccionar un instante o un período."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/results.rst:39
+msgid "The *Timestamp* options will only work in *With water* mode."
+msgstr "Las opciones de *Marca de tiempo* solo funcionarán en modo *Con agua*."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/results.rst:41
+msgid ""
+"After clicking on the *Draw profile* button, a new dialog will be opened "
+"with the profile."
+msgstr ""
+"Después de hacer clic en el botón *Dibujar perfil*, se abrirá un nuevo diálogo "
+"con el perfil."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/results.rst:43
+msgid ""
+"This dialog has many options to improve the visualization of the profile,"
+" like zoom or customization of the colors."
+msgstr ""
+"Este diálogo tiene muchas opciones para mejorar la visualización del perfil,"
+" como zoom o personalización de los colores."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/results.rst:47
+msgid "Dialog Profile."
+msgstr "Diálogo Perfil."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/results.rst:49
+msgid ""
+"The *Dry* mode gets the data form the project GeoPackage, while the *With"
+" water* mode gets the data form the results folder."
+msgstr ""
+"El modo *Seco* obtiene los datos del GeoPackage del proyecto, mientras que el modo *Con"
+" agua* obtiene los datos de la carpeta de resultados."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/results.rst:52
+msgid "Report summary"
+msgstr "Resumen de informe"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/results.rst:54
+msgid "Provides the maximum values of the results, in a table."
+msgstr "Proporciona los valores máximos de los resultados, en una tabla."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/results.rst:58
+msgid "Dialog Report Summary."
+msgstr "Diálogo Resumen de Informe."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/results.rst:61
+msgid "Time series graph"
+msgstr "Gráfico de series temporales"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/results.rst:63
+msgid ""
+"Allows to visualize how flow, precipitation or water levels vary at "
+"specific points in the model."
+msgstr ""
+"Permite visualizar cómo varían el flujo, la precipitación o los niveles de agua en "
+"puntos específicos del modelo."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/results.rst:67
+msgid "Dialog Create Time Series Graph."
+msgstr "Diálogo Crear Gráfico de Series Temporales."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/results.rst:71
+msgid "**Time Periods:** allows to select the time periods to be displayed."
+msgstr "**Períodos de Tiempo:** permite seleccionar los períodos de tiempo a mostrar."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/results.rst:72
+msgid "**Plot Configuration:** allows to configure the plot configuration."
+msgstr "**Configuración del Gráfico:** permite configurar la configuración del gráfico."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/results.rst:73
+msgid ""
+"**Data Series:** allows to add, remove and select the objects to be "
+"displayed."
+msgstr ""
+"**Series de Datos:** permite añadir, eliminar y seleccionar los objetos a "
+"mostrar."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/results.rst:74
+msgid ""
+"**Data Series Selection:** allows to select the objects from the canvas "
+"and their variable to be displayed."
+msgstr ""
+"**Selección de Series de Datos:** permite seleccionar los objetos del lienzo "
+"y su variable a mostrar."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/results.rst:76
+msgid ""
+"This tool allows to save and load the graph configuration with the *Save*"
+" and *Load* buttons."
+msgstr ""
+"Esta herramienta permite guardar y cargar la configuración del gráfico con los botones *Guardar*"
+" y *Cargar*."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/results.rst:78
+msgid ""
+"After clicking on the *Show graph* button, a new dialog will be opened "
+"with the graph."
+msgstr ""
+"Después de hacer clic en el botón *Mostrar gráfico*, se abrirá un nuevo diálogo "
+"con el gráfico."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/results.rst:80
+msgid ""
+"This dialog have many options to improve the visualization of the graph, "
+"like zoom or customization of the colors."
+msgstr ""
+"Este diálogo tiene muchas opciones para mejorar la visualización del gráfico, "
+"como zoom o personalización de los colores."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/results.rst:84
+msgid "Dialog Time Series Graph."
+msgstr "Diálogo Gráfico de Series Temporales."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/results.rst:87
+msgid "Load raster results"
+msgstr "Cargar resultados ráster"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/results.rst:89
+msgid "Allows to load simulation results in raster format."
+msgstr "Permite cargar resultados de simulación en formato ráster."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/results.rst:93
+msgid "Dialog Load Raster Results."
+msgstr "Diálogo Cargar Resultados Ráster."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/results.rst:96
+msgid "Load vector results"
+msgstr "Cargar resultados vectoriales"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/results.rst:98
+msgid ""
+"Loads the maximum values obtained by the 1D model, in layer format with "
+"an specific style for each layer."
+msgstr ""
+"Carga los valores máximos obtenidos por el modelo 1D, en formato de capa con "
+"un estilo específico para cada capa."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/results.rst:102
+msgid "Vector Results Layers."
+msgstr "Capas de Resultados Vectoriales."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/results.rst:105
+msgid "Set results folder"
+msgstr "Establecer carpeta de resultados"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/results.rst:107
+msgid "Sets the folder where the results are stored."
+msgstr "Establece la carpeta donde se almacenan los resultados."

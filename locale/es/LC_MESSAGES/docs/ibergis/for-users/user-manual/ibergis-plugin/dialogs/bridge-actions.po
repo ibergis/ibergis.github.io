@@ -1,0 +1,70 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, IberGIS
+# This file is distributed under the same license as the IberGIS
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IberGIS Documentation 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-10 14:07+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: es\n"
+"Language-Team: es <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/bridge-actions.rst:5
+msgid "Dialog Bridge Actions"
+msgstr "Diálogo Acciones de Puente"
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/bridge-actions.rst:12
+msgid "Tool to incorporate bridges to the model."
+msgstr "Herramienta para incorporar puentes al modelo."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/bridge-actions.rst:14
+msgid ""
+"You can create a bridge by drawing it directly over the geometry. Some "
+"dimensional characteristics must be defined, such as the elevation. The "
+"bridge length is automatically calculated from the drawn line. You can "
+"manually edit the geometry."
+msgstr ""
+"Puede crear un puente dibujándolo directamente sobre la geometría. Algunas "
+"características dimensionales deben definirse, como la elevación. La "
+"longitud del puente se calcula automáticamente desde la línea dibujada. Puede "
+"editar manualmente la geometría."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/bridge-actions.rst:19
+msgid "Window to set the bridge parameters."
+msgstr "Ventana para configurar los parámetros del puente."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/bridge-actions.rst:21
+msgid ""
+"To correctly define the section characteristics, **a valid Digital "
+"Elevation Model (DEM) must be loaded** by clicking on *Raster File (DEM)*"
+" and choosing the layer with the DEM information. Otherwise, the riverbed"
+" will remain flat."
+msgstr ""
+"Para definir correctamente las características de la sección, **se debe cargar un Modelo Digital "
+"de Elevación (DEM) válido** haciendo clic en *Archivo Ráster (DEM)*"
+" y eligiendo la capa con la información DEM. De lo contrario, el lecho del río"
+" permanecerá plano."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/bridge-actions.rst:26
+msgid "DEM loaded to the bridge."
+msgstr "DEM cargado al puente."
+
+#: ../../docs/ibergis/for-users/user-manual/ibergis-plugin/dialogs/bridge-actions.rst:28
+msgid ""
+"Make sure that the *Digitize by segment* mode is enabled in the QGIS "
+"menu. If another mode is selected (for example, *Digitize by shape*) the "
+"bridge geometry will follow that drawing style."
+msgstr ""
+"Asegúrese de que el modo *Digitalizar por segmento* esté habilitado en el menú de QGIS. Si se selecciona otro modo (por ejemplo, *Digitalizar por forma*), la "
+"geometría del puente seguirá ese estilo de dibujo."
