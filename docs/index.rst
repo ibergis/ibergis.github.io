@@ -32,9 +32,3 @@ Please take a look at one of the documents below.
    :caption: FOR DEVELOPERS
 
    IberGIS Developer Manual <ibergis/for-developers/developer-manual/index>
-
-.. toctree::
-   :maxdepth: 2
-   :caption: FOR ADMINISTRATORS
-
-   Administrator Documentation <ibergis/for-admins/index>
