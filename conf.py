@@ -25,7 +25,7 @@ html_last_updated_fmt = '%Y %b %d, %H:%M %z'
 # built documents.
 #
 # The short X.Y version.
-version = 'master'
+version = 'main'
 
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
@@ -163,8 +163,8 @@ context = {
     # Do not display for outdated releases
     'display_github': not html_context['outdated'],
     'github_user': 'IberGIS',
-    'github_repo': 'IberGIS-Documentation',
-    'github_version': 'master/',
+    'github_repo': 'ibergis.github.io',
+    'github_version': 'main/',
     'github_url': 'https://github.com/ibergis/ibergis.github.io',
 }
 
